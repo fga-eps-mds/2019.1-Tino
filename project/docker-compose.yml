@@ -13,9 +13,11 @@ services:
       - --core
       - models
       - -c
-      - rest
+      - telegram
       - --endpoints
       - ./config/endpoints.yml
+      - --credentials
+      - ./config/credentials.yml
       - -u
       - current/
   rasa_nlu:
@@ -26,3 +28,22 @@ services:
       - start
       - --path
       - models
+  # action_server:
+  #   image: jp:latest 
+  #   volumes:
+  #     - ./actions:/app/actions
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${ADMIN_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${ADMIN_PASS}
+  mongo-express:
+    image: mongo-express
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${ADMIN_USER}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${ADMIN_PASS}
+
+  redis:
+    image: redis:latest

@@ -11,6 +11,6 @@
 * greet
   - utter_greet
 * mood_unhappy
-  - utter_cheer_up
+  - action_joke
 * goodbye
   - utter_goodbye
