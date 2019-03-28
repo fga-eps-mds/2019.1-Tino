@@ -1,2 +1,13 @@
 nlu:
   url: http://rasa_nlu:5000
+
+tracker_store:
+  store_type: mongod
+  url: mongodb://mongo:27017
+  username: rasa
+  password: rasa
+
+
+#tracker_store:
+ # store_type: redis
+  #url: redis
