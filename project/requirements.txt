@@ -1,0 +1,8 @@
+Flask==1.0.2
+Flask-Cors==3.0.6
+httpretty
+requests
+pymongo==3.7.1
+websocket-client==0.52.0
+python-crontab
+pycurl==7.43.0.2
