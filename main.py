@@ -9,10 +9,10 @@ from rasa_core.utils import EndpointConfig
 
 # load trained models
 interpreter = RasaNLUInterpreter('./models/current/nlu')
-agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url="http://localhost:5055/webhook"))
+agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url="0.0.0.0:5055/webhook"))
 
 token = '739701752:AAEu1dcyxVeTNf8pgyN5FfMZx-2Te3PwprA'
-# https://api.telegram.org/bot{token}/setWebhook?url=https://8a1c91c7.ngrok.io
+
 # https://api.telegram.org/bot{token}/deleteWebhook
 
 app = Flask(__name__)
@@ -57,4 +57,4 @@ def applyAi(message):
 
 
 if(__name__ ==  '__main__'):
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
