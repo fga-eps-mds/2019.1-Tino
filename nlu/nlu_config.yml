@@ -1,0 +1,7 @@
+#Define basicamente como o modelo será treinado e como os recursos serão extraídos.
+#Usaremos o pipeline spacy_sklearn predefinido,
+#pois temos muito poucos exemplos de treinamento. 
+
+language: "pt"
+
+pipeline: spacy_sklearn

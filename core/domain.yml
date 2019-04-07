@@ -1,0 +1,33 @@
+#O domínio define o universo em que seu bot vive - 
+#quais entradas do usuário ele deve esperar obter, 
+#quais ações ele deve ser capaz de prever, como responder e quais informações armazenar. 
+
+intents:
+- greet
+- goodbye
+- thanks
+- callapi
+- out_of_scope
+
+actions:
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- action_callapi
+- utter_out_of_scope
+
+
+templates:
+  
+  utter_greet:
+  - text: "Olá, como posso te ajudar?"
+
+  utter_goodbye:
+  - text: "Falo com você depois!"
+
+  utter_out_of_scope:
+  - text: "Não consegui entender nada do que voce falou, ta falando portugues ?"
+  
+  utter_thanks:
+  - text: "Obrigado!"
+  

@@ -1,0 +1,297 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "out_of_scope",
+        "text": "aleatorio"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "filha da mae"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "filha da puta"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "suave na nave?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "tem prova amanha ?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "prova"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "nao sei"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "o que voce faz ?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "calcula ai pra mim"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "to sem ideia"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "conta uma piada"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "o que temos pro cafe?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "e hoje?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "vamos ?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "opa"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "kkk"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "hahahaha"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "celular"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "objeto"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Tchau"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Adeus"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Até logo"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bot de tchau"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Adeus amigo"
+      },
+      {
+        "intent": "goodbye",
+        "text": "tchau"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Adeus por agora"
+      },
+      {
+        "intent": "goodbye",
+        "text": "te vejo mais tarde"
+      },
+      {
+        "intent": "goodbye",
+        "text": "tenho que ir"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Até logo"
+      },
+      {
+        "intent": "goodbye",
+        "text": "boa noite"
+      },
+      {
+        "intent": "goodbye",
+        "text": "tenha um bom dia"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Eu estou fora"
+      },
+      {
+        "intent": "goodbye",
+        "text": "te vejo mais tarde Jacaré"
+      },
+      {
+        "intent": "goodbye",
+        "text": "nós falaremos em breve"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi"
+      },
+      {
+        "intent": "greet",
+        "text": "Ei"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Olá"
+      },
+      {
+        "intent": "greet",
+        "text": "Bom Dia"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi de novo"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi pessoal"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi senhor"
+      },
+      {
+        "intent": "greet",
+        "text": "oi amigo!"
+      },
+      {
+        "intent": "greet",
+        "text": "Olá"
+      },
+      {
+        "intent": "greet",
+        "text": "saudações"
+      },
+      {
+        "intent": "greet",
+        "text": "Olá pessoal"
+      },
+      {
+        "intent": "greet",
+        "text": "olá é alguém aí"
+      },
+      {
+        "intent": "greet",
+        "text": "olá robô"
+      },
+      {
+        "intent": "thanks",
+        "text": "Obrigado"
+      },
+      {
+        "intent": "thanks",
+        "text": "Obrigado"
+      },
+      {
+        "intent": "thanks",
+        "text": "Muito obrigado"
+      },
+      {
+        "intent": "thanks",
+        "text": "bot obrigado"
+      },
+      {
+        "intent": "thanks",
+        "text": "Obrigado por isso"
+      },
+      {
+        "intent": "thanks",
+        "text": "Felicidades"
+      },
+      {
+        "intent": "thanks",
+        "text": "gritos mano"
+      },
+      {
+        "intent": "thanks",
+        "text": "ok obrigado!"
+      },
+      {
+        "intent": "thanks",
+        "text": "perfeito obrigado"
+      },
+      {
+        "intent": "thanks",
+        "text": "muito obrigado por tudo"
+      },
+      {
+        "intent": "thanks",
+        "text": "Obrigado pela ajuda"
+      },
+      {
+        "intent": "thanks",
+        "text": "Muito obrigado"
+      },
+      {
+        "intent": "thanks",
+        "text": "incrível, obrigado"
+      },
+      {
+        "intent": "thanks",
+        "text": "legal, obrigado"
+      },
+      {
+        "intent": "thanks",
+        "text": "legal obrigado"
+      },
+      {
+        "intent": "callapi",
+        "text": "chame sua ação"
+      },
+      {
+        "intent": "callapi",
+        "text": "mostre-me a ação personalizada"
+      },
+      {
+        "intent": "callapi",
+        "text": "ligue para sua API"
+      },
+      {
+        "intent": "callapi",
+        "text": "mostre seu serviço"
+      },
+      {
+        "intent": "callapi",
+        "text": "mostre sua ação"
+      },
+      {
+        "intent": "callapi",
+        "text": "chame sua ação personalizada"
+      },
+      {
+        "intent": "callapi",
+        "text": "açao"
+      },
+      {
+        "intent": "callapi",
+        "text": "personalizadas"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
