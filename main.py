@@ -9,7 +9,7 @@ from rasa_core.utils import EndpointConfig
 
 # load trained models
 interpreter = RasaNLUInterpreter('./models/current/nlu')
-agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url="0.0.0.0:5055/webhook"))
+agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url="https://ecb20f99.ngrok.io/webhook"))
 
 token = '739701752:AAEu1dcyxVeTNf8pgyN5FfMZx-2Te3PwprA'
 
@@ -22,12 +22,13 @@ app = Flask(__name__)
 def index():
     if(request.method == 'POST'):
         msg = request.get_json()
-        print(msg)
+        print('mensagem:', msg)
         chat_id , message = parse_msg(msg) #message é a mensagem do usuario, chat_id do user
-        
+        print('message: {}'.format (message))
         response_messages = applyAi(message)
         send_message(chat_id,response_messages)
         return Response('ok',status=200)
+    
     else:
         return '<h1>HELLO</h1>'
 
