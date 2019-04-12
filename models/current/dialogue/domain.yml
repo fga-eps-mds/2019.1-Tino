@@ -29,5 +29,7 @@ templates:
   - text: Olá, como posso te ajudar?
   utter_out_of_scope:
   - text: Não consegui entender nada do que voce falou, ta falando portugues ?
+  - text: Não entendi o que disse, pode repetir?
+  - text: Ta viajando? não entendi nada
   utter_thanks:
   - text: Obrigado!

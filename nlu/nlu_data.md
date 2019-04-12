@@ -20,6 +20,13 @@
 - hahahaha
 - celular
 - objeto
+- vai se fuder
+- vsf
+- merda
+- droga 
+- carai
+- lixo
+- merda
 
 
 ## intent:goodbye <!--- The label of the intent --> 

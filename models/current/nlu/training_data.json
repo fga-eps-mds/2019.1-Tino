@@ -78,6 +78,34 @@
         "text": "objeto"
       },
       {
+        "intent": "out_of_scope",
+        "text": "vai se fuder"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "vsf"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "merda"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "droga"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "carai"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "lixo"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "merda"
+      },
+      {
         "intent": "goodbye",
         "text": "Tchau"
       },
