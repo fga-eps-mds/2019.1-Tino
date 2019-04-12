@@ -6,6 +6,9 @@ actions:
 - utter_goodbye
 - action_callapi
 - utter_out_of_scope
+- utter_offense
+- utter_im_bad
+- utter_call_lino
 config:
   store_entities_as_slots: true
 entities: []
@@ -21,13 +24,30 @@ intents:
     use_entities: true
 - out_of_scope:
     use_entities: true
+- offense:
+    use_entities: true
+- im_bad:
+    use_entities: true
+- call_lino:
+    use_entities: true
 slots: {}
 templates:
+  utter_call_lino:
+  - text: 'Isso ai ja é com meu primo Lino, para encontra-lo na Telegram pesquise
+      por: lino_o_bot ou só Lino para o Facebook'
   utter_goodbye:
   - text: Falo com você depois!
   utter_greet:
   - text: Olá, como posso te ajudar?
+  utter_im_bad:
+  - text: Que pena amigo,desejo melhoras para voce!
+  - text: Não desanime e siga em frente.
+  utter_offense:
+  - text: Que feio! Devia ter mais educação!
+  - text: 'Que deselegante... '
+  - text: Melhor ir lavar a boca
   utter_out_of_scope:
   - text: Não consegui entender nada do que voce falou, ta falando portugues ?
+  - text: Hmmm, não vou saber te responder isso agora...Tente mais tarde
   utter_thanks:
   - text: Obrigado!

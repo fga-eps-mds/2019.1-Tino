@@ -3,19 +3,28 @@
     "action_listen": {
       "slots": []
     },
+    "utter_call_lino": {
+      "slots": []
+    },
     "utter_thanks": {
+      "slots": []
+    },
+    "utter_im_bad": {
       "slots": []
     },
     "action_callapi": {
       "slots": []
     },
+    "utter_offense": {
+      "slots": []
+    },
     "utter_out_of_scope": {
       "slots": []
     },
-    "utter_goodbye": {
+    "utter_greet": {
       "slots": []
     },
-    "utter_greet": {
+    "utter_goodbye": {
       "slots": []
     }
   },
@@ -33,7 +42,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190407-185655",
+  "trained_at": "20190412-145846",
   "rasa_core": "0.13.7",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

@@ -17,4 +17,16 @@
 ## story_out_of_scope
 * out_of_scope
  - utter_out_of_scope
+
+## story_offense
+* offense
+ - utter_offense
+
+## story_im_bad
+* im_bad
+ - utter_im_bad  
+
+## story_call_lino
+* call_lino
+ - utter_call_lino  
  

@@ -11,10 +11,6 @@
       },
       {
         "intent": "out_of_scope",
-        "text": "filha da puta"
-      },
-      {
-        "intent": "out_of_scope",
         "text": "suave na nave?"
       },
       {
@@ -28,10 +24,6 @@
       {
         "intent": "out_of_scope",
         "text": "nao sei"
-      },
-      {
-        "intent": "out_of_scope",
-        "text": "o que voce faz ?"
       },
       {
         "intent": "out_of_scope",
@@ -55,7 +47,7 @@
       },
       {
         "intent": "out_of_scope",
-        "text": "vamos ?"
+        "text": "veterinario"
       },
       {
         "intent": "out_of_scope",
@@ -63,11 +55,23 @@
       },
       {
         "intent": "out_of_scope",
-        "text": "kkk"
+        "text": "asdf"
       },
       {
         "intent": "out_of_scope",
         "text": "hahahaha"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "speak english?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "english"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "los hermanos"
       },
       {
         "intent": "out_of_scope",
@@ -139,47 +143,211 @@
       },
       {
         "intent": "greet",
-        "text": "Oi"
+        "text": "olá"
       },
       {
         "intent": "greet",
-        "text": "Ei"
+        "text": "ola"
       },
       {
         "intent": "greet",
-        "text": "Oi bot"
+        "text": "oi"
       },
       {
         "intent": "greet",
-        "text": "Oi bot"
+        "text": "eai"
       },
       {
         "intent": "greet",
-        "text": "Olá"
+        "text": "eae"
       },
       {
         "intent": "greet",
-        "text": "Bom Dia"
+        "text": "boa tarde"
       },
       {
         "intent": "greet",
-        "text": "Oi de novo"
+        "text": "bom dia"
       },
       {
         "intent": "greet",
-        "text": "Oi pessoal"
+        "text": "e ai"
       },
       {
         "intent": "greet",
-        "text": "Oi senhor"
+        "text": "hello"
       },
       {
         "intent": "greet",
-        "text": "oi amigo!"
+        "text": "hi"
       },
       {
         "intent": "greet",
-        "text": "Olá"
+        "text": "opa"
+      },
+      {
+        "intent": "greet",
+        "text": "eai blz"
+      },
+      {
+        "intent": "greet",
+        "text": "oie"
+      },
+      {
+        "intent": "greet",
+        "text": "salve"
+      },
+      {
+        "intent": "greet",
+        "text": "qual foi"
+      },
+      {
+        "intent": "greet",
+        "text": "koe"
+      },
+      {
+        "intent": "greet",
+        "text": "fala tu"
+      },
+      {
+        "intent": "greet",
+        "text": "piei"
+      },
+      {
+        "intent": "greet",
+        "text": "ou"
+      },
+      {
+        "intent": "greet",
+        "text": "ow"
+      },
+      {
+        "intent": "greet",
+        "text": "eaew"
+      },
+      {
+        "intent": "greet",
+        "text": "fi"
+      },
+      {
+        "intent": "greet",
+        "text": "mlk"
+      },
+      {
+        "intent": "greet",
+        "text": "mano"
+      },
+      {
+        "intent": "greet",
+        "text": "vei"
+      },
+      {
+        "intent": "greet",
+        "text": "vey"
+      },
+      {
+        "intent": "greet",
+        "text": "eaae vey"
+      },
+      {
+        "intent": "greet",
+        "text": "eai bixo"
+      },
+      {
+        "intent": "greet",
+        "text": "ea e"
+      },
+      {
+        "intent": "greet",
+        "text": "ea i"
+      },
+      {
+        "intent": "greet",
+        "text": "e ai"
+      },
+      {
+        "intent": "greet",
+        "text": "faala"
+      },
+      {
+        "intent": "greet",
+        "text": "ea aí man kk"
+      },
+      {
+        "intent": "greet",
+        "text": "como vai"
+      },
+      {
+        "intent": "greet",
+        "text": "fala meu consagrado"
+      },
+      {
+        "intent": "greet",
+        "text": "fala meu compatriota"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hello bitch"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "boa noite"
+      },
+      {
+        "intent": "greet",
+        "text": "buenos dias"
+      },
+      {
+        "intent": "greet",
+        "text": "eaiii"
+      },
+      {
+        "intent": "greet",
+        "text": "eaaii"
+      },
+      {
+        "intent": "greet",
+        "text": "eaeee"
+      },
+      {
+        "intent": "greet",
+        "text": "oiiii"
+      },
+      {
+        "intent": "greet",
+        "text": "oii"
+      },
+      {
+        "intent": "greet",
+        "text": "oiee"
+      },
+      {
+        "intent": "greet",
+        "text": "fala ai"
+      },
+      {
+        "intent": "greet",
+        "text": "ola senhor"
+      },
+      {
+        "intent": "greet",
+        "text": "ola meu caro"
+      },
+      {
+        "intent": "greet",
+        "text": "ola robo"
+      },
+      {
+        "intent": "greet",
+        "text": "eai bot"
       },
       {
         "intent": "greet",
@@ -187,15 +355,127 @@
       },
       {
         "intent": "greet",
-        "text": "Olá pessoal"
+        "text": "oi pessoal"
       },
       {
         "intent": "greet",
-        "text": "olá é alguém aí"
+        "text": "oi de novo"
       },
       {
         "intent": "greet",
-        "text": "olá robô"
+        "text": "ei"
+      },
+      {
+        "intent": "greet",
+        "text": "epa"
+      },
+      {
+        "intent": "greet",
+        "text": "olá é alguém ai"
+      },
+      {
+        "intent": "greet",
+        "text": "eu lhe saldo"
+      },
+      {
+        "intent": "greet",
+        "text": "cheguei"
+      },
+      {
+        "intent": "greet",
+        "text": "cheguei chegando"
+      },
+      {
+        "intent": "greet",
+        "text": "fala ae"
+      },
+      {
+        "intent": "greet",
+        "text": "chora"
+      },
+      {
+        "intent": "greet",
+        "text": "da ideia firma"
+      },
+      {
+        "intent": "greet",
+        "text": "opa opa opa"
+      },
+      {
+        "intent": "greet",
+        "text": "ja voltei"
+      },
+      {
+        "intent": "greet",
+        "text": "to aqui"
+      },
+      {
+        "intent": "greet",
+        "text": "oieee"
+      },
+      {
+        "intent": "greet",
+        "text": "oi oi"
+      },
+      {
+        "intent": "greet",
+        "text": "olaa"
+      },
+      {
+        "intent": "greet",
+        "text": "de volta na area"
+      },
+      {
+        "intent": "greet",
+        "text": "muito prazer robo"
+      },
+      {
+        "intent": "greet",
+        "text": "prazer"
+      },
+      {
+        "intent": "greet",
+        "text": "prazer em conhece-lo"
+      },
+      {
+        "intent": "greet",
+        "text": "eaíí"
+      },
+      {
+        "intent": "greet",
+        "text": "e aí"
+      },
+      {
+        "intent": "greet",
+        "text": "eai meu bom"
+      },
+      {
+        "intent": "greet",
+        "text": "manda o papo"
+      },
+      {
+        "intent": "greet",
+        "text": "salvee"
+      },
+      {
+        "intent": "greet",
+        "text": "to aqui denovo"
+      },
+      {
+        "intent": "greet",
+        "text": "denovo eu"
+      },
+      {
+        "intent": "greet",
+        "text": "dnv aqui"
+      },
+      {
+        "intent": "greet",
+        "text": "denovo aqui"
+      },
+      {
+        "intent": "greet",
+        "text": "boa tarde amigo"
       },
       {
         "intent": "thanks",
@@ -288,6 +568,526 @@
       {
         "intent": "callapi",
         "text": "personalizadas"
+      },
+      {
+        "intent": "offense",
+        "text": "alma sebosa"
+      },
+      {
+        "intent": "offense",
+        "text": "ordinario"
+      },
+      {
+        "intent": "offense",
+        "text": "capa"
+      },
+      {
+        "intent": "offense",
+        "text": "escroto"
+      },
+      {
+        "intent": "offense",
+        "text": "cuzao"
+      },
+      {
+        "intent": "offense",
+        "text": "rauly"
+      },
+      {
+        "intent": "offense",
+        "text": "fela da puta"
+      },
+      {
+        "intent": "offense",
+        "text": "fela"
+      },
+      {
+        "intent": "offense",
+        "text": "pqp"
+      },
+      {
+        "intent": "offense",
+        "text": "puta que pariu"
+      },
+      {
+        "intent": "offense",
+        "text": "viado"
+      },
+      {
+        "intent": "offense",
+        "text": "bixa"
+      },
+      {
+        "intent": "offense",
+        "text": "otario"
+      },
+      {
+        "intent": "offense",
+        "text": "canalha"
+      },
+      {
+        "intent": "offense",
+        "text": "desgraçado"
+      },
+      {
+        "intent": "offense",
+        "text": "seu puto"
+      },
+      {
+        "intent": "offense",
+        "text": "fi de quenga"
+      },
+      {
+        "intent": "offense",
+        "text": "seu mané"
+      },
+      {
+        "intent": "offense",
+        "text": "robo idiota"
+      },
+      {
+        "intent": "offense",
+        "text": "fodasssse"
+      },
+      {
+        "intent": "offense",
+        "text": "foda-se"
+      },
+      {
+        "intent": "offense",
+        "text": "que se foda"
+      },
+      {
+        "intent": "offense",
+        "text": "foda se"
+      },
+      {
+        "intent": "offense",
+        "text": "fodase"
+      },
+      {
+        "intent": "offense",
+        "text": "fi da puta"
+      },
+      {
+        "intent": "offense",
+        "text": "vai tomar no cu"
+      },
+      {
+        "intent": "offense",
+        "text": "vtnc"
+      },
+      {
+        "intent": "offense",
+        "text": "tnc"
+      },
+      {
+        "intent": "offense",
+        "text": "bosta"
+      },
+      {
+        "intent": "offense",
+        "text": "vai se fuder"
+      },
+      {
+        "intent": "offense",
+        "text": "vsf"
+      },
+      {
+        "intent": "offense",
+        "text": "batata"
+      },
+      {
+        "intent": "offense",
+        "text": "seu merda"
+      },
+      {
+        "intent": "offense",
+        "text": "lixo"
+      },
+      {
+        "intent": "offense",
+        "text": "escroto"
+      },
+      {
+        "intent": "offense",
+        "text": "burro"
+      },
+      {
+        "intent": "offense",
+        "text": "merda"
+      },
+      {
+        "intent": "offense",
+        "text": "jumento"
+      },
+      {
+        "intent": "offense",
+        "text": "pnc"
+      },
+      {
+        "intent": "offense",
+        "text": "pau no cu"
+      },
+      {
+        "intent": "offense",
+        "text": "pau no rego"
+      },
+      {
+        "intent": "offense",
+        "text": "abestado"
+      },
+      {
+        "intent": "offense",
+        "text": "jegão"
+      },
+      {
+        "intent": "offense",
+        "text": "desgraça"
+      },
+      {
+        "intent": "offense",
+        "text": "safado"
+      },
+      {
+        "intent": "offense",
+        "text": "puta"
+      },
+      {
+        "intent": "offense",
+        "text": "corno"
+      },
+      {
+        "intent": "offense",
+        "text": "puto"
+      },
+      {
+        "intent": "offense",
+        "text": "piranha"
+      },
+      {
+        "intent": "offense",
+        "text": "vigarista"
+      },
+      {
+        "intent": "offense",
+        "text": "sua puta"
+      },
+      {
+        "intent": "offense",
+        "text": "bobão"
+      },
+      {
+        "intent": "offense",
+        "text": "tu é um mosca"
+      },
+      {
+        "intent": "offense",
+        "text": "moscao"
+      },
+      {
+        "intent": "offense",
+        "text": "zé ruela"
+      },
+      {
+        "intent": "offense",
+        "text": "zé buceta"
+      },
+      {
+        "intent": "offense",
+        "text": "ameba"
+      },
+      {
+        "intent": "offense",
+        "text": "seu bot horrivel"
+      },
+      {
+        "intent": "offense",
+        "text": "vai se lascar"
+      },
+      {
+        "intent": "offense",
+        "text": "arrombado"
+      },
+      {
+        "intent": "offense",
+        "text": "vagabundo"
+      },
+      {
+        "intent": "offense",
+        "text": "chupa minha pica"
+      },
+      {
+        "intent": "offense",
+        "text": "retardado"
+      },
+      {
+        "intent": "offense",
+        "text": "petista"
+      },
+      {
+        "intent": "offense",
+        "text": "lacaio"
+      },
+      {
+        "intent": "offense",
+        "text": "froxo"
+      },
+      {
+        "intent": "offense",
+        "text": "covarde"
+      },
+      {
+        "intent": "offense",
+        "text": "tratante"
+      },
+      {
+        "intent": "offense",
+        "text": "buceta"
+      },
+      {
+        "intent": "offense",
+        "text": "traste"
+      },
+      {
+        "intent": "offense",
+        "text": "embuste"
+      },
+      {
+        "intent": "offense",
+        "text": "ranço"
+      },
+      {
+        "intent": "offense",
+        "text": "burro pra caralho"
+      },
+      {
+        "intent": "im_bad",
+        "text": "to mal"
+      },
+      {
+        "intent": "im_bad",
+        "text": "muito triste"
+      },
+      {
+        "intent": "im_bad",
+        "text": "triste"
+      },
+      {
+        "intent": "im_bad",
+        "text": "mais ou menos"
+      },
+      {
+        "intent": "im_bad",
+        "text": "mas ou menos"
+      },
+      {
+        "intent": "im_bad",
+        "text": "podia estar melhor"
+      },
+      {
+        "intent": "im_bad",
+        "text": "infeliz"
+      },
+      {
+        "intent": "im_bad",
+        "text": "cansado"
+      },
+      {
+        "intent": "im_bad",
+        "text": "mal"
+      },
+      {
+        "intent": "im_bad",
+        "text": "na mals"
+      },
+      {
+        "intent": "im_bad",
+        "text": "na bad"
+      },
+      {
+        "intent": "im_bad",
+        "text": "numa bad"
+      },
+      {
+        "intent": "im_bad",
+        "text": "infeliz"
+      },
+      {
+        "intent": "im_bad",
+        "text": "me sinto péssimo"
+      },
+      {
+        "intent": "im_bad",
+        "text": "minha vida nao faz sentido"
+      },
+      {
+        "intent": "im_bad",
+        "text": "terrivel"
+      },
+      {
+        "intent": "im_bad",
+        "text": "me sinto terrivel"
+      },
+      {
+        "intent": "im_bad",
+        "text": "sou emo"
+      },
+      {
+        "intent": "im_bad",
+        "text": "vida lixo"
+      },
+      {
+        "intent": "im_bad",
+        "text": "vida muito dura"
+      },
+      {
+        "intent": "im_bad",
+        "text": "deprimido aqui"
+      },
+      {
+        "intent": "im_bad",
+        "text": "chorei aqui"
+      },
+      {
+        "intent": "im_bad",
+        "text": "to triste"
+      },
+      {
+        "intent": "im_bad",
+        "text": "cansei dessa vida"
+      },
+      {
+        "intent": "im_bad",
+        "text": "acho que vou me matar"
+      },
+      {
+        "intent": "im_bad",
+        "text": "aqui to mal"
+      },
+      {
+        "intent": "im_bad",
+        "text": "não estou bem"
+      },
+      {
+        "intent": "im_bad",
+        "text": "não me sinto feliz"
+      },
+      {
+        "intent": "im_bad",
+        "text": "sou infeliz"
+      },
+      {
+        "intent": "im_bad",
+        "text": "sou titi"
+      },
+      {
+        "intent": "im_bad",
+        "text": "depre aqui"
+      },
+      {
+        "intent": "im_bad",
+        "text": "depressivo estou"
+      },
+      {
+        "intent": "im_bad",
+        "text": "estou depressivo"
+      },
+      {
+        "intent": "im_bad",
+        "text": "não ageunto mais"
+      },
+      {
+        "intent": "im_bad",
+        "text": "situação ta ruim"
+      },
+      {
+        "intent": "im_bad",
+        "text": "sou triste"
+      },
+      {
+        "intent": "im_bad",
+        "text": "acabou minhas esperanças"
+      },
+      {
+        "intent": "call_lino",
+        "text": "me ve o cardapio do ru"
+      },
+      {
+        "intent": "call_lino",
+        "text": "RU"
+      },
+      {
+        "intent": "call_lino",
+        "text": "ru por favor"
+      },
+      {
+        "intent": "call_lino",
+        "text": "documents"
+      },
+      {
+        "intent": "call_lino",
+        "text": "documentos"
+      },
+      {
+        "intent": "call_lino",
+        "text": "comida ru"
+      },
+      {
+        "intent": "call_lino",
+        "text": "cardápio ru"
+      },
+      {
+        "intent": "call_lino",
+        "text": "cardapio"
+      },
+      {
+        "intent": "call_lino",
+        "text": "menu da semana"
+      },
+      {
+        "intent": "call_lino",
+        "text": "menu"
+      },
+      {
+        "intent": "call_lino",
+        "text": "queria saber do ru"
+      },
+      {
+        "intent": "call_lino",
+        "text": "documentos unb"
+      },
+      {
+        "intent": "call_lino",
+        "text": "documentos fga"
+      },
+      {
+        "intent": "call_lino",
+        "text": "retirar documentos"
+      },
+      {
+        "intent": "call_lino",
+        "text": "ru agora"
+      },
+      {
+        "intent": "call_lino",
+        "text": "manda o ru"
+      },
+      {
+        "intent": "call_lino",
+        "text": "almoco"
+      },
+      {
+        "intent": "call_lino",
+        "text": "almoço"
+      },
+      {
+        "intent": "call_lino",
+        "text": "café"
+      },
+      {
+        "intent": "call_lino",
+        "text": "cafe"
       }
     ],
     "regex_features": [],

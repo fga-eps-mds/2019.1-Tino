@@ -1,8 +1,11 @@
 {
   "states": [
+    "intent_call_lino",
     "intent_callapi",
     "intent_goodbye",
     "intent_greet",
+    "intent_im_bad",
+    "intent_offense",
     "intent_out_of_scope",
     "intent_thanks",
     "prev_action_listen",
@@ -16,6 +19,9 @@
     "prev_utter_greet",
     "prev_utter_goodbye",
     "prev_action_callapi",
-    "prev_utter_out_of_scope"
+    "prev_utter_out_of_scope",
+    "prev_utter_offense",
+    "prev_utter_im_bad",
+    "prev_utter_call_lino"
   ]
 }
