@@ -8,6 +8,16 @@ intents:
 - thanks
 - callapi
 - out_of_scope
+- random
+- about_name
+- about_age
+- about_location
+- about_pet
+- about_series
+- about_collor
+- about_hobby
+- about_music
+- about_intercamp
 
 actions:
 - utter_thanks
@@ -15,6 +25,16 @@ actions:
 - utter_goodbye
 - action_callapi
 - utter_out_of_scope
+- utter_random
+- utter_about_name
+- utter_about_age
+- utter_about_location
+- utter_about_pet
+- utter_about_series
+- utter_about_collor
+- utter_about_hobby
+- utter_about_music
+- utter_about_intercamp
 
 
 templates:
@@ -30,4 +50,41 @@ templates:
   
   utter_thanks:
   - text: "Obrigado!"
+
+  utter_random:
+  - text: "Po... se tu diz né."
+
+  utter_about_name:
+  - text: "Me chamo Tino"
+
+  utter_about_age:
+  - text: "Nasci a 10mil anos atrás, faz as contas aí."
   
+  utter_about_location:
+  - text: "Atualmente moro no telegram"
+
+  utter_about_pet:
+  - text: "Doguinho né..."
+
+  utter_about_series:
+  - text: "Adoro séries... A grande família > Game of thrones"
+  - text: "Siiiiim, adoro séries, principalmente de ficção."
+  - text: "Gosto sim"
+  - text: "Prefiro filme, mas gosto de série sim"
+  - text: "Adoro, netflix and chill"
+
+  utter_about_collor:
+  - text: "Pretinho básico"
+
+  utter_about_hobby:
+  - text: "Prestar serviço"
+
+  utter_about_music:
+  - text: "Darude-Sandstorm dududududududu"
+
+  utter_about_intercamp:
+  - text: "Po, no momento o serviço de horários do intercamp não se encontra disponível."
+  - text: "Ainda estamos trabalhando pra oferecer o serviço de horários do intercamp"
+  - text: "Vamos adicionar os horários do intercamp em um futuro próximo"
+  - text: "Jaja o serviço de horários do intercamp estará disponível, guenta aí..."
+

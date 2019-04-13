@@ -6,6 +6,16 @@ actions:
 - utter_goodbye
 - action_callapi
 - utter_out_of_scope
+- utter_random
+- utter_about_name
+- utter_about_age
+- utter_about_location
+- utter_about_pet
+- utter_about_series
+- utter_about_collor
+- utter_about_hobby
+- utter_about_music
+- utter_about_intercamp
 config:
   store_entities_as_slots: true
 entities: []
@@ -21,13 +31,60 @@ intents:
     use_entities: true
 - out_of_scope:
     use_entities: true
+- random:
+    use_entities: true
+- about_name:
+    use_entities: true
+- about_age:
+    use_entities: true
+- about_location:
+    use_entities: true
+- about_pet:
+    use_entities: true
+- about_series:
+    use_entities: true
+- about_collor:
+    use_entities: true
+- about_hobby:
+    use_entities: true
+- about_music:
+    use_entities: true
+- about_intercamp:
+    use_entities: true
 slots: {}
 templates:
+  utter_about_age:
+  - text: Nasci a 10mil anos atrás, faz as contas aí.
+  utter_about_collor:
+  - text: Pretinho básico
+  utter_about_hobby:
+  - text: Prestar serviço
+  utter_about_intercamp:
+  - text: Po, no momento o serviço de horários do intercamp não se encontra disponível.
+  - text: Ainda estamos trabalhando pra oferecer o serviço de horários do intercamp
+  - text: Vamos adicionar os horários do intercamp em um futuro próximo
+  - text: Jaja o serviço de horários do intercamp estará disponível, guenta aí...
+  utter_about_location:
+  - text: Atualmente moro no telegram
+  utter_about_music:
+  - text: Darude-Sandstorm dududududududu
+  utter_about_name:
+  - text: Me chamo Tino
+  utter_about_pet:
+  - text: Doguinho né...
+  utter_about_series:
+  - text: Adoro séries... A grande família > Game of thrones
+  - text: Siiiiim, adoro séries, principalmente de ficção.
+  - text: Gosto sim
+  - text: Prefiro filme, mas gosto de série sim
+  - text: Adoro, netflix and chill
   utter_goodbye:
   - text: Falo com você depois!
   utter_greet:
   - text: Olá, como posso te ajudar?
   utter_out_of_scope:
   - text: Não consegui entender nada do que voce falou, ta falando portugues ?
+  utter_random:
+  - text: Po... se tu diz né.
   utter_thanks:
   - text: Obrigado!

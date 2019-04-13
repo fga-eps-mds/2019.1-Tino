@@ -1,9 +1,19 @@
 {
   "states": [
+    "intent_about_age",
+    "intent_about_collor",
+    "intent_about_hobby",
+    "intent_about_intercamp",
+    "intent_about_location",
+    "intent_about_music",
+    "intent_about_name",
+    "intent_about_pet",
+    "intent_about_series",
     "intent_callapi",
     "intent_goodbye",
     "intent_greet",
     "intent_out_of_scope",
+    "intent_random",
     "intent_thanks",
     "prev_action_listen",
     "prev_action_restart",
@@ -16,6 +26,16 @@
     "prev_utter_greet",
     "prev_utter_goodbye",
     "prev_action_callapi",
-    "prev_utter_out_of_scope"
+    "prev_utter_out_of_scope",
+    "prev_utter_random",
+    "prev_utter_about_name",
+    "prev_utter_about_age",
+    "prev_utter_about_location",
+    "prev_utter_about_pet",
+    "prev_utter_about_series",
+    "prev_utter_about_collor",
+    "prev_utter_about_hobby",
+    "prev_utter_about_music",
+    "prev_utter_about_intercamp"
   ]
 }

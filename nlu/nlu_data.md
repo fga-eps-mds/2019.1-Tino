@@ -82,3 +82,75 @@
 - chame sua ação personalizada
 - açao
 - personalizadas
+
+## intent:random
+- fora temer
+- bolsonaro
+- você parece o lino
+- o dia está lindo hoje
+- palmeiras não tem mundial
+- vai chover
+- nunca nem vi
+
+## intent:about_name
+- Qual é o seu nome?
+- Como você se chama?
+- Qual teu nome?
+- Quem é você?
+- Qual seu nome?
+
+## intent:about_age
+- Qual é sua idade?
+- Quantos anos você tem?
+- Qual sua idade?
+- Quantos anos?
+- Quantos aninhos?
+
+## intent:about_location
+- Onde você mora?
+- Mora aonde?
+- Onde tu mora?
+- Mora por aqui?
+- Onde é que tu mora?
+
+## intent:about_pet
+- Qual é o seu animal favorito?
+- Qual seu bichinho favorito?
+- Qual teu animal favorito?
+- Qual dos animais é o seu favorito?
+
+## intent:about_series
+- Gosta de assistir série?
+- Assiste série?
+- Tu gosta de assistir série?
+- Tu gosta de ver série?
+- Você curte série?
+
+## intent:about_collor
+- Qual sua cor favorita?
+- Qua é tua cor favorita?
+- Que cor você mais gosta?
+- Tem alguma cor favorita?
+- Qual é a cor que você mais gosta?
+
+## intent:about_hobby
+- O que você gosta de fazer nas horas vagas?
+- Qual teu hobby favorito?
+- O que você mais gosta de fazer?
+- Qual é o seu hobby?
+- Tem algum hobby?
+
+## intent:about_music
+- Qual é sua música favorita?
+- Qual é a música que você mais curte atualmente?
+- Qual é a melhor música de todas?
+- Tem alguma música favorita?
+- Que música você curte?
+
+## intent:about_intercamp
+- Qual são os horários do intercamp?
+- Sabe quais são os horários do intercamp?
+- Sabe que hora passa o intercamp?
+- Quais os horários do intercamp?
+- Sabe qual é o horário do intercamp?
+- E o horário do intercamp?
