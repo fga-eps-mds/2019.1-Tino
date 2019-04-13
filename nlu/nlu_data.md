@@ -153,7 +153,6 @@
 - açao
 - personalizadas
 
-<<<<<<< HEAD
 ## intent:random
 - fora temer
 - bolsonaro
@@ -225,7 +224,6 @@
 - Quais os horários do intercamp?
 - Sabe qual é o horário do intercamp?
 - E o horário do intercamp?
-=======
 ## intent:offense
 - alma sebosa
 - ordinario
@@ -361,4 +359,3 @@
 - almoço
 - café
 - cafe
->>>>>>> e03ad8c9489c36d7715f02ed9a02004adb3d1848

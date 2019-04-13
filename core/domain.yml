@@ -8,7 +8,6 @@ intents:
 - thanks
 - callapi
 - out_of_scope
-<<<<<<< HEAD
 - random
 - about_name
 - about_age
@@ -19,11 +18,9 @@ intents:
 - about_hobby
 - about_music
 - about_intercamp
-=======
 - offense
 - im_bad
 - call_lino
->>>>>>> e03ad8c9489c36d7715f02ed9a02004adb3d1848
 
 actions:
 - utter_thanks
@@ -31,7 +28,6 @@ actions:
 - utter_goodbye
 - action_callapi
 - utter_out_of_scope
-<<<<<<< HEAD
 - utter_random
 - utter_about_name
 - utter_about_age
@@ -42,11 +38,9 @@ actions:
 - utter_about_hobby
 - utter_about_music
 - utter_about_intercamp
-=======
 - utter_offense
 - utter_im_bad
 - utter_call_lino
->>>>>>> e03ad8c9489c36d7715f02ed9a02004adb3d1848
 
 
 templates:
@@ -64,7 +58,6 @@ templates:
   utter_thanks:
   - text: "Obrigado!"
 
-<<<<<<< HEAD
   utter_random:
   - text: "Po... se tu diz né."
 
@@ -73,7 +66,6 @@ templates:
 
   utter_about_age:
   - text: "Nasci a 10mil anos atrás, faz as contas aí."
-=======
   utter_offense:
   - text: "Que feio! Devia ter mais educação!"
   - text: "Que deselegante... "
@@ -87,7 +79,6 @@ templates:
   - text: "Isso ai ja é com meu primo Lino, para encontra-lo no Telegram pesquise por: lino_o_bot ou só Lino para o Facebook"
   
 
->>>>>>> e03ad8c9489c36d7715f02ed9a02004adb3d1848
   
   utter_about_location:
   - text: "Atualmente moro no telegram"
