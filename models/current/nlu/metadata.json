@@ -82,6 +82,10 @@
         }
     ],
     "training_data": "training_data.json",
+<<<<<<< HEAD
     "trained_at": "20190409-032718",
+=======
+    "trained_at": "20190413-144959",
+>>>>>>> issue_34_iniciar_conversacao
     "rasa_nlu_version": "0.14.6"
 }

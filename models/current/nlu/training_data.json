@@ -288,6 +288,214 @@
       {
         "intent": "callapi",
         "text": "personalizadas"
+      },
+      {
+        "intent": "random",
+        "text": "fora temer"
+      },
+      {
+        "intent": "random",
+        "text": "bolsonaro"
+      },
+      {
+        "intent": "random",
+        "text": "você parece o lino"
+      },
+      {
+        "intent": "random",
+        "text": "o dia está lindo hoje"
+      },
+      {
+        "intent": "random",
+        "text": "palmeiras não tem mundial"
+      },
+      {
+        "intent": "random",
+        "text": "vai chover"
+      },
+      {
+        "intent": "random",
+        "text": "nunca nem vi"
+      },
+      {
+        "intent": "about_name",
+        "text": "Qual é o seu nome?"
+      },
+      {
+        "intent": "about_name",
+        "text": "Como você se chama?"
+      },
+      {
+        "intent": "about_name",
+        "text": "Qual teu nome?"
+      },
+      {
+        "intent": "about_name",
+        "text": "Quem é você?"
+      },
+      {
+        "intent": "about_name",
+        "text": "Qual seu nome?"
+      },
+      {
+        "intent": "about_age",
+        "text": "Qual é sua idade?"
+      },
+      {
+        "intent": "about_age",
+        "text": "Quantos anos você tem?"
+      },
+      {
+        "intent": "about_age",
+        "text": "Qual sua idade?"
+      },
+      {
+        "intent": "about_age",
+        "text": "Quantos anos?"
+      },
+      {
+        "intent": "about_age",
+        "text": "Quantos aninhos?"
+      },
+      {
+        "intent": "about_location",
+        "text": "Onde você mora?"
+      },
+      {
+        "intent": "about_location",
+        "text": "Mora aonde?"
+      },
+      {
+        "intent": "about_location",
+        "text": "Onde tu mora?"
+      },
+      {
+        "intent": "about_location",
+        "text": "Mora por aqui?"
+      },
+      {
+        "intent": "about_location",
+        "text": "Onde é que tu mora?"
+      },
+      {
+        "intent": "about_pet",
+        "text": "Qual é o seu animal favorito?"
+      },
+      {
+        "intent": "about_pet",
+        "text": "Qual seu bichinho favorito?"
+      },
+      {
+        "intent": "about_pet",
+        "text": "Qual teu animal favorito?"
+      },
+      {
+        "intent": "about_pet",
+        "text": "Qual dos animais é o seu favorito?"
+      },
+      {
+        "intent": "about_series",
+        "text": "Gosta de assistir série?"
+      },
+      {
+        "intent": "about_series",
+        "text": "Assiste série?"
+      },
+      {
+        "intent": "about_series",
+        "text": "Tu gosta de assistir série?"
+      },
+      {
+        "intent": "about_series",
+        "text": "Tu gosta de ver série?"
+      },
+      {
+        "intent": "about_series",
+        "text": "Você curte série?"
+      },
+      {
+        "intent": "about_collor",
+        "text": "Qual sua cor favorita?"
+      },
+      {
+        "intent": "about_collor",
+        "text": "Qua é tua cor favorita?"
+      },
+      {
+        "intent": "about_collor",
+        "text": "Que cor você mais gosta?"
+      },
+      {
+        "intent": "about_collor",
+        "text": "Tem alguma cor favorita?"
+      },
+      {
+        "intent": "about_collor",
+        "text": "Qual é a cor que você mais gosta?"
+      },
+      {
+        "intent": "about_hobby",
+        "text": "O que você gosta de fazer nas horas vagas?"
+      },
+      {
+        "intent": "about_hobby",
+        "text": "Qual teu hobby favorito?"
+      },
+      {
+        "intent": "about_hobby",
+        "text": "O que você mais gosta de fazer?"
+      },
+      {
+        "intent": "about_hobby",
+        "text": "Qual é o seu hobby?"
+      },
+      {
+        "intent": "about_hobby",
+        "text": "Tem algum hobby?"
+      },
+      {
+        "intent": "about_music",
+        "text": "Qual é sua música favorita?"
+      },
+      {
+        "intent": "about_music",
+        "text": "Qual é a música que você mais curte atualmente?"
+      },
+      {
+        "intent": "about_music",
+        "text": "Qual é a melhor música de todas?"
+      },
+      {
+        "intent": "about_music",
+        "text": "Tem alguma música favorita?"
+      },
+      {
+        "intent": "about_music",
+        "text": "Que música você curte?"
+      },
+      {
+        "intent": "about_intercamp",
+        "text": "Qual são os horários do intercamp?"
+      },
+      {
+        "intent": "about_intercamp",
+        "text": "Sabe quais são os horários do intercamp?"
+      },
+      {
+        "intent": "about_intercamp",
+        "text": "Sabe que hora passa o intercamp?"
+      },
+      {
+        "intent": "about_intercamp",
+        "text": "Quais os horários do intercamp?"
+      },
+      {
+        "intent": "about_intercamp",
+        "text": "Sabe qual é o horário do intercamp?"
+      },
+      {
+        "intent": "about_intercamp",
+        "text": "E o horário do intercamp?"
       }
     ],
     "regex_features": [],

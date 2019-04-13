@@ -12,12 +12,18 @@ import os
 
 
 interpreter = RasaNLUInterpreter('./models/current/nlu')
+<<<<<<< HEAD
 ACTION_WEBHOOK = os.environ['ACTION_WEBHOOK']
 ACTION_WEBHOOK = ACTION_WEBHOOK + "/webhook"
 print(ACTION_WEBHOOK)
 agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url=ACTION_WEBHOOK))
 
 token = os.environ['TELEGRAM_TOKEN']
+=======
+agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url="https://b6f78eea.ngrok.io/webhook"))
+
+token = '725793069:AAG70j101Fn6RdcNhmgLv_e--7SVCj83AEY'
+>>>>>>> issue_34_iniciar_conversacao
 
 # https://api.telegram.org/bot{token}/deleteWebhook
 

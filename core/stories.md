@@ -17,4 +17,55 @@
 ## story_out_of_scope
 * out_of_scope
  - utter_out_of_scope
+
+## story_random
+* random
+ - utter_random
+
+## story_about_name
+* about_name
+ - utter_about_name
+
+## story_about_age
+* about_age
+ - utter_about_age
+
+## story_about_location
+* about_location
+ - utter_about_location
+
+## story_about_pet
+* about_pet
+ - utter_about_pet
+
+## story_about_series
+* about_series
+ - utter_about_series
+
+## story_about_collor
+* about_collor
+ - utter_about_collor
+
+## story_about_hobby
+* about_hobby
+ - utter_about_hobby
+
+## story_about_music
+* about_music
+ - utter_about_music 
+
+## story_about_intercamp
+* about_intercamp
+ - utter_about_intercamp
+## story_offense
+* offense
+ - utter_offense
+
+## story_im_bad
+* im_bad
+ - utter_im_bad  
+
+## story_call_lino
+* call_lino
+ - utter_call_lino  
  
