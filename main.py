@@ -6,12 +6,18 @@ from flask import Response
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.utils import EndpointConfig
+import os
 
 # load trained models
-interpreter = RasaNLUInterpreter('./models/current/nlu')
-agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url="https://ecb20f99.ngrok.io/webhook"))
 
-token = '739701752:AAEu1dcyxVeTNf8pgyN5FfMZx-2Te3PwprA'
+
+interpreter = RasaNLUInterpreter('./models/current/nlu')
+ACTION_WEBHOOK = os.environ['ACTION_WEBHOOK']
+ACTION_WEBHOOK = ACTION_WEBHOOK + "/webhook"
+print(ACTION_WEBHOOK)
+agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url=ACTION_WEBHOOK))
+
+token = os.environ['TELEGRAM_TOKEN']
 
 # https://api.telegram.org/bot{token}/deleteWebhook
 
@@ -40,6 +46,8 @@ def parse_msg(message):
 
 # helper function to send message 
 def send_message(chat_id,messages=[]):
+    print(token)
+    print(ACTION_WEBHOOK)
     url = 'https://api.telegram.org/bot'+token+'/sendMessage' 
     if messages:
         for message in messages:

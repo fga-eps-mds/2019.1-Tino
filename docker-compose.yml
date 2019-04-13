@@ -2,33 +2,50 @@ version: '3.0'
 
 services:
   action_server:
-    image: jp:latest
-    ports:
-      - 5055:5055
-    volumes:
-    - .:/2019.1-Tino
-    command: sh -c "python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python -m rasa_core_sdk.endpoint --actions actions"
+      image: jp:latest
+      environment:      
+        ACTION_WEBHOOK: ${ACTION_WEBHOOK} 
+      ports:
+        - 5055:5055
+      volumes:
+      - .:/2019.1-Tino    
+      command: sh -c "pip install python-dotenv && python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python -m rasa_core_sdk.endpoint --actions actions"
   telegram:
     image: telegram-jp:latest
+    environment:
+      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
+      TELEGRAM_WEBHOOK: ${TELEGRAM_WEBHOOK}
+      ACTION_WEBHOOK: ${ACTION_WEBHOOK}
     ports:
       - 5000:5000
     volumes:
       - .:/2019.1-Tino
-    command: sh -c "python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python main.py"
+    command: sh -c "pip install python-dotenv && python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python main.py"
+  intercampi:
+    image: jp-intercampi:latest
+    environment:      
+      INTERCAMPI_WEBHOOK: ${INTERCAMPI_WEBHOOK}
+      ACTION_WEBHOOK: ${ACTION_WEBHOOK}
+    ports:
+      - 5002:5002
+    volumes:
+      - .:/2019.1-Tino
+    command: sh -c "pip install python-dotenv && pip install lxml && pip install html5lib && pip install BeautifulSoup4 && pip install pandas && export FLASK_APP=intercampi.py && export FLASK_DEBUG=1 && flask run --host 0.0.0.0 --port 5002"
   mongo:
     image: mongo
     ports:
       - 27017:27017
     environment:
-      MONGO_INITDB_ROOT_USERNAME: rasa
-      MONGO_INITDB_ROOT_PASSWORD: rasa
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD} 
   mongo-express:
     image: mongo-express
     ports:
       - 8081:8081
     environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: rasa
-      ME_CONFIG_MONGODB_ADMINPASSWORD: rasa
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_USER}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_PASSWORD}
   redis:
     image: redis:latest
+
 

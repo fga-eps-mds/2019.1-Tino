@@ -4,16 +4,20 @@ from typing import Dict, Text, Any, List
 from rasa_core_sdk import Action
 import requests
 import json
+import os
 
+# url = os.environ['ACTION_WEBHOOK']
+# url = str(url) #casting url
 
 class ActionCallapi(Action):
   def name(self) -> Text:
     return 'action_callapi'
 
-  def run(self, dispatcher, tracker, domain):
-    request = requests.get('https://11cbadc9.ngrok.io').json() #make an api call
-    intercampi_destino = request[0]['Destino'] #extract a joke from returned json response
-    intercampi_horario = request[0]['Horário'] #extract a joke from returned json response
-    intercampi_origem = request[0]['Origem'] #extract a joke from returned json response
-    dispatcher.utter_message('O proximo intercampi vai sair de {} para: {}, com saida no horario: {}'.format(intercampi_origem, intercampi_horario, intercampi_destino)) #send the message back to the user
+  def run(self, dispatcher, tracker, domain):	
+    # url = os.environ['INTERCAMPI_WEBHOOK']
+    # url = str(url) #casting url    
+    # request = requests.get(url).json() #make an api call
+    # json = request[0]
+    # dispatcher.utter_message('O proximo intercampi vai sair de {} para: {}, com saida no horario: {}'.format(json[0][1], json[0][2], json[0][0])) #send the message back to the user
+    dispatcher.utter_message('O proximo intercampi vai para: Darcy ribeiro')
     return []
