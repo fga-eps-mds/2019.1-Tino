@@ -18,6 +18,7 @@
 * out_of_scope
  - utter_out_of_scope
 
+<<<<<<< HEAD
 ## story_random
 * random
  - utter_random
@@ -57,3 +58,17 @@
 ## story_about_intercamp
 * about_intercamp
  - utter_about_intercamp
+=======
+## story_offense
+* offense
+ - utter_offense
+
+## story_im_bad
+* im_bad
+ - utter_im_bad  
+
+## story_call_lino
+* call_lino
+ - utter_call_lino  
+ 
+>>>>>>> e03ad8c9489c36d7715f02ed9a02004adb3d1848

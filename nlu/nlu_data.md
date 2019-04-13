@@ -3,21 +3,22 @@
 ## intent:out_of_scope
 - aleatorio
 - filha da mae
-- filha da puta
 - suave na nave?
 - tem prova amanha ?
 - prova
 - nao sei
-- o que voce faz ?
 - calcula ai pra mim
 - to sem ideia
 - conta uma piada
 - o que temos pro cafe?
 - e hoje?
-- vamos ?
+- veterinario
 - opa
-- kkk
+- asdf
 - hahahaha
+- speak english?
+- english
+- los hermanos
 - celular
 - objeto
 
@@ -40,21 +41,90 @@
 - nós falaremos em breve
 
 ## intent:greet
-- Oi
-- Ei
-- Oi bot
-- Oi bot
-- Olá
-- Bom Dia
-- Oi de novo
-- Oi pessoal
-- Oi senhor
-- oi amigo!
-- Olá
+- olá
+- ola
+- oi
+- eai
+- eae
+- boa tarde
+- bom dia
+- e ai
+- hello
+- hi
+- opa
+- eai blz
+- oie
+- salve
+- qual foi
+- koe
+- fala tu 
+- piei
+- ou
+- ow
+- eaew
+- fi
+- mlk
+- mano
+- vei
+- vey
+- eaae vey
+- eai bixo
+- ea e
+- ea i
+- e ai
+- faala
+- ea aí man kk
+- como vai
+- fala meu consagrado
+- fala meu compatriota
+- hello
+- hello bitch
+- hi
+- boa noite
+- buenos dias
+- eaiii
+- eaaii
+- eaeee
+- oiiii
+- oii
+- oiee
+- fala ai 
+- ola senhor
+- ola meu caro
+- ola robo
+- eai bot
 - saudações
-- Olá pessoal
-- olá é alguém aí
-- olá robô
+- oi pessoal
+- oi de novo
+- ei
+- epa
+- olá é alguém ai
+- eu lhe saldo
+- cheguei
+- cheguei chegando
+- fala ae
+- chora
+- da ideia firma
+- opa opa opa
+- ja voltei
+- to aqui
+- oieee
+- oi oi
+- olaa
+- de volta na area
+- muito prazer robo
+- prazer
+- prazer em conhece-lo
+- eaíí
+- e aí
+- eai meu bom 
+- manda o papo
+- salvee
+- to aqui denovo
+- denovo eu 
+- dnv aqui
+- denovo aqui
+- boa tarde amigo
 
 ## intent:thanks
 - Obrigado
@@ -83,6 +153,7 @@
 - açao
 - personalizadas
 
+<<<<<<< HEAD
 ## intent:random
 - fora temer
 - bolsonaro
@@ -154,3 +225,140 @@
 - Quais os horários do intercamp?
 - Sabe qual é o horário do intercamp?
 - E o horário do intercamp?
+=======
+## intent:offense
+- alma sebosa
+- ordinario
+- capa
+- escroto
+- cuzao
+- rauly
+- fela da puta
+- fela
+- pqp
+- puta que pariu
+- viado
+- bixa
+- otario
+- canalha
+- desgraçado
+- seu puto
+- fi de quenga
+- seu mané
+- robo idiota
+- fodasssse
+- foda-se
+- que se foda
+- foda se
+- fodase
+- fi da puta
+- vai tomar no cu
+- vtnc
+- tnc
+- bosta
+- vai se fuder
+- vsf
+- batata
+- seu merda
+- lixo
+- escroto
+- burro
+- merda
+- jumento
+- pnc
+- pau no cu
+- pau no rego
+- abestado
+- jegão
+- desgraça
+- safado
+- puta
+- corno
+- puto
+- piranha
+- vigarista
+- sua puta
+- bobão
+- tu é um mosca
+- moscao
+- zé ruela
+- zé buceta
+- ameba
+- seu bot horrivel
+- vai se lascar
+- arrombado
+- vagabundo
+- chupa minha pica
+- retardado
+- petista
+- lacaio
+- froxo
+- covarde
+- tratante 
+- buceta
+- traste
+- embuste
+- ranço
+- burro pra caralho
+
+## intent:im_bad
+- to mal
+- muito triste
+- triste
+- mais ou menos
+- mas ou menos
+- podia estar melhor
+- infeliz
+- cansado
+- mal
+- na mals
+- na bad
+- numa bad
+- infeliz
+- me sinto péssimo
+- minha vida nao faz sentido
+- terrivel
+- me sinto terrivel
+- sou emo 
+- vida lixo
+- vida muito dura
+- deprimido aqui
+- chorei aqui
+- to triste
+- cansei dessa vida
+- acho que vou me matar
+- aqui to mal
+- não estou bem
+- não me sinto feliz
+- sou infeliz
+- sou titi
+- depre aqui
+- depressivo estou
+- estou depressivo
+- não ageunto mais 
+- situação ta ruim 
+- sou triste
+- acabou minhas esperanças
+
+## intent:call_lino
+- me ve o cardapio do ru
+- RU
+- ru por favor
+- documents
+- documentos
+- comida ru
+- cardápio ru
+- cardapio
+- menu da semana
+- menu
+- queria saber do ru
+- documentos unb
+- documentos fga
+- retirar documentos
+- ru agora
+- manda o ru 
+- almoco
+- almoço
+- café
+- cafe
+>>>>>>> e03ad8c9489c36d7715f02ed9a02004adb3d1848

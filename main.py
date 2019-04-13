@@ -9,9 +9,15 @@ from rasa_core.utils import EndpointConfig
 
 # load trained models
 interpreter = RasaNLUInterpreter('./models/current/nlu')
+<<<<<<< HEAD
 agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url="https://b6f78eea.ngrok.io/webhook"))
 
 token = '725793069:AAG70j101Fn6RdcNhmgLv_e--7SVCj83AEY'
+=======
+agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url="https://a6cfdc41.ngrok.io/webhook"))
+
+token = '808831458:AAGalckqDD85Vce6TghVpB5hJTc40IA3AcI'
+>>>>>>> e03ad8c9489c36d7715f02ed9a02004adb3d1848
 
 # https://api.telegram.org/bot{token}/deleteWebhook
 
