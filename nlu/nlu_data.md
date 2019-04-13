@@ -3,22 +3,21 @@
 ## intent:out_of_scope
 - aleatorio
 - filha da mae
+- filha da puta
 - suave na nave?
 - tem prova amanha ?
 - prova
 - nao sei
+- o que voce faz ?
 - calcula ai pra mim
 - to sem ideia
 - conta uma piada
 - o que temos pro cafe?
 - e hoje?
-- veterinario
+- vamos ?
 - opa
-- asdf
+- kkk
 - hahahaha
-- speak english?
-- english
-- los hermanos
 - celular
 - objeto
 
@@ -205,6 +204,9 @@
 - palmeiras não tem mundial
 - vai chover
 - nunca nem vi
+- kkkk
+- aleatorio
+- random
 
 ## intent:about_name
 - Qual é o seu nome?
@@ -212,6 +214,13 @@
 - Qual teu nome?
 - Quem é você?
 - Qual seu nome?
+- Nome
+- Qual seu nome
+- Me fala seu nome
+- Seu nome
+- qual seu nome
+- Seu nome
+- Fala seu nome fera
 
 ## intent:about_age
 - Qual é sua idade?
@@ -219,6 +228,14 @@
 - Qual sua idade?
 - Quantos anos?
 - Quantos aninhos?
+- idade
+- Qual sua idade
+- qual a idade
+- quantos anos voce tem?
+- quantos anus voce tem?
+- Quantos anos?
+- idade
+- Idade
 
 ## intent:about_location
 - Onde você mora?
@@ -242,10 +259,18 @@
 
 ## intent:about_collor
 - Qual sua cor favorita?
-- Qua é tua cor favorita?
+- Qual é tua cor favorita?
 - Que cor você mais gosta?
 - Tem alguma cor favorita?
 - Qual é a cor que você mais gosta?
+- qual e a sua cor favorita
+- qual a sua cor favorita?
+- cor
+- fala da sua cor favorita
+- fala da cor ai
+- qual a sua cor
+- voce gosta de qual cor
+- cor favorita
 
 ## intent:about_hobby
 - O que você gosta de fazer nas horas vagas?
@@ -253,6 +278,11 @@
 - O que você mais gosta de fazer?
 - Qual é o seu hobby?
 - Tem algum hobby?
+- fala do seu hobby
+- qual seu hobby
+- me fala do seu hobby
+- Qual seu hobby? 
+- Fala do seu hobby
 
 ## intent:about_music
 - Qual é sua música favorita?
@@ -260,6 +290,13 @@
 - Qual é a melhor música de todas?
 - Tem alguma música favorita?
 - Que música você curte?
+- Musica
+- musica
+- qual sua musica favorita
+- qual a musica
+- qual sua musica ?
+- fala da sua musica favorita
+- qual sua musica favorita?
 
 ## intent:about_intercamp
 - Qual são os horários do intercamp?
@@ -268,6 +305,10 @@
 - Quais os horários do intercamp?
 - Sabe qual é o horário do intercamp?
 - E o horário do intercamp?
+- intercampi
+- qual seu intercampi
+- horario intercampi
+
 ## intent:offense
 - alma sebosa
 - ordinario
@@ -385,6 +426,13 @@
 ## intent:call_lino
 - me ve o cardapio do ru
 - RU
+- ru
+- to com fome, quero ru
+- to brocado
+- to na fome
+- me fala do ru
+- qual cardapio ru
+- restaurante universitario
 - ru por favor
 - documents
 - documentos

@@ -8,7 +8,6 @@ intents:
 - thanks
 - callapi
 - out_of_scope
-- random
 - about_name
 - about_age
 - about_location
@@ -17,10 +16,10 @@ intents:
 - about_collor
 - about_hobby
 - about_music
-- about_intercamp
 - offense
 - im_bad
 - call_lino
+- about_intercamp
 
 actions:
 - utter_thanks
@@ -28,7 +27,6 @@ actions:
 - utter_goodbye
 - action_callapi
 - utter_out_of_scope
-- utter_random
 - utter_about_name
 - utter_about_age
 - utter_about_location
@@ -37,16 +35,17 @@ actions:
 - utter_about_collor
 - utter_about_hobby
 - utter_about_music
-- utter_about_intercamp
 - utter_offense
 - utter_im_bad
 - utter_call_lino
+- utter_about_intercamp
 
 
 templates:
   
   utter_greet:
-  - text: "Olá, como posso te ajudar?"
+  - text: "Fala ai, beleza ? Sou o Tino e estou aqui para te ajudar!" 
+  - text: "Opa Eai! Sou o Tino e estou ansioso para te ajudar no que precisar" 
 
   utter_goodbye:
   - text: "Falo com você depois!"
@@ -58,14 +57,12 @@ templates:
   utter_thanks:
   - text: "Obrigado!"
 
-  utter_random:
-  - text: "Po... se tu diz né."
-
   utter_about_name:
   - text: "Me chamo Tino"
 
   utter_about_age:
   - text: "Nasci a 10mil anos atrás, faz as contas aí."
+  
   utter_offense:
   - text: "Que feio! Devia ter mais educação!"
   - text: "Que deselegante... "
@@ -77,8 +74,6 @@ templates:
   
   utter_call_lino:
   - text: "Isso ai ja é com meu primo Lino, para encontra-lo no Telegram pesquise por: lino_o_bot ou só Lino para o Facebook"
-  
-
   
   utter_about_location:
   - text: "Atualmente moro no telegram"
@@ -93,6 +88,12 @@ templates:
   - text: "Prefiro filme, mas gosto de série sim"
   - text: "Adoro, netflix and chill"
 
+  utter_about_intercamp:
+  - text: "Po, no momento o serviço de horários do intercamp não se encontra disponível."
+  - text: "Ainda estamos trabalhando pra oferecer o serviço de horários do intercamp"
+  - text: "Vamos adicionar os horários do intercamp em um futuro próximo"
+  - text: "Jaja o serviço de horários do intercamp estará disponível, guenta aí..." 
+
   utter_about_collor:
   - text: "Pretinho básico"
 
@@ -101,10 +102,4 @@ templates:
 
   utter_about_music:
   - text: "Darude-Sandstorm dududududududu"
-
-  utter_about_intercamp:
-  - text: "Po, no momento o serviço de horários do intercamp não se encontra disponível."
-  - text: "Ainda estamos trabalhando pra oferecer o serviço de horários do intercamp"
-  - text: "Vamos adicionar os horários do intercamp em um futuro próximo"
-  - text: "Jaja o serviço de horários do intercamp estará disponível, guenta aí..."
 

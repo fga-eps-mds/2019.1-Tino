@@ -18,10 +18,6 @@
 * out_of_scope
  - utter_out_of_scope
 
-## story_random
-* random
- - utter_random
-
 ## story_about_name
 * about_name
  - utter_about_name
@@ -33,6 +29,10 @@
 ## story_about_location
 * about_location
  - utter_about_location
+
+## story_about_intercamp
+* about_intercamp
+ - utter_about_intercamp 
 
 ## story_about_pet
 * about_pet
@@ -54,9 +54,6 @@
 * about_music
  - utter_about_music 
 
-## story_about_intercamp
-* about_intercamp
- - utter_about_intercamp
 ## story_offense
 * offense
  - utter_offense
