@@ -7,8 +7,18 @@ O projeto Lino é um bot que visa orientar, alertar e tirar dúvidas a respeito 
 
 ### 2 - build imagem telegram server: `sudo docker build -t telegram-jp:latest -f Telegram.Dockerfile .`
 
-### 3 - Run ngrok with `./ngrok http 5000`
+### 3 - build imagem intercampi server: `sudo docker build -t jp-intercampi:latest -f Telegram.Dockerfile .`
 
-### 4 - Get https url and set webhook with following url: `https://api.telegram.org/bot{token}/setWebhook?url=https://77dc50cf.ngrok.io`
+### 4 - Run ngrok with `./ngrok http 5000`
 
-### 5 - rodar compose: `sudo docker-compose up`
+### 5 - Run ngrok with `./ngrok http 5055`
+
+### 6 - Run ngrok with `./ngrok http 5002`
+
+### 7 - Substituir as urls com HTTPS no .env juntamente com o token do seu bot
+
+### 8 -Pegar a url HTTPS no ngrok na porta 5000 e o token do bot e substituir na url: `https://api.telegram.org/bot{token}/setWebhook?url={}`
+
+#### Obs: substituir e retirar as chaves {}
+
+### 9 - rodar compose: `sudo docker-compose up`
