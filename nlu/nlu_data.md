@@ -1,0 +1,453 @@
+<!--- Ele contém dados de treinamento nlu que você pode alimentar dados usando o formato .md ou .json, usaremos .md para simplificar. --> 
+
+## intent:out_of_scope
+- aleatorio
+- filha da mae
+- filha da puta
+- suave na nave?
+- tem prova amanha ?
+- prova
+- nao sei
+- o que voce faz ?
+- calcula ai pra mim
+- to sem ideia
+- conta uma piada
+- o que temos pro cafe?
+- e hoje?
+- vamos ?
+- opa
+- kkk
+- hahahaha
+- celular
+- objeto
+
+
+## intent:goodbye <!--- The label of the intent --> 
+- Tchau 			<!--- Training examples for intent 'bye'--> 
+- Adeus
+- Até logo
+- bot de tchau
+- Adeus amigo
+- tchau
+- Adeus por agora
+- te vejo mais tarde
+- tenho que ir
+- Até logo
+- boa noite
+- tenha um bom dia
+- Eu estou fora
+- te vejo mais tarde Jacaré
+- nós falaremos em breve
+
+## intent:greet
+- olá
+- ola
+- oi
+- eai
+- eae
+- boa tarde
+- bom dia
+- e ai
+- hello
+- hi
+- opa
+- eai blz
+- oie
+- salve
+- qual foi
+- koe
+- fala tu 
+- piei
+- ou
+- ow
+- eaew
+- fi
+- mlk
+- mano
+- vei
+- vey
+- eaae vey
+- eai bixo
+- ea e
+- ea i
+- e ai
+- faala
+- ea aí man kk
+- como vai
+- fala meu consagrado
+- fala meu compatriota
+- hello
+- hello bitch
+- hi
+- boa noite
+- buenos dias
+- eaiii
+- eaaii
+- eaeee
+- oiiii
+- oii
+- oiee
+- fala ai 
+- ola senhor
+- ola meu caro
+- ola robo
+- eai bot
+- saudações
+- oi pessoal
+- oi de novo
+- ei
+- epa
+- olá é alguém ai
+- eu lhe saldo
+- cheguei
+- cheguei chegando
+- fala ae
+- chora
+- da ideia firma
+- opa opa opa
+- ja voltei
+- to aqui
+- oieee
+- oi oi
+- olaa
+- de volta na area
+- muito prazer robo
+- prazer
+- prazer em conhece-lo
+- eaíí
+- e aí
+- eai meu bom 
+- manda o papo
+- salvee
+- to aqui denovo
+- denovo eu 
+- dnv aqui
+- denovo aqui
+- boa tarde amigo
+
+## intent:thanks
+- Obrigado
+- Obrigado
+- Muito obrigado
+- bot obrigado
+- Obrigado por isso
+- Felicidades
+- gritos mano
+- ok obrigado!
+- perfeito obrigado
+- muito obrigado por tudo
+- Obrigado pela ajuda
+- Muito obrigado
+- incrível, obrigado
+- legal, obrigado
+- legal obrigado
+
+## intent:callapi
+- chame sua ação
+- mostre-me a ação personalizada
+- ligue para sua API
+- mostre seu serviço
+- mostre sua ação
+- chame sua ação personalizada
+- açao
+- personalizadas
+- intercampi
+- horários intercampi
+- horários de saídas do intercampi
+- tabela horários intercampi
+- me fale sobre o intercampi
+- me diga os horários do intercampi
+- me informe sobre o intercampi
+- me passa os horários do intercampi
+- qual a agenda do intercampi?
+- qual a programação do intercampi?
+- hoje tem intercampi?
+- qual o próximo intercampi?
+- intercampi para o Darcy
+- intercampi para o Darcy Ribeiro
+- qual o horário do intercampi para o Darcy?
+- qual o horário do intercampi para o Darcy Ribeiro?
+- intercampi para a FCE
+- intercampi para o campus da Ceilândia
+- qual o próximo intercampi para a Ceilândia?
+- qual o próximo intercampi para a FCE?
+- qual o horário do intercampi para a FCE?
+- intercampi para Planaltina
+- intercampi para o campus de Planaltina
+- qual o próximo intercampi para Planaltina?
+- qual o horário do intercampi para Planaltina?
+- intercampi para o Darcy Ribeiro
+- tá sabendo do intercampi?
+- e o intercampi?
+- intercampi?
+- tem intercampi?
+- você sabe o horário do intercampi?
+- informações do intercampi
+- me passa a tabela do intercampi?
+- me manda os horários do intercampi?
+- me ajuda a pegar intercampi?
+- preciso de um intercampi
+- preciso de um intercampi agora
+- quero saber os horários do intercampi
+- quero a agenda do intercampi
+- agenda intercampi
+- ônibus para outro campus
+- horário dos ônibus para outro campus
+- qual o horário dos ônibus intercampi?
+
+
+## intent:random
+- fora temer
+- bolsonaro
+- você parece o lino
+- o dia está lindo hoje
+- palmeiras não tem mundial
+- vai chover
+- nunca nem vi
+- kkkk
+- aleatorio
+- random
+
+## intent:about_name
+- Qual é o seu nome?
+- Como você se chama?
+- Qual teu nome?
+- Quem é você?
+- Qual seu nome?
+- Nome
+- Qual seu nome
+- Me fala seu nome
+- Seu nome
+- qual seu nome
+- Seu nome
+- Fala seu nome fera
+
+## intent:about_age
+- Qual é sua idade?
+- Quantos anos você tem?
+- Qual sua idade?
+- Quantos anos?
+- Quantos aninhos?
+- idade
+- Qual sua idade
+- qual a idade
+- quantos anos voce tem?
+- quantos anus voce tem?
+- Quantos anos?
+- idade
+- Idade
+
+## intent:about_location
+- Onde você mora?
+- Mora aonde?
+- Onde tu mora?
+- Mora por aqui?
+- Onde é que tu mora?
+
+## intent:about_pet
+- Qual é o seu animal favorito?
+- Qual seu bichinho favorito?
+- Qual teu animal favorito?
+- Qual dos animais é o seu favorito?
+
+## intent:about_series
+- Gosta de assistir série?
+- Assiste série?
+- Tu gosta de assistir série?
+- Tu gosta de ver série?
+- Você curte série?
+
+## intent:about_collor
+- Qual sua cor favorita?
+- Qual é tua cor favorita?
+- Que cor você mais gosta?
+- Tem alguma cor favorita?
+- Qual é a cor que você mais gosta?
+- qual e a sua cor favorita
+- qual a sua cor favorita?
+- cor
+- fala da sua cor favorita
+- fala da cor ai
+- qual a sua cor
+- voce gosta de qual cor
+- cor favorita
+
+## intent:about_hobby
+- O que você gosta de fazer nas horas vagas?
+- Qual teu hobby favorito?
+- O que você mais gosta de fazer?
+- Qual é o seu hobby?
+- Tem algum hobby?
+- fala do seu hobby
+- qual seu hobby
+- me fala do seu hobby
+- Qual seu hobby? 
+- Fala do seu hobby
+
+## intent:about_music
+- Qual é sua música favorita?
+- Qual é a música que você mais curte atualmente?
+- Qual é a melhor música de todas?
+- Tem alguma música favorita?
+- Que música você curte?
+- Musica
+- musica
+- qual sua musica favorita
+- qual a musica
+- qual sua musica ?
+- fala da sua musica favorita
+- qual sua musica favorita?
+
+## intent:about_intercamp
+- Qual são os horários do intercamp?
+- Sabe quais são os horários do intercamp?
+- Sabe que hora passa o intercamp?
+- Quais os horários do intercamp?
+- Sabe qual é o horário do intercamp?
+- E o horário do intercamp?
+- intercampi
+- qual seu intercampi
+- horario intercampi
+
+## intent:offense
+- alma sebosa
+- ordinario
+- capa
+- escroto
+- cuzao
+- rauly
+- fela da puta
+- fela
+- pqp
+- puta que pariu
+- viado
+- bixa
+- otario
+- canalha
+- desgraçado
+- seu puto
+- fi de quenga
+- seu mané
+- robo idiota
+- fodasssse
+- foda-se
+- que se foda
+- foda se
+- fodase
+- fi da puta
+- vai tomar no cu
+- vtnc
+- tnc
+- bosta
+- vai se fuder
+- vsf
+- batata
+- seu merda
+- lixo
+- escroto
+- burro
+- merda
+- jumento
+- pnc
+- pau no cu
+- pau no rego
+- abestado
+- jegão
+- desgraça
+- safado
+- puta
+- corno
+- puto
+- piranha
+- vigarista
+- sua puta
+- bobão
+- tu é um mosca
+- moscao
+- zé ruela
+- zé buceta
+- ameba
+- seu bot horrivel
+- vai se lascar
+- arrombado
+- vagabundo
+- chupa minha pica
+- retardado
+- petista
+- lacaio
+- froxo
+- covarde
+- tratante 
+- buceta
+- traste
+- embuste
+- ranço
+- burro pra caralho
+
+## intent:im_bad
+- to mal
+- muito triste
+- triste
+- mais ou menos
+- mas ou menos
+- podia estar melhor
+- infeliz
+- cansado
+- mal
+- na mals
+- na bad
+- numa bad
+- infeliz
+- me sinto péssimo
+- minha vida nao faz sentido
+- terrivel
+- me sinto terrivel
+- sou emo 
+- vida lixo
+- vida muito dura
+- deprimido aqui
+- chorei aqui
+- to triste
+- cansei dessa vida
+- acho que vou me matar
+- aqui to mal
+- não estou bem
+- não me sinto feliz
+- sou infeliz
+- sou titi
+- depre aqui
+- depressivo estou
+- estou depressivo
+- não ageunto mais 
+- situação ta ruim 
+- sou triste
+- acabou minhas esperanças
+
+## intent:call_lino
+- me ve o cardapio do ru
+- RU
+- ru
+- to com fome, quero ru
+- to brocado
+- to na fome
+- me fala do ru
+- qual cardapio ru
+- restaurante universitario
+- ru por favor
+- documents
+- documentos
+- comida ru
+- cardápio ru
+- cardapio
+- menu da semana
+- menu
+- queria saber do ru
+- documentos unb
+- documentos fga
+- retirar documentos
+- ru agora
+- manda o ru 
+- almoco
+- almoço
+- café
+- cafe

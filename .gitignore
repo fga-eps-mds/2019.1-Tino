@@ -1,0 +1,6 @@
+.DS_Store
+.env
+*.log
+.vscode
+__pycache__
+models/*
