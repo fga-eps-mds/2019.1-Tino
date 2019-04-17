@@ -453,13 +453,38 @@
 - horário próximo intercampi
 - hora do próximo intercampi
 - próximo ônibus
-- próximo intercampi Darcy
-- próximo intercampi Ceilândia
-- próximo intercampi Planaltina
-- próximo intercampi Gama
+- próximo intercampi [Darcy](campus)
+- próximo intercampi [Ceilândia](campus)
+- próximo intercampi [Planaltina](campus)
+- próximo intercampi [Gama](campus)
 - quando sai o próximo intercampi?
 - quero o próximo intercampi
 - vou no próximo intercampi
+- do proximo
+- quero proximo
+- quero saber do proximo intercampi
+- próximo
+- intercampi proximo
+- é o proximo?
+- e o proximo?
+- proximo busao
+- os proximos
+- proximos
+- os intercampis proximos
+- dos proximos
+- o proximo cade
+- cade os proximos intercampis
+- esses proximos intercampis
+- intercampis chegando 
+- intercampi saindo daqui
+- saindo de intercampi daqui
+- proximos intercampis a partir de onde estou 
+- cade os proximos chefe 
+- mand o proximo intercampi chefe 
+- proximos intercampis meu bom 
+- manda os proximos ai
+- próximos
+- quero os práximos 
 
 ## intent:intercampi_all
 - todos horários intercampi
@@ -495,3 +520,40 @@
 - E o horário do intercamp?
 - qual seu intercampi
 - horario intercampi
+
+## intent:affirm_where
+ - estou no [darcy](campus)
+ - estou no [gama](campus)
+ - estou em [planaltina](campus)
+ - estou na [ceilandia](campus)
+ - campus [darcy](campus)
+ - campus [gama](campus)
+ - campus [Ceilândia](campus)
+ - campus [Planaltina](campus)
+ - campus [FGA](campus)
+ - campus [FCE](campus)
+ - campus [FUP](campus)
+ - campus [Darcy Ribeiro](campus)
+ - estou no campus da [fga]
+ - estou no campus da [ceilandia](campus)
+ - to no [gama](campus) 
+ - to no [darcy](campus)
+ - [darcy ribeiro](campus) 
+ - [gamão](campus)
+ - [FGA](campus)
+ - [FCE](campus)
+ - [FUP](campus)
+ - UnB [darcy](campus)
+ - Unb [fga](campus)
+ - unb [darcy](campus)
+ - unb [gama](campus) 
+ - unb [fup](campus)
+ - unb [ceilandia](campus)
+ - to no campus da [ceilandia](campus) 
+ - to na [cei](campus) 
+ - me encontro na unb do [gama](campus) 
+ - estou aqui na [fga](campus) 
+ - unb [fga](campus)
+ - unb [darcy](campus)
+ - unb [fup](campus)
+ - unb [fce](campus)

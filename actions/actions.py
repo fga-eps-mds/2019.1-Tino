@@ -13,20 +13,24 @@ class ActionCallapi(Action):
   def name(self) -> Text:
     return 'action_callapi'
 
-  def run(self, dispatcher, tracker, domain):	
+  def run(self, dispatcher, tracker, domain):
+    url = "https://5fe66413.ngrok.io"
+    url_darcy = url + "/darcy"
+    url_gama = url + "/gama"
+    url_planaltina = url + "/planaltina" 
+    url_ceilandia = url + "/ceilandia" 
 
-     url = os.environ['INTERCAMPI_WEBHOOK']
-     url = str(url) #casting url
-     url_darcy = url + "/darcy"
-     url_gama = url + "/gama"
-     url_planaltina = url + "/planaltina" 
-     url_ceilandia = url + "/ceilandia" 
+    origem = "Darcy Ribeiro"
     
-     
-
-     request = requests.get(url_darcy).json() #make an api call
-     json = request[0]
-     dispatcher.utter_message('Próximos Intercampis em {}: ')
-     dispatcher.utter_message('Destino: {} Sai ás: {}'.format(json[0][1], json[0][2], json[0][0])) #send the message back to the user
+    
+    request = requests.get(url_darcy).json() #make an api call
+    json = request
+    dispatcher.utter_message('Próximos Intercampis para o campus {}:'.format(origem))
    
+    for y in json:
+      dispatcher.utter_message('Destino: ...................... {}'.format(y['destino']))
+      dispatcher.utter_message('Sai ás: ...................... {}'.format(y['horario_saida']))
+
+
+
     return []
