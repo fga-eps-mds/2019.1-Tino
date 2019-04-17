@@ -23,7 +23,7 @@ MONGO_PASSWORD = str(MONGO_PASSWORD)
 
 
 # accept telegram messages
-@app.route('/',methods=['POST','GET'])
+@app.route('/',methods=['POST','GET']) ##########-----ALL PATH-----#############
 def index():
     if(request.method == 'POST'):
         return Response('ok',status=200)
@@ -48,6 +48,7 @@ def index():
     return jsonify(json)
 
 def get_intercampi_collection():
+    #acess mongo database
     client = MongoClient('e4b07ec50c05:27017', username=MONGO_USER,password=MONGO_PASSWORD)          
     db = client.admin
     collection = db['intercampi-horario']
