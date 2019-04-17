@@ -19,7 +19,7 @@ intents:
 - offense
 - im_bad
 - call_lino
-- about_intercamp
+- intercampi_info
 
 actions:
 - utter_thanks
@@ -38,7 +38,7 @@ actions:
 - utter_offense
 - utter_im_bad
 - utter_call_lino
-- utter_about_intercamp
+- utter_intercampi_info
 
 
 templates:
@@ -73,7 +73,7 @@ templates:
   - text: "Não desanime e siga em frente."
   
   utter_call_lino:
-  - text: "Isso ai ja é com meu primo Lino, para encontra-lo no Telegram pesquise por: lino_o_bot ou só Lino para o Facebook"
+  - text: "Isso ai ja é com meu primo Lino, para encontra-lo no Telegram pesquise por: @lino_o_bot ou só Lino para o Facebook"
   
   utter_about_location:
   - text: "Atualmente moro no telegram"
@@ -88,11 +88,8 @@ templates:
   - text: "Prefiro filme, mas gosto de série sim"
   - text: "Adoro, netflix and chill"
 
-  utter_about_intercamp:
-  - text: "Po, no momento o serviço de horários do intercamp não se encontra disponível."
-  - text: "Ainda estamos trabalhando pra oferecer o serviço de horários do intercamp"
-  - text: "Vamos adicionar os horários do intercamp em um futuro próximo"
-  - text: "Jaja o serviço de horários do intercamp estará disponível, guenta aí..." 
+  utter_intercampi_info:
+  - text: "Certo, você quer saber sobre o intercampi... Mais especificamente, você quer saber de todos ou apenas do próximo?"
 
   utter_about_collor:
   - text: "Pretinho básico"
