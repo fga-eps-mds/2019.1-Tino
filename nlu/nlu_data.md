@@ -298,17 +298,6 @@
 - fala da sua musica favorita
 - qual sua musica favorita?
 
-## intent:about_intercamp
-- Qual são os horários do intercamp?
-- Sabe quais são os horários do intercamp?
-- Sabe que hora passa o intercamp?
-- Quais os horários do intercamp?
-- Sabe qual é o horário do intercamp?
-- E o horário do intercamp?
-- intercampi
-- qual seu intercampi
-- horario intercampi
-
 ## intent:offense
 - alma sebosa
 - ordinario
@@ -451,3 +440,58 @@
 - almoço
 - café
 - cafe
+
+## intent:intercampi_next
+- quais os próximos intercampis?
+- quero saber do próximo intercampi
+- quero pegar o próximo intercampi
+- próximo intercampi
+- proximo intercampi
+- qual o horário do próximo intercampi?
+- que horas sai o próximo intercampi?
+- o próximo intercampi sai que horas?
+- horário próximo intercampi
+- hora do próximo intercampi
+- próximo ônibus
+- próximo intercampi Darcy
+- próximo intercampi Ceilândia
+- próximo intercampi Planaltina
+- próximo intercampi Gama
+- quando sai o próximo intercampi?
+- quero o próximo intercampi
+- vou no próximo intercampi
+
+## intent:intercampi_all
+- todos horários intercampi
+- hora todos intercampis
+- lista todos intercampi
+- me vê a lista com todos intercampis?
+- me mostra a lista com todos intercampis?
+- traz todos intercampis aí
+- quero ver todos intercampis
+- quero saber de todos intercampis
+- posso saber de todos intercampis?
+- todos intercampi
+- todos intercampi
+- geral sobre intercampi
+
+## intent:intercampi_info
+- intercampi
+- quero saber sobre o intercampi
+- me fala sobre o intercampi?
+- me informe sobre o intercampi
+- horários intercampi
+- horário intercampi
+- hora intercampi
+- informações intercampi
+- me diga sobre o intercampi
+- fala sobre o intercampi
+- sobre o intercampi
+- Qual são os horários do intercamp?
+- Sabe quais são os horários do intercamp?
+- Sabe que hora passa o intercamp?
+- Quais os horários do intercamp?
+- Sabe qual é o horário do intercamp?
+- E o horário do intercamp?
+- qual seu intercampi
+- horario intercampi

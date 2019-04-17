@@ -30,9 +30,9 @@
 * about_location
  - utter_about_location
 
-## story_about_intercamp
-* about_intercamp
- - utter_about_intercamp 
+## story_intercampi_info
+* intercampi_info
+ - utter_intercampi_info
 
 ## story_about_pet
 * about_pet
@@ -65,4 +65,4 @@
 ## story_call_lino
 * call_lino
  - utter_call_lino  
- 
+
