@@ -580,15 +580,5 @@
  - minha localidade atual é: [Darcy Ribeiro](campus)
 
 
- ## intent:about_politics
- - Bolsonaro
- - haddad
- - é de esquerda ou direita?
- - votou em quem?
- - política 
- - politica
- - pt
- - psol
- - psdb
- 
+
  
