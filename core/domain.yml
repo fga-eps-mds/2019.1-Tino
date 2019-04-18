@@ -97,8 +97,8 @@ templates:
   - text: "Adoro, netflix and chill"
 
   utter_intercampi_info:
-  - text: "Certo, você quer saber sobre o intercampi... Mais especificamente, você quer saber de todos ou apenas do próximo?"
-
+  - text: "Certo, você quer saber sobre o intercampi...Mais especificamente, você quer saber de todos ou dos proximos partindo de onde esta?"
+  - text: "Com certeza poderei te ajudar, mas antes so me ajuda um pouco...Você quer visualizar os proximos a sair ou quer uma lista de todos ?"
   utter_about_collor:
   - text: "Pretinho básico"
 

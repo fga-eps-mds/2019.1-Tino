@@ -416,46 +416,52 @@
 - proximo busao
 - os proximos
 - proximos
+- pŕoximo a sair
 - os [intercampis](intercampi) proximos
 - dos proximos
 - o proximo cade
 - cade os proximos [intercampis](intercampi)
-- esses proximos [intercampis](intercampi)
-- [intercampis](intercampi) chegando 
+- esses proximos [intercampis](intercampi)?
+- [intercampis](intercampi) a sair
 - [intercampi](intercampi) saindo daqui
 - saindo de [intercampi](intercampi) daqui
 - proximos [intercampis](intercampi) a partir de onde estou 
 - cade os proximos chefe 
 - manda o proximo [intercampi](intercampi) chefe 
-- proximos [intercampi](intercampi) meu bom 
+- proximos [intercampis](intercampi) meu bom 
 - manda os proximos ai
 - próximos
-- quero os práximos 
+- quero os proximos 
+- próximos saindo daqui
+- proximo de onde estou 
+- quero os proximos de onde estou
+- quero os proximos a sair
+- quero pegar um intercampi rapido
+
 
 ## intent:intercampi_all
 - todos horários [intercampi](intercampi)
-- hora todos [intercampis](intercampi)
-- lista todos [intercampis](intercampi)
+- quero hora de todos os [intercampis](intercampi)
+- lista todos [intercampis](intercampi) ai
 - me vê a lista com todos [intercampis](intercampi)
-- me mostra a lista com todos [intercampis](intercampi)
+- me mostra a lista com todos [intercamps](intercampi)
 - traz todos [intercampis](intercampi) aí
 - quero ver todos [intercampis](intercampi)
+- quero ver todos os [intercampis](intercampi) possiveis
 - quero saber de todos [intercampis](intercampi)
 - posso saber de todos [intercampis](intercampi)
 - todos [intercampi](intercampi)
 - todos [intercampi](intercampi)
-- geral sobre [intercampi](intercampi)
-- quero saber sobre o [intercampi](intercampi)
-- desejo saber sobre o [intercampi](intercampi)
-- fale sobre o [intercampi](intercampi)
-- quero [intercampi](intercampi) agora
-- [intercampi](intercampi) intercammpi
-- [intercampi](intercampi) por favor
-- me informa ai sobre o [intercampi](intercampi)
-- me ajuda aqui acom o [intercampi](intercampi)
-- eai ajuda [intercampi](intercampi)
-- intercamp
-- quero um [intercampi](intercampi) agora 
+- tabela [intercampi](intercampi)
+- tabela geral [intercampi](intercampi)
+- tabela de horarios
+- tabela de horarios geral
+- tabela geral [intercampi](intercampi) horarios
+- manda todos os horarios ai
+- quero saber de tudo entao
+- quero tudo de horario
+- todos os horarios do [onibus](intercampi) da unb
+
 
 ## intent:intercampi_info
 - [intercampi](intercampi)
@@ -483,7 +489,6 @@
 - tem [intercampi](intercampi)?
 - você sabe o horário do [intercampi](intercampi)?
 - informações do [intercampi](intercampi)
-- me passa a tabela do [intercampi](intercampi)?
 - me manda os horários do [intercampi](intercampi)?
 - me ajuda a pegar [intercampi](intercampi)?
 - preciso de um [intercampi](intercampi)
@@ -494,13 +499,17 @@
 - ônibus para outro campus
 - horário dos ônibus para outro campus
 - qual o horário dos ônibus [intercampi](intercampi)?
+- me informa ai sobre o [intercampi](intercampi)
+- me ajuda aqui acom o [intercampi](intercampi)
+- quero [intercampi](intercampi) agora
+- eai ajuda [intercampi](intercampi)
 
 ## intent:affirm_where
  - estou no [darcy](campus)
  - estou no [gama](campus)
  - estou em [planaltina](campus)
  - estou na [ceilandia](campus)
- - campus [darcy](campus)
+ - to no campus [darcy](campus)
  - campus [gama](campus)
  - campus [Ceilândia](campus)
  - campus [Planaltina](campus)
@@ -510,6 +519,7 @@
  - campus [Darcy Ribeiro](campus)
  - estou no campus da [fga](campus)
  - estou no campus da [ceilandia](campus)
+ - estou no campus [Darcy Ribeiro](campus)
  - to no [gama](campus) 
  - to no [darcy](campus)
  - [darcy ribeiro](campus) 
@@ -542,3 +552,29 @@
  - [ceilandia](campus)
  - [planaltina](campus)
  - [fup](campus)
+ - to no [gama](campus) meu bro
+ - vei to na [fga](campus)
+ - vei to na [FUP](campus)
+ - estou exatamente no [icc](campus) sul
+ - no [darcy](campus) meu chapa
+ - to em [pĺanaltina](campus) bro
+ - to em casa
+ - to onde judas perdeu as botas
+ - local sigiloso
+ - estou em um local secreto 
+ - to na [UCB](campus)
+ - to tranquilao no [gama](campus)
+ - me encontro agora na [fga](campus)
+ - to no [uniceub](campus) aqui
+ - to na [estácio](campus)
+ - to na ponte que partiu
+ - to numa festa aqui
+ - to no transito
+ - estou preso na [fup](campus)
+ - estou na Universidade de Brasília, campus da [Ceilândia](campus)
+ - estou na Universidade de Brasília, campus da [Faculdade de Planaltina](campus)
+ - estou na Universidade de Brasília, campus da [Faculdade do Gama](campus)
+ - [faculdade do Gama](campus)
+ - [faculdade da Ceilandia](campus)
+ - [faculdade de Planaltina](campus)
+ - minha localidade atual é: [Darcy Ribeiro](campus)

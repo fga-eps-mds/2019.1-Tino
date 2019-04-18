@@ -6,7 +6,7 @@ import requests
 import json
 import os
 
-url = os.environ['INTERCAMPI_WEBHOOK']
+url = "https://f0b8a019.ngrok.io" # url da porta 5002 (ngrok)
 
 class ActionCallapi(Action):
   def name(self) -> Text:
