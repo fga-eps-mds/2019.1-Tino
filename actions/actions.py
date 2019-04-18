@@ -22,14 +22,15 @@ class ActionCallapi(Action):
 
     origem = "Darcy Ribeiro"
     
-    
     request = requests.get(url_darcy).json() #make an api call
     json = request
-    dispatcher.utter_message('Próximos Intercampis para o campus {}:'.format(origem))
+    dispatcher.utter_message('Próximos Intercampis saindo de {}:'.format(origem))
    
     for y in json:
+      
       dispatcher.utter_message('Destino: ...................... {}'.format(y['destino']))
       dispatcher.utter_message('Sai ás: ...................... {}'.format(y['horario_saida']))
+      dispatcher.utter_message('______________________________________________________________________')
 
 
 

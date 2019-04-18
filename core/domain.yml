@@ -6,7 +6,6 @@ intents:
 - greet
 - goodbye
 - thanks
-- callapi
 - out_of_scope
 - about_name
 - about_age
@@ -21,6 +20,7 @@ intents:
 - call_lino
 - intercampi_info
 - intercampi_next
+- affirm_where
 
 actions:
 - utter_thanks
@@ -40,11 +40,13 @@ actions:
 - utter_im_bad
 - utter_call_lino
 - utter_intercampi_info
+- utter_where_next
+
 
 
 entities:
 - campus
-
+- intercampi
 
 
 templates:
@@ -106,3 +108,5 @@ templates:
   utter_about_music:
   - text: "Darude-Sandstorm dududududududu"
 
+  utter_where_next:
+  - text: "Por favor me diga então em que campus você esta para que eu possa te ajudar melhor ;)"  

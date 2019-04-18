@@ -9,10 +9,6 @@
 ## story_thanks
 * thanks
  - utter_thanks
- 
-## story_callapi
-* schedule
- - action_callapi
 
 ## story_out_of_scope
 * out_of_scope
@@ -36,7 +32,9 @@
 
 ## story_intercampi_next
 * intercampi_next
- - action_callapi 
+ - utter_where_next
+* affirm_where
+ - action_callapi
 
 ## story_about_pet
 * about_pet

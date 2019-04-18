@@ -142,60 +142,6 @@
 - legal, obrigado
 - legal obrigado
 
-## intent:callapi
-- chame sua ação
-- mostre-me a ação personalizada
-- ligue para sua API
-- mostre seu serviço
-- mostre sua ação
-- chame sua ação personalizada
-- açao
-- personalizadas
-- intercampi
-- horários intercampi
-- horários de saídas do intercampi
-- tabela horários intercampi
-- me fale sobre o intercampi
-- me diga os horários do intercampi
-- me informe sobre o intercampi
-- me passa os horários do intercampi
-- qual a agenda do intercampi?
-- qual a programação do intercampi?
-- hoje tem intercampi?
-- qual o próximo intercampi?
-- intercampi para o Darcy
-- intercampi para o Darcy Ribeiro
-- qual o horário do intercampi para o Darcy?
-- qual o horário do intercampi para o Darcy Ribeiro?
-- intercampi para a FCE
-- intercampi para o campus da Ceilândia
-- qual o próximo intercampi para a Ceilândia?
-- qual o próximo intercampi para a FCE?
-- qual o horário do intercampi para a FCE?
-- intercampi para Planaltina
-- intercampi para o campus de Planaltina
-- qual o próximo intercampi para Planaltina?
-- qual o horário do intercampi para Planaltina?
-- intercampi para o Darcy Ribeiro
-- tá sabendo do intercampi?
-- e o intercampi?
-- intercampi?
-- tem intercampi?
-- você sabe o horário do intercampi?
-- informações do intercampi
-- me passa a tabela do intercampi?
-- me manda os horários do intercampi?
-- me ajuda a pegar intercampi?
-- preciso de um intercampi
-- preciso de um intercampi agora
-- quero saber os horários do intercampi
-- quero a agenda do intercampi
-- agenda intercampi
-- ônibus para outro campus
-- horário dos ônibus para outro campus
-- qual o horário dos ônibus intercampi?
-
-
 ## intent:random
 - fora temer
 - bolsonaro
@@ -442,84 +388,112 @@
 - cafe
 
 ## intent:intercampi_next
-- quais os próximos intercampis?
-- quero saber do próximo intercampi
-- quero pegar o próximo intercampi
-- próximo intercampi
-- proximo intercampi
-- qual o horário do próximo intercampi?
-- que horas sai o próximo intercampi?
-- o próximo intercampi sai que horas?
-- horário próximo intercampi
-- hora do próximo intercampi
+- quais os próximos [intercampi]s?
+- quero saber do próximo [intercampi]
+- quero pegar o próximo [intercampi]
+- próximo [intercampi]
+- proximo [intercampi]
+- qual o horário do próximo [intercampi]?
+- que horas sai o próximo [intercampi]?
+- o próximo [intercampi] sai que horas?
+- horário próximo [intercampi]
+- hora do próximo [intercampi]
 - próximo ônibus
-- próximo intercampi [Darcy](campus)
-- próximo intercampi [Ceilândia](campus)
-- próximo intercampi [Planaltina](campus)
-- próximo intercampi [Gama](campus)
-- quando sai o próximo intercampi?
-- quero o próximo intercampi
-- vou no próximo intercampi
+- próximo [intercampi](intercampi) [Darcy](campus)
+- próximo [intercampi](intercampi) [Ceilândia](campus)
+- próximo [intercampi] [Planaltina](campus)
+- próximo [intercampi] [Gama](campus)
+- quando sai o próximo [intercampi]?
+- quero o próximo [intercampi](intercampi)
+- vou no próximo [intercampi](intercampi)
 - do proximo
 - quero proximo
-- quero saber do proximo intercampi
+- quero saber do proximo [intercampi](intercampi)
 - próximo
-- intercampi proximo
+- [intercampi](intercampi) proximo
 - é o proximo?
 - e o proximo?
 - proximo busao
 - os proximos
 - proximos
-- os intercampis proximos
+- os [intercampis](intercampi) proximos
 - dos proximos
 - o proximo cade
-- cade os proximos intercampis
-- esses proximos intercampis
-- intercampis chegando 
-- intercampi saindo daqui
-- saindo de intercampi daqui
-- proximos intercampis a partir de onde estou 
+- cade os proximos [intercampis](intercampi)
+- esses proximos [intercampis](intercampi)
+- [intercampis](intercampi) chegando 
+- [intercampi](intercampi) saindo daqui
+- saindo de [intercampi](intercampi) daqui
+- proximos [intercampis](intercampi) a partir de onde estou 
 - cade os proximos chefe 
-- mand o proximo intercampi chefe 
-- proximos intercampis meu bom 
+- manda o proximo [intercampi](intercampi) chefe 
+- proximos [intercampi](intercampi) meu bom 
 - manda os proximos ai
 - próximos
 - quero os práximos 
 
 ## intent:intercampi_all
-- todos horários intercampi
-- hora todos intercampis
-- lista todos intercampi
-- me vê a lista com todos intercampis?
-- me mostra a lista com todos intercampis?
-- traz todos intercampis aí
-- quero ver todos intercampis
-- quero saber de todos intercampis
-- posso saber de todos intercampis?
-- todos intercampi
-- todos intercampi
-- geral sobre intercampi
+- todos horários [intercampi](intercampi)
+- hora todos [intercampis](intercampi)
+- lista todos [intercampis](intercampi)
+- me vê a lista com todos [intercampis]?(intercampi)
+- me mostra a lista com todos [intercampis]?(intercampi)
+- traz todos [intercampis](intercampi) aí
+- quero ver todos [intercampis](intercampi)
+- quero saber de todos [intercampis](intercampi)
+- posso saber de todos [intercampis]?(intercampi)
+- todos [intercampi](intercampi)
+- todos [intercampi](intercampi)
+- geral sobre [intercampi](intercampi)
+- quero saber sobre o [intercampi](intercampi)
+- desejo saber sobre o [intercampi](intercampi)
+- fale sobre o [intercampi](intercampi)
+- quero [intercampi](intercampi) agora
+- [[intercampi]](intercampi) intercammpi
+- [intercampi](intercampi) por favor
+- me informa ai sobre o [intercampi](intercampi)
+- me ajuda aqui acom o [intercampi](intercampi)
+- eai ajuda [intercampi](intercampi)
+- intercamp
+- quero um [intercampi](intercampi) agora 
 
 ## intent:intercampi_info
-- intercampi
-- quero saber sobre o intercampi
-- me fala sobre o intercampi?
-- me informe sobre o intercampi
-- horários intercampi
-- horário intercampi
-- hora intercampi
-- informações intercampi
-- me diga sobre o intercampi
-- fala sobre o intercampi
-- sobre o intercampi
-- Qual são os horários do intercamp?
-- Sabe quais são os horários do intercamp?
-- Sabe que hora passa o intercamp?
-- Quais os horários do intercamp?
-- Sabe qual é o horário do intercamp?
-- E o horário do intercamp?
-- qual seu intercampi
-- horario intercampi
+- [intercampi]
+- quero saber sobre o [intercampi](intercampi)
+- me fala sobre o [intercampi]?(intercampi)
+- me informe sobre o [intercampi](intercampi)
+- horários [intercampi](intercampi)
+- horário [intercampi(intercampi)]
+- hora [intercampi](intercampi)
+- informações [intercampi](intercampi)
+- me diga sobre o [intercampi](intercampi)
+- fala sobre o [intercampi](intercampi)
+- sobre o [intercampi](intercampi)
+- Qual são os horários do [intercamp]?(intercampi)
+- Sabe quais são os horários do [intercamp]?(intercampi)
+- Sabe que hora passa o [intercamp]?(intercampi)
+- Quais os horários do [intercamp]?(intercampi)
+- Sabe qual é o horário do [intercamp]?(intercampi)
+- E o horário do intercamp?(intercampi)
+- qual seu [intercampi](intercampi)
+- horario [intercampi](intercampi)
+- tá sabendo do [intercampi](intercampi)?
+- e o [intercampi](intercampi)?
+- [intercampi](intercampi)?
+- tem [intercampi](intercampi)?
+- você sabe o horário do [intercampi](intercampi)?
+- informações do [intercampi](intercampi)
+- me passa a tabela do [intercampi](intercampi)?
+- me manda os horários do [intercampi](intercampi)?
+- me ajuda a pegar [intercampi](intercampi)?
+- preciso de um [intercampi](intercampi)
+- preciso de um [intercampi](intercampi) agora
+- quero saber os horários do [intercampi](intercampi)
+- quero a agenda do [intercampi](intercampi)
+- agenda [intercampi](intercampi)
+- ônibus para outro campus
+- horário dos ônibus para outro campus
+- qual o horário dos ônibus [intercampi](intercampi)?
 
 ## intent:affirm_where
  - estou no [darcy](campus)
@@ -534,7 +508,7 @@
  - campus [FCE](campus)
  - campus [FUP](campus)
  - campus [Darcy Ribeiro](campus)
- - estou no campus da [fga]
+ - estou no campus da [fga](campus)
  - estou no campus da [ceilandia](campus)
  - to no [gama](campus) 
  - to no [darcy](campus)
@@ -557,3 +531,14 @@
  - unb [darcy](campus)
  - unb [fup](campus)
  - unb [fce](campus)
+ - no [darcy](campus)
+ - na [fga](campus)
+ - na [FCE](campus)
+ - na [fup](campus)
+ - [darcy](campus)
+ - [fga](campus) 
+ - no campus do [gama](campus)
+ - [gama](campus)
+ - [ceilandia](campus)
+ - [planaltina](campus)
+ - [fup](campus)
