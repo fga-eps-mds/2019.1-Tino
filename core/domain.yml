@@ -21,6 +21,7 @@ intents:
 - intercampi_info
 - intercampi_next
 - affirm_where
+- about_politics
 
 actions:
 - utter_thanks
@@ -41,6 +42,7 @@ actions:
 - utter_call_lino
 - utter_intercampi_info
 - utter_where_next
+- utter_politics
 
 
 
@@ -50,7 +52,7 @@ entities:
 
 slots:
   campus:
-  type: "text"
+  type: text
   
 
 templates:
@@ -114,3 +116,7 @@ templates:
 
   utter_where_next:
   - text: "Por favor me diga então em que campus você esta para que eu possa te ajudar melhor ;)"  
+
+  utter_politics:
+  -text: "Não sou capaz de opniar"
+    
