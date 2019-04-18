@@ -48,6 +48,10 @@ entities:
 - campus
 - intercampi
 
+slots:
+  campus:
+  type: "text"
+  
 
 templates:
   
