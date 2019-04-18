@@ -388,22 +388,22 @@
 - cafe
 
 ## intent:intercampi_next
-- quais os próximos [intercampi]s?
-- quero saber do próximo [intercampi]
-- quero pegar o próximo [intercampi]
-- próximo [intercampi]
-- proximo [intercampi]
-- qual o horário do próximo [intercampi]?
-- que horas sai o próximo [intercampi]?
-- o próximo [intercampi] sai que horas?
-- horário próximo [intercampi]
-- hora do próximo [intercampi]
+- quais os próximos [intercampi](intercampi)?
+- quero saber do próximo [intercampi](intercampi)
+- quero pegar o próximo [intercampi](intercampi)
+- próximo [intercampi](intercampi)
+- proximo [intercampi](intercampi)
+- qual o horário do próximo [intercampi](intercampi)?
+- que horas sai o próximo [intercampi](intercampi)?
+- o próximo [intercampi](intercampi) sai que horas?
+- horário próximo [intercampi](intercampi)
+- hora do próximo [intercampi](intercampi)
 - próximo ônibus
 - próximo [intercampi](intercampi) [Darcy](campus)
 - próximo [intercampi](intercampi) [Ceilândia](campus)
-- próximo [intercampi] [Planaltina](campus)
-- próximo [intercampi] [Gama](campus)
-- quando sai o próximo [intercampi]?
+- próximo [intercampi](intercampi) [Planaltina](campus)
+- próximo [intercampi](intercampi) [Gama](campus)
+- quando sai o próximo [intercampi](intercampi)?
 - quero o próximo [intercampi](intercampi)
 - vou no próximo [intercampi](intercampi)
 - do proximo
@@ -436,12 +436,12 @@
 - todos horários [intercampi](intercampi)
 - hora todos [intercampis](intercampi)
 - lista todos [intercampis](intercampi)
-- me vê a lista com todos [intercampis]?(intercampi)
-- me mostra a lista com todos [intercampis]?(intercampi)
+- me vê a lista com todos [intercampis](intercampi)
+- me mostra a lista com todos [intercampis](intercampi)
 - traz todos [intercampis](intercampi) aí
 - quero ver todos [intercampis](intercampi)
 - quero saber de todos [intercampis](intercampi)
-- posso saber de todos [intercampis]?(intercampi)
+- posso saber de todos [intercampis](intercampi)
 - todos [intercampi](intercampi)
 - todos [intercampi](intercampi)
 - geral sobre [intercampi](intercampi)
@@ -449,7 +449,7 @@
 - desejo saber sobre o [intercampi](intercampi)
 - fale sobre o [intercampi](intercampi)
 - quero [intercampi](intercampi) agora
-- [[intercampi]](intercampi) intercammpi
+- [intercampi](intercampi) intercammpi
 - [intercampi](intercampi) por favor
 - me informa ai sobre o [intercampi](intercampi)
 - me ajuda aqui acom o [intercampi](intercampi)
@@ -458,23 +458,23 @@
 - quero um [intercampi](intercampi) agora 
 
 ## intent:intercampi_info
-- [intercampi]
+- [intercampi](intercampi)
 - quero saber sobre o [intercampi](intercampi)
-- me fala sobre o [intercampi]?(intercampi)
+- me fala sobre o [intercampi](intercampi)
 - me informe sobre o [intercampi](intercampi)
 - horários [intercampi](intercampi)
-- horário [intercampi(intercampi)]
+- horário [intercampi](intercampi)
 - hora [intercampi](intercampi)
 - informações [intercampi](intercampi)
 - me diga sobre o [intercampi](intercampi)
 - fala sobre o [intercampi](intercampi)
 - sobre o [intercampi](intercampi)
-- Qual são os horários do [intercamp]?(intercampi)
-- Sabe quais são os horários do [intercamp]?(intercampi)
-- Sabe que hora passa o [intercamp]?(intercampi)
-- Quais os horários do [intercamp]?(intercampi)
-- Sabe qual é o horário do [intercamp]?(intercampi)
-- E o horário do intercamp?(intercampi)
+- Qual são os horários do [intercamp](intercampi)
+- Sabe quais são os horários do [intercamp](intercampi)?
+- Sabe que hora passa o [intercamp](intercampi)
+- Quais os horários do [intercamp](intercampi)
+- Sabe qual é o horário do [intercamp](intercampi)?
+- E o horário do [intercamp](intercampi)
 - qual seu [intercampi](intercampi)
 - horario [intercampi](intercampi)
 - tá sabendo do [intercampi](intercampi)?

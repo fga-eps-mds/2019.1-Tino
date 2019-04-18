@@ -20,9 +20,52 @@ class ActionCallapi(Action):
     url_planaltina = url + "/planaltina" 
     url_ceilandia = url + "/ceilandia" 
 
-    origem = "Darcy Ribeiro"
-    
-    request = requests.get(url_darcy).json() #make an api call
+    tracker_state = tracker.current_state()
+    text = tracker_state['latest_message']['text']
+    text = text.lower()
+    words = text.split(' ')
+    origem = ""
+    request = ""
+
+    for word in words:
+      if(word == "darcy"):
+        origem = "Darcy Ribeiro"
+        request = requests.get(url_darcy).json() #api call
+        break
+      if(word == "gama"):
+        origem = "Gama-FGA"
+        request = requests.get(url_gama).json()
+        break
+      if(word == "ceilandia"):
+        origem = "Ceilândia"
+        request = requests.get(url_ceilandia).json()
+        break
+      if(word == "ceilândia"):
+        origem = "Ceilândia"
+        request = requests.get(url_ceilandia).json()
+        break        
+      if(word == "planaltina"):
+        origem = "Planaltina"
+        request = requests.get(url_planaltina).json()
+        break
+      if(word == "fup"):
+        origem = "Planaltina"
+        request = requests.get(url_planaltina).json()
+        break        
+      if(word == "fce"):
+        origem = "Ceilândia"
+        request = requests.get(url_ceilandia).json()
+        break
+      if(word == "fga"):
+        origem = "Gama-FGA"
+        request = requests.get(url_gama).json()
+        break
+
+    if(origem == ""):
+      dispatcher.utter_message('Opção invalida')
+      return []
+
+
     json = request
     dispatcher.utter_message('Próximos Intercampis saindo de {}:'.format(origem))
    
@@ -30,7 +73,7 @@ class ActionCallapi(Action):
       
       dispatcher.utter_message('Destino: ...................... {}'.format(y['destino']))
       dispatcher.utter_message('Sai ás: ...................... {}'.format(y['horario_saida']))
-      dispatcher.utter_message('______________________________________________________________________')
+      dispatcher.utter_message('__________________________________')
 
 
 
