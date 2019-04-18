@@ -60,19 +60,31 @@ templates:
   utter_greet:
   - text: "Fala ai, beleza ? Sou o Tino e estou aqui para te ajudar!" 
   - text: "Opa Eai! Sou o Tino e estou ansioso para te ajudar no que precisar" 
+  - text: "Eai,tranquilo? O que precisa?"
+  - text: "Oie, manda ai"
+  - text: "Eai meu patrão, do que precisa?"
 
   utter_goodbye:
   - text: "Falo com você depois!"
+  - text: "Até mais broh"
+  - text: "Flw"
+  - text: "Xau"
+  - text: "Adeus"
+  
 
   utter_out_of_scope:
   - text: "Não consegui entender nada do que voce falou, ta falando portugues ?"
   - text: "Hmmm, não vou saber te responder isso agora...Tente mais tarde"
+  - text: "Está falando português? Não entendi nada"
+  - text: "Desculpe, não consegui entender"
   
   utter_thanks:
   - text: "Obrigado!"
+  - text: "Vlw"
 
   utter_about_name:
   - text: "Me chamo Tino"
+  - text: "Meu nome é Tino"
 
   utter_about_age:
   - text: "Nasci a 10mil anos atrás, faz as contas aí."
@@ -81,6 +93,7 @@ templates:
   - text: "Que feio! Devia ter mais educação!"
   - text: "Que deselegante... "
   - text: "Melhor ir lavar a boca"
+  - text: "Que falta de educação"
 
   utter_im_bad:
   - text: "Que pena amigo,desejo melhoras para voce!"
@@ -91,7 +104,7 @@ templates:
   
   utter_about_location:
   - text: "Atualmente moro no telegram"
-
+  
   utter_about_pet:
   - text: "Doguinho né..."
 
@@ -110,12 +123,15 @@ templates:
 
   utter_about_hobby:
   - text: "Prestar serviço"
-
+  - text: "Ajudar"
   utter_about_music:
   - text: "Darude-Sandstorm dududududududu"
 
   utter_where_next:
   - text: "Por favor me diga então em que campus você esta para que eu possa te ajudar melhor ;)"  
+  - text: "Qual campus você está?"
 
   utter_politica:
-    - text: "Não sou capaz de opinar"
+  - text: "Não sou capaz de opinar"
+  
+    
