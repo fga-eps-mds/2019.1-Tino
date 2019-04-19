@@ -5,8 +5,10 @@ from rasa_core_sdk import Action
 import requests
 import json
 import os
+from datetime import datetime, timezone
+import pytz
 
-url = "https://f0b8a019.ngrok.io" # url da porta 5002 (ngrok)
+url = "https://6f9d987c.ngrok.io" # url da porta 5002 (ngrok)
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -63,16 +65,24 @@ class ActionCallapi(Action):
       dispatcher.utter_message('Opção invalida')
       return []
 
+    dispatcher.utter_message('Verificando se há intercampis saindo de {} ...'.format(origem))
 
     json = request
-    dispatcher.utter_message('Próximos Intercampis saindo de {}:'.format(origem))
    
-    for y in json:
-      
-      dispatcher.utter_message('Destino: ...................... {}'.format(y['destino']))
-      dispatcher.utter_message('Sai ás: ...................... {}'.format(y['horario_saida']))
-      dispatcher.utter_message('__________________________________')
+    time_zone = pytz.timezone('America/Sao_Paulo')
+    hora_atual = datetime.now(time_zone)
+    contador_proximos_intercampis = 0
 
+    for y in json:
+      hora_intercampi = y['horario_saida']
+      hora_intercampi = hora_intercampi.split('h')
+
+      if hora_atual.hour <= int(hora_intercampi[0]):
+        dispatcher.utter_message('Destino: ' + y['destino'] + '\n' + "Horário de saída: " + y['horario_saida'])
+        contador_proximos_intercampis += 1
+
+    if contador_proximos_intercampis == 0:
+      dispatcher.utter_message('Não há mais intercampis saindo hoje :/')
 
 
     return []
