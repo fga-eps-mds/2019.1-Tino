@@ -8,7 +8,7 @@ import os
 from datetime import datetime, timezone
 import pytz
 
-url = "https://6f9d987c.ngrok.io" # url da porta 5002 (ngrok)
+url = 'https://8a0cb889.ngrok.io'  # url da porta 5002 (ngrok)
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -26,43 +26,32 @@ class ActionCallapi(Action):
     words = text.split(' ')
     origem = ""
     request = ""
+    local_embarque = ""
 
     for word in words:
-      if(word == "darcy"):
+      if(word == "darcy" or word == "plano"):
         origem = "Darcy Ribeiro"
-        request = requests.get(url_darcy).json() #api call
+        local_embarque = "no Estacionamento do ICC sul"
+        request = requests.get(url_darcy).json()  # api call
         break
-      if(word == "gama"):
+      if(word == "gama" or word == "fga"):
         origem = "Gama-FGA"
+        local_embarque = "no \"Estacionamento\" do Prédio "
         request = requests.get(url_gama).json()
         break
-      if(word == "ceilandia"):
+      if(word == "ceilandia" or word == "ceilândia" or word == "fce"):
         origem = "Ceilândia"
+        local_embarque = "em frente a portaria central"
         request = requests.get(url_ceilandia).json()
-        break
-      if(word == "ceilândia"):
-        origem = "Ceilândia"
-        request = requests.get(url_ceilandia).json()
-        break        
-      if(word == "planaltina"):
+        break 
+      if(word == "planaltina" or word == "fup"):
         origem = "Planaltina"
+        local_embarque = "em frente ao antigo Prédio"
         request = requests.get(url_planaltina).json()
-        break
-      if(word == "fup"):
-        origem = "Planaltina"
-        request = requests.get(url_planaltina).json()
-        break        
-      if(word == "fce"):
-        origem = "Ceilândia"
-        request = requests.get(url_ceilandia).json()
-        break
-      if(word == "fga"):
-        origem = "Gama-FGA"
-        request = requests.get(url_gama).json()
         break
 
     if(origem == ""):
-      dispatcher.utter_message('Opção invalida')
+      dispatcher.utter_message('Desculpe, não consegui entender onde você está... Pode falar de maneira mais clara?')
       return []
 
     dispatcher.utter_message('Verificando se há intercampis saindo de {} ...'.format(origem))
@@ -80,6 +69,8 @@ class ActionCallapi(Action):
       if hora_atual.hour <= int(hora_intercampi[0]):
         dispatcher.utter_message('Destino: ' + y['destino'] + '\n' + "Horário de saída: " + y['horario_saida'])
         contador_proximos_intercampis += 1
+
+    dispatcher.utter_message('O local de embarque é ' + local_embarque)
 
     if contador_proximos_intercampis == 0:
       dispatcher.utter_message('Não há mais intercampis saindo hoje :/')
