@@ -36,18 +36,18 @@ def index():
         return Response('ok',status=200)
     
     else:
-        return '<h1>HELLO</h1>'
+        return '<h1>Tino-Eps</h1>'
 
 # helper function to extract chat id and text
 def parse_msg(message):
-    chat_id = message['message']['chat']['id']
+    chat_id = message['message']['chat']['id']    
     txt = message['message']['text']
     return chat_id,txt
 
+
 # helper function to send message 
 def send_message(chat_id,messages=[]):
-    print(token)
-    print(ACTION_WEBHOOK)
+
     url = 'https://api.telegram.org/bot'+token+'/sendMessage' 
     if messages:
         for message in messages:

@@ -39,6 +39,23 @@
 - te vejo mais tarde Jacaré
 - nós falaremos em breve
 
+## intent: tudo_bem
+- tudo bem?
+- tudo bom ?
+- bem ?
+- bom?
+- bom ?
+- como vai ?
+- como voce ta ?
+- eai, como ta ?
+- tudo certo?
+- suave na nave ?
+- beleza pura ?
+- tranquilo ?
+- como esta ?
+- eae, deboa ?
+- deboa ?
+
 ## intent:greet
 - olá
 - ola
@@ -346,7 +363,6 @@
 - cansei dessa vida
 - acho que vou me matar
 - aqui to mal
-- não estou bem
 - não me sinto feliz
 - sou infeliz
 - sou titi
@@ -455,6 +471,9 @@
 - tabela [intercampi](intercampi)
 - tabela geral [intercampi](intercampi)
 - tabela de horarios
+- todos
+- todos horarios
+- todos horários
 - tabela de horarios geral
 - tabela geral [intercampi](intercampi) horarios
 - manda todos os horarios ai
@@ -578,3 +597,16 @@
  - [faculdade da Ceilandia](campus)
  - [faculdade de Planaltina](campus)
  - minha localidade atual é: [Darcy Ribeiro](campus)
+
+
+## intent:politica
+ - Bolsonaro 
+ - Haddad
+ - esquerda ou direita?
+ - esquerdista
+ - mortadela
+ - pt
+ - psol
+ - psl
+ - votou em quem?f
+ 

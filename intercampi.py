@@ -28,17 +28,24 @@ MONGO_HOSTNAME = MONGO_HOSTNAME + ':27017'
 def index():
     if(request.method == 'POST'):
         return Response('ok',status=200)
-    else:
-        collection = get_intercampi_collection()
-        
-        intercampi_dados = get_from_fga_site()      # Get data from FGA site
+    else: 
+        intercampi_dados = ""
+        try:
+            collection = get_intercampi_collection()
+        except Exception as error:
+            print(error)
+     # Get data from FGA site
+        try:
+            intercampi_dados = get_from_fga_site()
+        except Exception as error:
+            print(error)
 
        # Data must exists to insert a new in mongo
-        if(len(intercampi_dados) != 0):
-            collection.delete_many({})      # Delete old files in collection
 
+        if(intercampi_dados != ""):
+            collection.delete_many({})      # Delete old files in collection
             # Insert each element on db    
-            for element in intercampi_dados:
+            for element in intercampi_dados :
                 collection.insert_one(element)
         json = []
 

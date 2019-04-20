@@ -49,7 +49,8 @@ class ActionCallapi(Action):
         local_embarque = "em frente ao antigo Prédio"
         request = requests.get(url_planaltina).json()
         break
-
+      
+      
     if(origem == ""):
       dispatcher.utter_message('Desculpe, não consegui entender onde você está... Pode falar de maneira mais clara?')
       return []
@@ -76,3 +77,10 @@ class ActionCallapi(Action):
 
 
     return []
+
+class ActionCallapiAll(Action):
+  def name(self) -> Text:
+    return 'action_callapi_all_intercampi'
+
+  def run(self, dispatcher, tracker, domain):
+    dispatcher.utter_message('Espera um minuto, estamos providenciando')
