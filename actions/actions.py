@@ -8,7 +8,7 @@ import os
 from datetime import datetime, timezone
 import pytz
 
-url = 'https://8a0cb889.ngrok.io'  # url da porta 5002 (ngrok)
+url = 'https://77d5be53.ngrok.io'  # url da porta 5002 (ngrok)
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -29,22 +29,22 @@ class ActionCallapi(Action):
     local_embarque = ""
 
     for word in words:
-      if(word == "darcy" or word == "plano"):
+      if('darcy' in word or "plano" in word):
         origem = "Darcy Ribeiro"
         local_embarque = "no Estacionamento do ICC sul"
         request = requests.get(url_darcy).json()  # api call
         break
-      if(word == "gama" or word == "fga"):
+      if("gama" in word or "fga" in word):
         origem = "Gama-FGA"
         local_embarque = "no \"Estacionamento\" do Prédio "
         request = requests.get(url_gama).json()
         break
-      if(word == "ceilandia" or word == "ceilândia" or word == "fce"):
+      if("ceilandia" in word or "ceilândia" in word or "fce" in word):
         origem = "Ceilândia"
         local_embarque = "em frente a portaria central"
         request = requests.get(url_ceilandia).json()
         break 
-      if(word == "planaltina" or word == "fup"):
+      if("planaltina" in word or "fup" in word):
         origem = "Planaltina"
         local_embarque = "em frente ao antigo Prédio"
         request = requests.get(url_planaltina).json()
@@ -69,8 +69,7 @@ class ActionCallapi(Action):
       if hora_atual.hour <= int(hora_intercampi[0]):
         dispatcher.utter_message('Destino: ' + y['destino'] + '\n' + "Horário de saída: " + y['horario_saida'])
         contador_proximos_intercampis += 1
-
-    dispatcher.utter_message('O local de embarque é ' + local_embarque)
+        dispatcher.utter_message('O local de embarque é ' + local_embarque)
 
     if contador_proximos_intercampis == 0:
       dispatcher.utter_message('Não há mais intercampis saindo hoje :/')

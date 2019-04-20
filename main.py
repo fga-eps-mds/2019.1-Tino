@@ -18,7 +18,7 @@ print(ACTION_WEBHOOK)
 agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url=ACTION_WEBHOOK))
 
 #token = os.environ['TELEGRAM_TOKEN']
-token = '639040351:AAGy8b6pcRPLXM2aIw1hGSu9_ko244JfDSQ'
+token = '754642432:AAGY8WA31VvMx9SVedXzS8IjNzSgLjG62HI'
 # https://api.telegram.org/bot{token}/deleteWebhook
 
 app = Flask(__name__)
