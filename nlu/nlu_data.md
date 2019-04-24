@@ -608,5 +608,12 @@
  - pt
  - psol
  - psl
- - votou em quem?f
- 
+ - votou em quem?
+
+## intent:find_professor
+ - Como falo com o [Fragelli](professor)
+ - Passa o contato da [Bruna](professor)
+ - Quero falar com o [Saleh](professor)
+ - Cade o contato do [Morgado](professor)
+ - Quero o email da [Carla](professor)
+ - Queria falar com o [Filomeno](professor)

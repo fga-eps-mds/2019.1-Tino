@@ -84,3 +84,14 @@ class ActionCallapiAll(Action):
 
   def run(self, dispatcher, tracker, domain):
     dispatcher.utter_message('Espera um minuto, estamos providenciando')
+
+class ActionFindProfessor(Action):
+  def name(self) -> Text:
+    return 'action_find_professor'
+
+  def run(self, dispatcher, tracker, domain):
+    
+    tracker_state = tracker.current_state()
+    text = tracker_state['latest_message']['text']
+    text = text.lower()
+    words = text.split(' ')
