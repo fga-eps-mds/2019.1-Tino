@@ -7,8 +7,11 @@ import json
 import os
 from datetime import datetime, timezone
 import pytz
+import pymongo
+from pymongo import MongoClient
 
-url = 'https://77d5be53.ngrok.io'  # url da porta 5002 (ngrok)
+url = 'http://0.0.0.0:5002'
+
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -90,8 +93,7 @@ class ActionFindProfessor(Action):
     return 'action_find_professor'
 
   def run(self, dispatcher, tracker, domain):
-    
-    tracker_state = tracker.current_state()
-    text = tracker_state['latest_message']['text']
-    text = text.lower()
-    words = text.split(' ')
+
+    dispatcher.utter_message('Entrou na action !!')
+
+    return []
