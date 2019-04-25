@@ -17,8 +17,8 @@ ACTION_WEBHOOK = ACTION_WEBHOOK + "/webhook"
 print(ACTION_WEBHOOK)
 agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url=ACTION_WEBHOOK))
 
-#token = os.environ['TELEGRAM_TOKEN']
-token = '754642432:AAGY8WA31VvMx9SVedXzS8IjNzSgLjG62HI'
+#token = os.environ['TELEGRAM_TOKEN'
+token = '639040351:AAGy8b6pcRPLXM2aIw1hGSu9_ko244JfDSQ'
 # https://api.telegram.org/bot{token}/deleteWebhook
 
 app = Flask(__name__)
@@ -44,7 +44,6 @@ def parse_msg(message):
     txt = message['message']['text']
     return chat_id,txt
 
-
 # helper function to send message 
 def send_message(chat_id,messages=[]):
 
@@ -63,7 +62,6 @@ def applyAi(message):
         for response in responses:
             text.append(response["text"])
     return text
-
 
 if(__name__ ==  '__main__'):
     app.run(debug=True, host='0.0.0.0')

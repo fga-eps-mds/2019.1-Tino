@@ -34,7 +34,7 @@ def index():
             collection = get_intercampi_collection()
         except Exception as error:
             print(error)
-     # Get data from FGA site
+     # get data from FGA site
         try:
             intercampi_dados = get_from_fga_site()
         except Exception as error:
@@ -106,7 +106,6 @@ def get_from_darcy():
             del y['_id']                        # Delete the '_id' attribute.
             json.append(y)                      # Add the register in json list.
         
-
     return jsonify(json)
 
 @app.route("/gama") ##########-----GAMA PATH-----#############
@@ -120,7 +119,6 @@ def get_from_gama():
             del y['_id']
             json.append(y)
         
-
     return jsonify(json)
 
 @app.route("/ceilandia") ##########-----CEILÂNDIA PATH-----#############
@@ -134,7 +132,6 @@ def get_from_ceilandia():
             del y['_id']
             json.append(y)
         
-
     return jsonify(json)
 
 @app.route("/planaltina") ##########-----PLANALTINA PATH-----#############
@@ -148,7 +145,6 @@ def get_from_planaltina():
             del y['_id']
             json.append(y)
         
-
     return jsonify(json)   
 
 if(__name__ ==  '__main__'):
