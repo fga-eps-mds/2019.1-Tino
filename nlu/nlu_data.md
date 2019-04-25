@@ -611,9 +611,36 @@
  - votou em quem?
 
 ## intent:find_professor
- - Como falo com o [Fragelli](professor)
+<!---Como... -->
+ - Como falo com o [Fragelli](professor)?
+ - Como consigo o email do [Fulano Deutrano](professor)?
+ - como entro em contato com o [Luis Augusto Laranjeiras](professor)?
+ - como acho o professor [Fabricio Braz](professor)?
+ - como faço pra falar com a [Rejane Maria](professor)? 
+ - como consigo falar com o [André Luiz Peron](professor)? 
+ - como posso falar com o [Nilton Correia da Silva](professor)?
+ - como me comunico com o [Giovanni Almeida Santos](professor)?
+ - como encontro a professora [Fulana Fulanice](professor)?
+<!---Passa... -->
  - Passa o contato da [Bruna](professor)
- - Quero falar com o [Saleh](professor)
- - Cade o contato do [Morgado](professor)
- - Quero o email da [Carla](professor)
- - Queria falar com o [Filomeno](professor)
+ - Passa ai o email do [Saleh](professor)
+ - me passa ai a sala do [Luiz Augusto Fontes Laranjeira](professor)
+ - passa o do professor [Vandor Roberto](professor)
+ - passa as informações do [Daniel Monteiro Rosa](professor)
+<!---Quero... --> 
+ - Quero o contato do [Morgado](professor)
+ - Quero o email da [Carla Rocha](professor)
+ - Queria falar com o [Luis Filomeno](professor)
+ - quero entrar em contato com [Wander Cleber](professor)
+ - quero que voce me passe o contato do [Ricardo Matos Chaim](professor)
+ - quero saber em qual sala fica o [Sergio Antonio Andrade](professor)
+ - quero o [Maurício Serrano](professor)
+ - quero saber como falo com o [Renato Coral Sampaio](professor)
+<!---Preciso... -->
+ - preciso do contato do [Odair Perereira](professor)
+ - preciso saber como falo com o [Adson Ferreira da Rocha](professor)
+ - preciso que voce me passe o contato da [Carla Tatiana](professor)
+ - preciso falar com o [Artur Elias](professor)
+ - preciso achar o [Diogo Caetano](professor)
+ - preciso saber a sala da [Cristiane Soares Ramos](professor)
+
