@@ -9,7 +9,7 @@ services:
         - 5055:5055
       volumes:
       - .:/2019.1-Tino    
-      command: sh -c "pip install python-dotenv && python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python -m rasa_core_sdk.endpoint --actions actions"
+      command: sh -c "python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python -m rasa_core_sdk.endpoint --actions actions"
   telegram:
     image: telegram-jp:latest
     environment:
@@ -20,7 +20,7 @@ services:
       - 5000:5000
     volumes:
       - .:/2019.1-Tino
-    command: sh -c "pip install python-dotenv && python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python main.py"
+    command: sh -c "python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python main.py"
   intercampi:
     image: jp-intercampi:latest
     environment:      
@@ -30,7 +30,7 @@ services:
       - 5002:5002
     volumes:
       - .:/2019.1-Tino
-    command: sh -c "pip install python-dotenv && pip install lxml && pip install html5lib && pip install BeautifulSoup4 && pip install pandas && export FLASK_APP=intercampi.py && export FLASK_DEBUG=1 && flask run --host 0.0.0.0 --port 5002"
+    command: sh -c "export FLASK_APP=intercampi.py && export FLASK_DEBUG=1 && flask run --host 0.0.0.0 --port 5002"
   mongo:
     image: mongo
     ports:
