@@ -38,6 +38,10 @@
 * intercampi_all
  - action_callapi_all_intercampi
 
+## story_find_professor
+* find_professor
+ - action_find_professor
+
 ## story_intercampi_next
 * intercampi_next
  - utter_where_next
@@ -70,7 +74,7 @@
 
 ## story_im_bad
 * im_bad
- - utter_im_bad  
+ - utter_im_bad  s
 
 ## story_call_lino
 * call_lino
