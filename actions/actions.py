@@ -98,6 +98,8 @@ class ActionFindProfessor(Action):
     text = tracker_state['latest_message']['text']
     text = text.lower()
     words = text.split(' ')
+    #Acessando o slot professor.
+    professor = tracker.current_slot_values()['professor']
     
 
     dispatcher.utter_message('Entrou na action !!')
