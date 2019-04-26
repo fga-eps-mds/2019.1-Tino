@@ -38,6 +38,14 @@
 - Eu estou fora
 - te vejo mais tarde Jacaré
 - nós falaremos em breve
+- Vou nessa
+- estou de saída
+- obrigado, tchau!
+- falo com você depois
+- Nos vemos por aí
+- saindo aqui
+- falou
+- flw
 
 ## intent: tudo_bem
 - tudo bem?
@@ -158,6 +166,11 @@
 - incrível, obrigado
 - legal, obrigado
 - legal obrigado
+- Agradeço
+- Agradecido
+- Agradecida
+- Grato
+- Grata
 
 ## intent:random
 - fora temer
@@ -206,12 +219,27 @@
 - Onde tu mora?
 - Mora por aqui?
 - Onde é que tu mora?
+- De onde você é?
+- Onde você vive?
+- De onde fala? 
+- Onde vive?
 
 ## intent:about_pet
 - Qual é o seu animal favorito?
 - Qual seu bichinho favorito?
 - Qual teu animal favorito?
 - Qual dos animais é o seu favorito?
+- Qual seu animal preferido?
+- Qual é seu animal preferido?
+- Qual animal vc acha mais legal?
+- Qual o seu pet favorito?
+- Qual é o melhor pet?
+- Qual é o melhor animal?
+- Animal favorito
+- Me fala seu animal favorito
+- Me fala seu pet favorito
+- Fala do melhor pet
+- Fala do melhor animal
 
 ## intent:about_series
 - Gosta de assistir série?
@@ -219,6 +247,12 @@
 - Tu gosta de assistir série?
 - Tu gosta de ver série?
 - Você curte série?
+- Gosta de séries?
+- Curte séries?
+- Maratona séries?
+- Fala de série
+- séries
+- series
 
 ## intent:about_collor
 - Qual sua cor favorita?
@@ -264,16 +298,12 @@
 ## intent:offense
 - alma sebosa
 - ordinario
-- capa
 - escroto
 - cuzao
-- rauly
 - fela da puta
 - fela
 - pqp
 - puta que pariu
-- viado
-- bixa
 - otario
 - canalha
 - desgraçado
@@ -297,7 +327,6 @@
 - seu merda
 - lixo
 - escroto
-- burro
 - merda
 - jumento
 - pnc
@@ -329,11 +358,9 @@
 - lacaio
 - froxo
 - covarde
-- tratante 
 - buceta
 - traste
 - embuste
-- ranço
 - burro pra caralho
 
 ## intent:im_bad
@@ -396,12 +423,39 @@
 - documentos unb
 - documentos fga
 - retirar documentos
+- matricula
+- calendário de matrícula
+- calendário
+- calendário escolar
+- período de matrícula
+- período de pré-matricula
+- calendário de matrícula
 - ru agora
 - manda o ru 
 - almoco
 - almoço
 - café
 - cafe
+- matricula
+- matrícula
+- A matricula
+- A matrícula
+- período de matrícula
+- período de matrículas
+- O período de matrículas
+- Até quando vai o período de matrículas
+- Até quando vai o período de matrícula
+- Gostaria de saber sobre o período de matrícula
+- quero o calendário de matrículas
+- Quando começa o período de matrícula
+- Você sabe quando começa o período de matrícula?
+- Quando começa as matrículas
+- Quando vai rolar as matrículas
+- Manda o calendário aí
+- calendar
+- calendario
+- calendario de matrícula
+- Tem como você me mandar o calendario?
 
 ## intent:intercampi_next
 - quais os próximos [intercampi](intercampi)?
@@ -608,5 +662,7 @@
  - pt
  - psol
  - psl
- - votou em quem?f
+ - votou em quem?
+ - me fala sobre política
+ - Vamos falar sobre política
  

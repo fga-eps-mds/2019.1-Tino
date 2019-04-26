@@ -15,7 +15,7 @@ interpreter = RasaNLUInterpreter('./models/current/nlu')
 ACTION_WEBHOOK = os.environ['ACTION_WEBHOOK']
 ACTION_WEBHOOK = ACTION_WEBHOOK + "/webhook"
 print(ACTION_WEBHOOK)
-agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url=ACTION_WEBHOOK))
+agent = Agent.load('./models/current/dialogue', interpreter=interpreter, action_endpoint = EndpointConfig(url = ACTION_WEBHOOK))
 
 #token = os.environ['TELEGRAM_TOKEN']
 token = '754642432:AAGY8WA31VvMx9SVedXzS8IjNzSgLjG62HI'
@@ -29,11 +29,11 @@ def index():
     if(request.method == 'POST'):
         msg = request.get_json()
         print('mensagem:', msg)
-        chat_id , message = parse_msg(msg) #message é a mensagem do usuario, chat_id do user
+        chat_id, message = parse_msg(msg)  # message é a mensagem do usuario, chat_id do user
         print('message: {}'.format (message))
         response_messages = applyAi(message)
-        send_message(chat_id,response_messages)
-        return Response('ok',status=200)
+        send_message(chat_id, response_messages)
+        return Response('ok', status=200)
     
     else:
         return '<h1>Tino-Eps</h1>'
@@ -48,11 +48,11 @@ def parse_msg(message):
 # helper function to send message 
 def send_message(chat_id,messages=[]):
 
-    url = 'https://api.telegram.org/bot'+token+'/sendMessage' 
+    url = 'https://api.telegram.org/bot' + token + '/sendMessage' 
     if messages:
         for message in messages:
-            payload = {'chat_id' : chat_id,'text' : message}
-            requests.post(url,json=payload)
+            payload = {'chat_id': chat_id, 'text': message}
+            requests.post(url, json=payload)
     return True
 
 # get response using rasa
