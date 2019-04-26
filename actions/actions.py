@@ -8,7 +8,7 @@ import os
 from datetime import datetime, timezone
 import pytz
 
-url = 'https://77d5be53.ngrok.io'  # url da porta 5002 (ngrok)
+url = 'https://571cb042.ngrok.io'  # url da porta 5002 (ngrok)
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -36,7 +36,7 @@ class ActionCallapi(Action):
         break
       if("gama" in word or "fga" in word):
         origem = "Gama-FGA"
-        local_embarque = "no \"Estacionamento\" do Prédio "
+        local_embarque = "no Estacionamento do Prédio "
         request = requests.get(url_gama).json()
         break
       if("ceilandia" in word or "ceilândia" in word or "fce" in word):
@@ -55,7 +55,7 @@ class ActionCallapi(Action):
       dispatcher.utter_message('Desculpe, não consegui entender onde você está... Pode falar de maneira mais clara?')
       return []
 
-    dispatcher.utter_message('Verificando se há intercampis saindo de {} ...'.format(origem))
+    dispatcher.utter_message('Verificando se há intercampis saindo de {}...'.format(origem))
 
     json = request
    
@@ -70,7 +70,7 @@ class ActionCallapi(Action):
       if hora_atual.hour <= int(hora_intercampi[0]):
         dispatcher.utter_message('Destino: ' + y['destino'] + '\n' + "Horário de saída: " + y['horario_saida'])
         contador_proximos_intercampis += 1
-        dispatcher.utter_message('O local de embarque é ' + local_embarque)
+        dispatcher.utter_message('O local de embarque é ' + local_embarque + '. Se tiver mais alguma pergunta, é so mandar!')
 
     if contador_proximos_intercampis == 0:
       dispatcher.utter_message('Não há mais intercampis saindo hoje :/')
