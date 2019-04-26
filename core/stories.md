@@ -26,9 +26,17 @@
 * about_location
  - utter_about_location
 
+## story_tudo_bem
+* tudo_bem
+ - utter_tudo_bem
+
 ## story_intercampi_info
 * intercampi_info
  - utter_intercampi_info
+
+## story_intercampi_all
+* intercampi_all
+ - action_callapi_all_intercampi
 
 ## story_intercampi_next
 * intercampi_next

@@ -22,12 +22,15 @@ intents:
 - intercampi_next
 - affirm_where
 - politica
+- tudo_bem
+- intercampi_all
 
 actions:
 - utter_thanks
 - utter_greet
 - utter_goodbye
 - action_callapi
+- action_callapi_all_intercampi
 - utter_out_of_scope
 - utter_about_name
 - utter_about_age
@@ -43,7 +46,7 @@ actions:
 - utter_intercampi_info
 - utter_where_next
 - utter_politica
-
+- utter_tudo_bem
 
 
 entities:
@@ -54,9 +57,14 @@ slots:
   campus:
     type: unfeaturized  
 
-
 templates:
-  
+
+  utter_tudo_bem:
+    - text: "Opa, tudo ótimo! obrigado por perguntar."
+    - text: "Tudo certo, obrigado!"
+    - text: "Bem demais, eu não tenho sentimentos, o que você precisa ?"
+    - text: "Ta querendo alguma coisa né, manda logo o que você quer"
+
   utter_greet:
   - text: "Fala ai, beleza ? Sou o Tino e estou aqui para te ajudar!" 
   - text: "Opa Eai! Sou o Tino e estou ansioso para te ajudar no que precisar" 
@@ -71,7 +79,6 @@ templates:
   - text: "Xau"
   - text: "Adeus"
   
-
   utter_out_of_scope:
   - text: "Não consegui entender nada do que voce falou, ta falando portugues ?"
   - text: "Hmmm, não vou saber te responder isso agora...Tente mais tarde"
@@ -79,8 +86,11 @@ templates:
   - text: "Desculpe, não consegui entender"
   
   utter_thanks:
-  - text: "Obrigado!"
-  - text: "Vlw"
+  - text: "Por nada!"
+  - text: "Estou ai pra isso!"
+  - text: "Estamos ai!"
+  - text: "Não há de que!"
+  - text: "De nada!"
 
   utter_about_name:
   - text: "Me chamo Tino"
@@ -118,12 +128,15 @@ templates:
   utter_intercampi_info:
   - text: "Certo, você quer saber sobre o intercampi...Mais especificamente, você quer saber de todos ou dos proximos partindo de onde esta?"
   - text: "Com certeza poderei te ajudar, mas antes so me ajuda um pouco...Você quer visualizar os proximos a sair ou quer uma lista de todos ?"
+  
   utter_about_collor:
   - text: "Pretinho básico"
 
   utter_about_hobby:
   - text: "Prestar serviço"
   - text: "Ajudar"
+
+
   utter_about_music:
   - text: "Darude-Sandstorm dududududududu"
 
