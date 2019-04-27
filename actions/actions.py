@@ -11,11 +11,8 @@ import pymongo
 from pymongo import MongoClient
 
 
-<<<<<<< HEAD
-url = 'https://09255887.ngrok.io'  # url da porta 5002 (ngrok)
-=======
-url = 'https://e5a4390d.ngrok.io'  # url da porta 5002 (ngrok)
->>>>>>> 619fc2004f3ef61933a2ea66c9577923bae2e072
+url = 'https://24232ae4.ngrok.io'# url da porta 5002 (ngrok)
+mongo_host = 'e4b07ec50c05:27017'
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -98,19 +95,30 @@ class ActionFindProfessor(Action):
 
   def run(self, dispatcher, tracker, domain):
     
-    tracker_state = tracker.current_state()
-    text = tracker_state['latest_message']['text']
-    text = text.lower()
-    words = text.split(' ')
-<<<<<<< HEAD
-
-    
-=======
     #Acessando o slot professor.
+    professor = ""
     professor = tracker.current_slot_values()['professor']
->>>>>>> 619fc2004f3ef61933a2ea66c9577923bae2e072
-    
+    #Conectando com a collection no banco:
+    client = MongoClient(mongo_host, username='rasa',password='rasa')          
+    db = client.admin
+    collection = db['professor-contato']
+    name = ""
+    room = ""
+    email = ""
+    #Vendo se ha algum registro do professor informado
+    for y in collection.find():
+      if (professor in y['name']):
+        name = y['name']
+        room = y['room']
+        email = y['email']
+        break
+    if(name == ""):
+      dispatcher.utter_message('Não foi possivel encontrar este professor')
+      return []
 
-    dispatcher.utter_message('Entrou na action !!')
+    dispatcher.utter_message('Professor da entity : {}'.format(professor))  
+    dispatcher.utter_message('Professor : {}'.format(name))
+    dispatcher.utter_message('Sala : {}'.format(room))
+    dispatcher.utter_message('E-mail : {}'.format(email))
 
     return []
