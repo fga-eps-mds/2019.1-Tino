@@ -57,9 +57,8 @@ entities:
 - professor
 
 slots:
-
   professor:
-    type: unfeaturized
+    type: unfeaturized  
   campus:
     type: unfeaturized  
 

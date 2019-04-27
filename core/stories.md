@@ -74,7 +74,7 @@
 
 ## story_im_bad
 * im_bad
- - utter_im_bad  s
+ - utter_im_bad
 
 ## story_call_lino
 * call_lino

@@ -11,7 +11,7 @@ import pymongo
 from pymongo import MongoClient
 
 
-url = 'https://09255887.ngrok.io'  # url da porta 5002 (ngrok)
+url = 'https://e5a4390d.ngrok.io'  # url da porta 5002 (ngrok)
 
 class ActionCallapi(Action):
   def name(self) -> Text:
