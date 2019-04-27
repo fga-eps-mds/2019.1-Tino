@@ -38,16 +38,6 @@
 * intercampi_all
  - action_callapi_all_intercampi
 
-## story_find_professor
-* find_professor
- - action_find_professor
-
-## story_intercampi_next
-* intercampi_next
- - utter_where_next
-* affirm_where
- - action_callapi
-
 ## story_about_pet
 * about_pet
  - utter_about_pet
@@ -83,3 +73,13 @@
 ## story_politica
 * politica
  - utter_politica
+
+## story_find_professor
+* find_professor
+ - action_find_professor
+
+## story_intercampi_next
+* intercampi_next
+ - utter_where_next
+* affirm_where
+ - action_callapi

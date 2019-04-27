@@ -10,12 +10,8 @@ import pytz
 import pymongo
 from pymongo import MongoClient
 
-url = 'http://0.0.0.0:5002'
 
-<<<<<<< HEAD
 url = 'https://09255887.ngrok.io'  # url da porta 5002 (ngrok)
-=======
->>>>>>> 6851cf1b9a55e9d514ea8187d075dd70e8a1a35c
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -97,16 +93,15 @@ class ActionFindProfessor(Action):
     return 'action_find_professor'
 
   def run(self, dispatcher, tracker, domain):
-<<<<<<< HEAD
     
     tracker_state = tracker.current_state()
     text = tracker_state['latest_message']['text']
     text = text.lower()
     words = text.split(' ')
+
     
-=======
+    
 
     dispatcher.utter_message('Entrou na action !!')
 
     return []
->>>>>>> 6851cf1b9a55e9d514ea8187d075dd70e8a1a35c
