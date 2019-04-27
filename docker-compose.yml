@@ -9,7 +9,7 @@ services:
         - 5055:5055
       volumes:
       - .:/2019.1-Tino    
-      command: sh -c "python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python -m rasa_core_sdk.endpoint --actions actions"
+      command: sh -c "python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue  && python -m rasa_core_sdk.endpoint --actions actions"
   telegram:
     image: telegram-jp:latest
     environment:
@@ -22,7 +22,7 @@ services:
       - .:/2019.1-Tino
     command: sh -c "python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python main.py"
   intercampi:
-    image: jp-intercampi:latest
+    image: intercampi-jp:latest
     environment:      
       INTERCAMPI_WEBHOOK: ${INTERCAMPI_WEBHOOK}
       ACTION_WEBHOOK: ${ACTION_WEBHOOK}
@@ -30,7 +30,19 @@ services:
       - 5002:5002
     volumes:
       - .:/2019.1-Tino
-    command: sh -c "export FLASK_APP=intercampi.py && export FLASK_DEBUG=1 && flask run --host 0.0.0.0 --port 5002"
+    command: sh -c "export FLASK_APP=./microservices/intercampi.py && export FLASK_DEBUG=1 && flask run --host 0.0.0.0 --port 5002"
+  send-pdf:
+    image: jp-send-pdf:latest
+    environment:      
+      INTERCAMPI_WEBHOOK: ${SENDPDF-WEBHOOK}
+      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
+      ACTION_WEBHOOK: ${ACTION_WEBHOOK}
+    ports:
+      - 5003:5003
+    volumes:
+      - .:/2019.1-Tino
+    command: sh -c "pip install telegram && pip install python-telegram-bot && export FLASK_APP=./microservices/send-pdf.py && export FLASK_DEBUG=1 && flask run --host 0.0.0.0 --port 5003"
+
   mongo:
     image: mongo
     ports:

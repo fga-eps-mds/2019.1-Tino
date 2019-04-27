@@ -14,10 +14,10 @@ class ActionCallapi(Action):
     return 'action_callapi'
 
   def run(self, dispatcher, tracker, domain):	
-    # url = os.environ['INTERCAMPI_WEBHOOK']
-    # url = str(url) #casting url    
-    # request = requests.get(url).json() #make an api call
-    # json = request[0]
+    url = os.environ['SENDPDF_WEBHOOK']
+    url = str(url) #casting url    
+    request = requests.get(url).json() #make an api call
+    json = request[0]
     # dispatcher.utter_message('O proximo intercampi vai sair de {} para: {}, com saida no horario: {}'.format(json[0][1], json[0][2], json[0][0])) #send the message back to the user
     dispatcher.utter_message('O proximo intercampi vai para: Darcy ribeiro')
     return []
