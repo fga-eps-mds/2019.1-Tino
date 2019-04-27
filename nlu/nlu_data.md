@@ -2,16 +2,30 @@
 
 ## intent:out_of_scope
 - aleatorio
-- filha da mae
-- filha da puta
 - suave na nave?
 - tem prova amanha ?
 - prova
 - nao sei
-- o que voce faz ?
+- ovni
+- leopardo
+- carteira
+- pneu
+- controle
+- tomada
+- tomate
+- marte
+- me empresta uma calculadora ?
+- me empresta uma caneta ?
+- tomada
+- chave
+- qual a sua velocidade ?
+- sorvete
+- picolé
+- me conte uma piada 
+- me conte outra piada
+- me conte mais uma piada
 - calcula ai pra mim
 - to sem ideia
-- conta uma piada
 - o que temos pro cafe?
 - e hoje?
 - vamos ?
@@ -34,25 +48,31 @@
 - tenho que ir
 - Até logo
 - boa noite
+- bom dia
+- boa tarde
+- xau
+- falou
+- falow
+- flw
+- até mais
+- falou mano
+- vou indo nessa
+- fui
 - tenha um bom dia
 - Eu estou fora
-- te vejo mais tarde Jacaré
 - nós falaremos em breve
-- Vou nessa
-- estou de saída
-- obrigado, tchau!
-- falo com você depois
-- Nos vemos por aí
-- saindo aqui
-- falou
-- flw
 
 ## intent: tudo_bem
 - tudo bem?
 - tudo bom ?
 - bem ?
 - bom?
-- bom ?
+- beleza ?
+- blza ?
+- blz ?
+- deboassa ?
+- suave ? 
+- trunks ?
 - como vai ?
 - como voce ta ?
 - eai, como ta ?
@@ -70,6 +90,7 @@
 - oi
 - eai
 - eae
+- iae
 - boa tarde
 - bom dia
 - e ai
@@ -80,7 +101,6 @@
 - oie
 - salve
 - qual foi
-- koe
 - fala tu 
 - piei
 - ou
@@ -101,11 +121,7 @@
 - como vai
 - fala meu consagrado
 - fala meu compatriota
-- hello
-- hello bitch
-- hi
 - boa noite
-- buenos dias
 - eaiii
 - eaaii
 - eaeee
@@ -123,7 +139,7 @@
 - ei
 - epa
 - olá é alguém ai
-- eu lhe saldo
+- eu lhe saúdo
 - cheguei
 - cheguei chegando
 - fala ae
@@ -152,12 +168,19 @@
 
 ## intent:thanks
 - Obrigado
-- Obrigado
 - Muito obrigado
 - bot obrigado
 - Obrigado por isso
 - Felicidades
-- gritos mano
+- Obrigado amigo!
+- Muito obrigado amigo!
+- Obrigado mesmo amigo!
+- Valeu amigo
+- vlw amigo
+- Nois, obrigado amigo!
+- Brigadão amigo!
+- Valeu!
+- vlw!
 - ok obrigado!
 - perfeito obrigado
 - muito obrigado por tudo
@@ -166,18 +189,30 @@
 - incrível, obrigado
 - legal, obrigado
 - legal obrigado
-- Agradeço
-- Agradecido
-- Agradecida
-- Grato
-- Grata
 
 ## intent:random
-- fora temer
-- bolsonaro
 - você parece o lino
 - o dia está lindo hoje
-- palmeiras não tem mundial
+- eu um ovni
+- você acredita em ovni?
+- o dia está chuvoso
+- você assisti televisão?
+- naruto
+- dragon ball
+- você joga poker?
+- caneta
+- borracha
+- corrida
+- televisão
+- controle remoto
+- parede
+- guarda roupa
+- medalha 
+- olimpiada
+- como deriva ?
+- como acho o limite de uma equação ?
+- como faço uma integral ?
+- quanto você tirou na prova ?
 - vai chover
 - nunca nem vi
 - kkkk
@@ -195,17 +230,7 @@
 - Me fala seu nome
 - Seu nome
 - qual seu nome
-- Seu nome
 - Fala seu nome fera
-- Qual é teu nome
-- Quem é tu
-- Qual seu nome mesmo
-- Me diz teu nome
-- Me diga seu nome
-- Me fala qual é o seu nome
-- Como é o seu nome
-- Como é teu nome
-- Qual teu nome
 
 ## intent:about_age
 - Qual é sua idade?
@@ -221,11 +246,6 @@
 - Quantos anos?
 - idade
 - Idade
-- Qual sua idade
-- Qual é tua idade 
-- Pode me dizer quantos anos você tem?
-- Me diz sua idade
-- Qual tua idade
 
 ## intent:about_location
 - Onde você mora?
@@ -233,32 +253,18 @@
 - Onde tu mora?
 - Mora por aqui?
 - Onde é que tu mora?
+- Tu mora onde?
 - De onde você é?
-- Onde você vive?
-- De onde fala? 
-- Onde vive?
-- Onde tu mora mesmo?
-- Tu mora aonde?
-- Tu mora aonde mesmo?
-- Onde é que você mora?
-- E tu mora aonde?
+- Você mora onde?
+- Tino, onde que você mora?
 
 ## intent:about_pet
 - Qual é o seu animal favorito?
 - Qual seu bichinho favorito?
 - Qual teu animal favorito?
 - Qual dos animais é o seu favorito?
-- Qual seu animal preferido?
-- Qual é seu animal preferido?
-- Qual animal vc acha mais legal?
-- Qual o seu pet favorito?
-- Qual é o melhor pet?
-- Qual é o melhor animal?
-- Animal favorito
-- Me fala seu animal favorito
-- Me fala seu pet favorito
-- Fala do melhor pet
-- Fala do melhor animal
+- Você tem um pet?
+- Qual o nome do seu pet?
 
 ## intent:about_series
 - Gosta de assistir série?
@@ -266,16 +272,8 @@
 - Tu gosta de assistir série?
 - Tu gosta de ver série?
 - Você curte série?
-- Gosta de séries?
-- Curte séries?
-- Maratona séries?
-- Fala de série
-- séries
-- series
-- Gosta de série?
-- Assiste alguma série?
-- Viu alguma série?
-- E série?
+- Qual a sua série favorita?
+- Você prefere séries ou filmes?
 
 ## intent:about_collor
 - Qual sua cor favorita?
@@ -303,12 +301,6 @@
 - me fala do seu hobby
 - Qual seu hobby? 
 - Fala do seu hobby
-- Qual teu hobby?
-- Tem um hobby?
-- Me fala teu hobby
-- Me diz seu hobby
-- Qual teu hobby mesmo?
-- E seu hobby, qual é?
 
 ## intent:about_music
 - Qual é sua música favorita?
@@ -323,19 +315,21 @@
 - qual sua musica ?
 - fala da sua musica favorita
 - qual sua musica favorita?
-- Tem uma música favorita?
-- Qual tua música favorita
-- Vamos falar da sua música favorita
+- qual a melhor musica da sua playlist ?
 
 ## intent:offense
 - alma sebosa
 - ordinario
+- capa
 - escroto
 - cuzao
+- rauly
 - fela da puta
 - fela
 - pqp
 - puta que pariu
+- viado
+- bixa
 - otario
 - canalha
 - desgraçado
@@ -359,6 +353,7 @@
 - seu merda
 - lixo
 - escroto
+- burro
 - merda
 - jumento
 - pnc
@@ -390,9 +385,11 @@
 - lacaio
 - froxo
 - covarde
+- tratante 
 - buceta
 - traste
 - embuste
+- ranço
 - burro pra caralho
 
 ## intent:im_bad
@@ -455,39 +452,12 @@
 - documentos unb
 - documentos fga
 - retirar documentos
-- matricula
-- calendário de matrícula
-- calendário
-- calendário escolar
-- período de matrícula
-- período de pré-matricula
-- calendário de matrícula
 - ru agora
 - manda o ru 
 - almoco
 - almoço
 - café
 - cafe
-- matricula
-- matrícula
-- A matricula
-- A matrícula
-- período de matrícula
-- período de matrículas
-- O período de matrículas
-- Até quando vai o período de matrículas
-- Até quando vai o período de matrícula
-- Gostaria de saber sobre o período de matrícula
-- quero o calendário de matrículas
-- Quando começa o período de matrícula
-- Você sabe quando começa o período de matrícula?
-- Quando começa as matrículas
-- Quando vai rolar as matrículas
-- Manda o calendário aí
-- calendar
-- calendario
-- calendario de matrícula
-- Tem como você me mandar o calendario?
 
 ## intent:intercampi_next
 - quais os próximos [intercampi](intercampi)?
@@ -695,15 +665,37 @@
  - psol
  - psl
  - votou em quem?
- - me fala sobre política
- - Vamos falar sobre política
- - coxinha
- - psdb
- - lula
- - lula livre
- - corrupção
- - flávio bolsonaro
- - política
- - gosta de política?
- - Vamos falar de política
- - E política
+
+## intent:find_professor
+<!---Como... -->
+ - Como falo com o [Fragelli](professor)?
+ - Como consigo o email do [Fulano Deutrano](professor)?
+ - como entro em contato com o [Luis Augusto Laranjeiras](professor)?
+ - como acho o professor [Fabricio Braz](professor)?
+ - como faço pra falar com a [Rejane Maria](professor)? 
+ - como consigo falar com o [André Luiz Peron](professor)? 
+ - como posso falar com o [Nilton Correia da Silva](professor)?
+ - como me comunico com o [Giovanni Almeida Santos](professor)?
+ - como encontro a professora [Fulana Fulanice](professor)?
+<!---Passa... -->
+ - Passa o contato da [Bruna](professor)
+ - Passa ai o email do [Saleh](professor)
+ - me passa ai a sala do [Luiz Augusto Fontes Laranjeira](professor)
+ - passa o do professor [Vandor Roberto](professor)
+ - passa as informações do [Daniel Monteiro Rosa](professor)
+<!---Quero... --> 
+ - Quero o contato do [Morgado](professor)
+ - Quero o email da [Carla Rocha](professor)
+ - Queria falar com o [Luis Filomeno](professor)
+ - quero entrar em contato com [Wander Cleber](professor)
+ - quero que voce me passe o contato do [Ricardo Matos Chaim](professor)
+ - quero saber em qual sala fica o [Sergio Antonio Andrade](professor)
+ - quero o [Maurício Serrano](professor)
+ - quero saber como falo com o [Renato Coral Sampaio](professor)
+<!---Preciso... -->
+ - preciso do contato do [Odair Perereira](professor)
+ - preciso saber como falo com o [Adson Ferreira da Rocha](professor)
+ - preciso que voce me passe o contato da [Carla Tatiana](professor)
+ - preciso falar com o [Artur Elias](professor)
+ - preciso achar o [Diogo Caetano](professor)
+ - preciso saber a sala da [Cristiane Soares Ramos](professor)
