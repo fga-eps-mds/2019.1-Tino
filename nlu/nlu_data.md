@@ -197,6 +197,15 @@
 - qual seu nome
 - Seu nome
 - Fala seu nome fera
+- Qual é teu nome
+- Quem é tu
+- Qual seu nome mesmo
+- Me diz teu nome
+- Me diga seu nome
+- Me fala qual é o seu nome
+- Como é o seu nome
+- Como é teu nome
+- Qual teu nome
 
 ## intent:about_age
 - Qual é sua idade?
@@ -212,6 +221,11 @@
 - Quantos anos?
 - idade
 - Idade
+- Qual sua idade
+- Qual é tua idade 
+- Pode me dizer quantos anos você tem?
+- Me diz sua idade
+- Qual tua idade
 
 ## intent:about_location
 - Onde você mora?
@@ -223,6 +237,11 @@
 - Onde você vive?
 - De onde fala? 
 - Onde vive?
+- Onde tu mora mesmo?
+- Tu mora aonde?
+- Tu mora aonde mesmo?
+- Onde é que você mora?
+- E tu mora aonde?
 
 ## intent:about_pet
 - Qual é o seu animal favorito?
@@ -253,6 +272,10 @@
 - Fala de série
 - séries
 - series
+- Gosta de série?
+- Assiste alguma série?
+- Viu alguma série?
+- E série?
 
 ## intent:about_collor
 - Qual sua cor favorita?
@@ -280,6 +303,12 @@
 - me fala do seu hobby
 - Qual seu hobby? 
 - Fala do seu hobby
+- Qual teu hobby?
+- Tem um hobby?
+- Me fala teu hobby
+- Me diz seu hobby
+- Qual teu hobby mesmo?
+- E seu hobby, qual é?
 
 ## intent:about_music
 - Qual é sua música favorita?
@@ -294,6 +323,9 @@
 - qual sua musica ?
 - fala da sua musica favorita
 - qual sua musica favorita?
+- Tem uma música favorita?
+- Qual tua música favorita
+- Vamos falar da sua música favorita
 
 ## intent:offense
 - alma sebosa
@@ -665,4 +697,13 @@
  - votou em quem?
  - me fala sobre política
  - Vamos falar sobre política
- 
+ - coxinha
+ - psdb
+ - lula
+ - lula livre
+ - corrupção
+ - flávio bolsonaro
+ - política
+ - gosta de política?
+ - Vamos falar de política
+ - E política
