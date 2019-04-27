@@ -11,7 +11,11 @@ import pymongo
 from pymongo import MongoClient
 
 
+<<<<<<< HEAD
 url = 'https://09255887.ngrok.io'  # url da porta 5002 (ngrok)
+=======
+url = 'https://e5a4390d.ngrok.io'  # url da porta 5002 (ngrok)
+>>>>>>> 619fc2004f3ef61933a2ea66c9577923bae2e072
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -98,8 +102,13 @@ class ActionFindProfessor(Action):
     text = tracker_state['latest_message']['text']
     text = text.lower()
     words = text.split(' ')
+<<<<<<< HEAD
 
     
+=======
+    #Acessando o slot professor.
+    professor = tracker.current_slot_values()['professor']
+>>>>>>> 619fc2004f3ef61933a2ea66c9577923bae2e072
     
 
     dispatcher.utter_message('Entrou na action !!')
