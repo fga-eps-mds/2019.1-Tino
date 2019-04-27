@@ -86,6 +86,9 @@ templates:
   - text: "Não consegui entender o que você falou, pode explicar melhor?"
   - text: "Está falando em português? Não entendi muito bem"
   - text: "Desculpe, não consegui entender..."
+  - text: "Não entendi, poderia explicar novamente?"
+  - text: "Desculpa, não estou entendendo o que você está dizendo"
+  - text: "Como assim? Não estou entendendo"
   
   utter_thanks:
   - text: "Por nada!"
@@ -98,10 +101,17 @@ templates:
   - text: "Me chamo Tino"
   - text: "Meu nome é Tino"
   - text: "Meu nome é Tino, um belo nome, não?!"
+  - text: "Opa, meu nome é Tino"
+  - text: "Sou o famoso Tino"
+  - text: "Bot Tino, ao seu dispor"
+  - text: "Aqui é o bot Tino"
+
 
   utter_about_age:
   - text: "Eu nasci há 10 mil anos atrás"
   - text: "Tenho 10 mil anos de idade, sabe qual é a música, né?!"
+  - text: "Que indelicado perguntar a idade dos outros"
+  - text: "10 mil anos, estou na flor da idade"
   
   utter_offense:
   - text: "Que feio! Deveria ter mais educação"
@@ -112,6 +122,8 @@ templates:
   utter_im_bad:
   - text: "Que pena amigo, desejo melhoras para você!"
   - text: "Não desanime e siga em frente"
+  - text: "Que isso, bola pra frente, vai dar tudo certo!"
+  - text: "Não desista, você consegue o que quiser!"
   
   utter_call_lino:
   - text: "Isso aí já é com meu primo, o Lino. Para encontra-lo no Telegram pesquise por: @lino_o_bot ou apenas Lino para o Facebook"
@@ -138,11 +150,12 @@ templates:
   utter_about_collor:
   - text: "Pretinho básico"
   - text: "A cor da elegância: o preto"
+  - text: "Preto né... combina com tudo"
+  - text: "Adoro preto, minha cor favorita"
 
   utter_about_hobby:
   - text: "Prestar serviço"
   - text: "Ajudar"
-
 
   utter_about_music:
   - text: "Darude-Sandstorm dududududududu"
