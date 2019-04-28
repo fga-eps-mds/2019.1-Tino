@@ -39,6 +39,23 @@
 - te vejo mais tarde Jacaré
 - nós falaremos em breve
 
+## intent: tudo_bem
+- tudo bem?
+- tudo bom ?
+- bem ?
+- bom?
+- bom ?
+- como vai ?
+- como voce ta ?
+- eai, como ta ?
+- tudo certo?
+- suave na nave ?
+- beleza pura ?
+- tranquilo ?
+- como esta ?
+- eae, deboa ?
+- deboa ?
+
 ## intent:greet
 - olá
 - ola
@@ -142,60 +159,6 @@
 - legal, obrigado
 - legal obrigado
 
-## intent:callapi
-- chame sua ação
-- mostre-me a ação personalizada
-- ligue para sua API
-- mostre seu serviço
-- mostre sua ação
-- chame sua ação personalizada
-- açao
-- personalizadas
-- intercampi
-- horários intercampi
-- horários de saídas do intercampi
-- tabela horários intercampi
-- me fale sobre o intercampi
-- me diga os horários do intercampi
-- me informe sobre o intercampi
-- me passa os horários do intercampi
-- qual a agenda do intercampi?
-- qual a programação do intercampi?
-- hoje tem intercampi?
-- qual o próximo intercampi?
-- intercampi para o Darcy
-- intercampi para o Darcy Ribeiro
-- qual o horário do intercampi para o Darcy?
-- qual o horário do intercampi para o Darcy Ribeiro?
-- intercampi para a FCE
-- intercampi para o campus da Ceilândia
-- qual o próximo intercampi para a Ceilândia?
-- qual o próximo intercampi para a FCE?
-- qual o horário do intercampi para a FCE?
-- intercampi para Planaltina
-- intercampi para o campus de Planaltina
-- qual o próximo intercampi para Planaltina?
-- qual o horário do intercampi para Planaltina?
-- intercampi para o Darcy Ribeiro
-- tá sabendo do intercampi?
-- e o intercampi?
-- intercampi?
-- tem intercampi?
-- você sabe o horário do intercampi?
-- informações do intercampi
-- me passa a tabela do intercampi?
-- me manda os horários do intercampi?
-- me ajuda a pegar intercampi?
-- preciso de um intercampi
-- preciso de um intercampi agora
-- quero saber os horários do intercampi
-- quero a agenda do intercampi
-- agenda intercampi
-- ônibus para outro campus
-- horário dos ônibus para outro campus
-- qual o horário dos ônibus intercampi?
-
-
 ## intent:random
 - fora temer
 - bolsonaro
@@ -297,17 +260,6 @@
 - qual sua musica ?
 - fala da sua musica favorita
 - qual sua musica favorita?
-
-## intent:about_intercamp
-- Qual são os horários do intercamp?
-- Sabe quais são os horários do intercamp?
-- Sabe que hora passa o intercamp?
-- Quais os horários do intercamp?
-- Sabe qual é o horário do intercamp?
-- E o horário do intercamp?
-- intercampi
-- qual seu intercampi
-- horario intercampi
 
 ## intent:offense
 - alma sebosa
@@ -411,7 +363,6 @@
 - cansei dessa vida
 - acho que vou me matar
 - aqui to mal
-- não estou bem
 - não me sinto feliz
 - sou infeliz
 - sou titi
@@ -451,3 +402,211 @@
 - almoço
 - café
 - cafe
+
+## intent:intercampi_next
+- quais os próximos [intercampi](intercampi)?
+- quero saber do próximo [intercampi](intercampi)
+- quero pegar o próximo [intercampi](intercampi)
+- próximo [intercampi](intercampi)
+- proximo [intercampi](intercampi)
+- qual o horário do próximo [intercampi](intercampi)?
+- que horas sai o próximo [intercampi](intercampi)?
+- o próximo [intercampi](intercampi) sai que horas?
+- horário próximo [intercampi](intercampi)
+- hora do próximo [intercampi](intercampi)
+- próximo ônibus
+- próximo [intercampi](intercampi) [Darcy](campus)
+- próximo [intercampi](intercampi) [Ceilândia](campus)
+- próximo [intercampi](intercampi) [Planaltina](campus)
+- próximo [intercampi](intercampi) [Gama](campus)
+- quando sai o próximo [intercampi](intercampi)?
+- quero o próximo [intercampi](intercampi)
+- vou no próximo [intercampi](intercampi)
+- do proximo
+- quero proximo
+- quero saber do proximo [intercampi](intercampi)
+- próximo
+- [intercampi](intercampi) proximo
+- é o proximo?
+- e o proximo?
+- proximo busao
+- os proximos
+- proximos
+- pŕoximo a sair
+- os [intercampis](intercampi) proximos
+- dos proximos
+- o proximo cade
+- cade os proximos [intercampis](intercampi)
+- esses proximos [intercampis](intercampi)?
+- [intercampis](intercampi) a sair
+- [intercampi](intercampi) saindo daqui
+- saindo de [intercampi](intercampi) daqui
+- proximos [intercampis](intercampi) a partir de onde estou 
+- cade os proximos chefe 
+- manda o proximo [intercampi](intercampi) chefe 
+- proximos [intercampis](intercampi) meu bom 
+- manda os proximos ai
+- próximos
+- quero os proximos 
+- próximos saindo daqui
+- proximo de onde estou 
+- quero os proximos de onde estou
+- quero os proximos a sair
+- quero pegar um intercampi rapido
+
+
+## intent:intercampi_all
+- todos horários [intercampi](intercampi)
+- quero hora de todos os [intercampis](intercampi)
+- lista todos [intercampis](intercampi) ai
+- me vê a lista com todos [intercampis](intercampi)
+- me mostra a lista com todos [intercamps](intercampi)
+- traz todos [intercampis](intercampi) aí
+- quero ver todos [intercampis](intercampi)
+- quero ver todos os [intercampis](intercampi) possiveis
+- quero saber de todos [intercampis](intercampi)
+- posso saber de todos [intercampis](intercampi)
+- todos [intercampi](intercampi)
+- todos [intercampi](intercampi)
+- tabela [intercampi](intercampi)
+- tabela geral [intercampi](intercampi)
+- tabela de horarios
+- todos
+- todos horarios
+- todos horários
+- tabela de horarios geral
+- tabela geral [intercampi](intercampi) horarios
+- manda todos os horarios ai
+- quero saber de tudo entao
+- quero tudo de horario
+- todos os horarios do [onibus](intercampi) da unb
+
+
+## intent:intercampi_info
+- [intercampi](intercampi)
+- quero saber sobre o [intercampi](intercampi)
+- me fala sobre o [intercampi](intercampi)
+- me informe sobre o [intercampi](intercampi)
+- horários [intercampi](intercampi)
+- horário [intercampi](intercampi)
+- hora [intercampi](intercampi)
+- informações [intercampi](intercampi)
+- me diga sobre o [intercampi](intercampi)
+- fala sobre o [intercampi](intercampi)
+- sobre o [intercampi](intercampi)
+- Qual são os horários do [intercamp](intercampi)
+- Sabe quais são os horários do [intercamp](intercampi)?
+- Sabe que hora passa o [intercamp](intercampi)
+- Quais os horários do [intercamp](intercampi)
+- Sabe qual é o horário do [intercamp](intercampi)?
+- E o horário do [intercamp](intercampi)
+- qual seu [intercampi](intercampi)
+- horario [intercampi](intercampi)
+- tá sabendo do [intercampi](intercampi)?
+- e o [intercampi](intercampi)?
+- [intercampi](intercampi)?
+- tem [intercampi](intercampi)?
+- você sabe o horário do [intercampi](intercampi)?
+- informações do [intercampi](intercampi)
+- me manda os horários do [intercampi](intercampi)?
+- me ajuda a pegar [intercampi](intercampi)?
+- preciso de um [intercampi](intercampi)
+- preciso de um [intercampi](intercampi) agora
+- quero saber os horários do [intercampi](intercampi)
+- quero a agenda do [intercampi](intercampi)
+- agenda [intercampi](intercampi)
+- ônibus para outro campus
+- horário dos ônibus para outro campus
+- qual o horário dos ônibus [intercampi](intercampi)?
+- me informa ai sobre o [intercampi](intercampi)
+- me ajuda aqui acom o [intercampi](intercampi)
+- quero [intercampi](intercampi) agora
+- eai ajuda [intercampi](intercampi)
+
+## intent:affirm_where
+ - estou no [darcy](campus)
+ - estou no [gama](campus)
+ - estou em [planaltina](campus)
+ - estou na [ceilandia](campus)
+ - to no campus [darcy](campus)
+ - campus [gama](campus)
+ - campus [Ceilândia](campus)
+ - campus [Planaltina](campus)
+ - campus [FGA](campus)
+ - campus [FCE](campus)
+ - campus [FUP](campus)
+ - campus [Darcy Ribeiro](campus)
+ - estou no campus da [fga](campus)
+ - estou no campus da [ceilandia](campus)
+ - estou no campus [Darcy Ribeiro](campus)
+ - to no [gama](campus) 
+ - to no [darcy](campus)
+ - [darcy ribeiro](campus) 
+ - [gamão](campus)
+ - [FGA](campus)
+ - [FCE](campus)
+ - [FUP](campus)
+ - UnB [darcy](campus)
+ - Unb [fga](campus)
+ - unb [darcy](campus)
+ - unb [gama](campus) 
+ - unb [fup](campus)
+ - unb [ceilandia](campus)
+ - to no campus da [ceilandia](campus) 
+ - to na [cei](campus) 
+ - me encontro na unb do [gama](campus) 
+ - estou aqui na [fga](campus) 
+ - unb [fga](campus)
+ - unb [darcy](campus)
+ - unb [fup](campus)
+ - unb [fce](campus)
+ - no [darcy](campus)
+ - na [fga](campus)
+ - na [FCE](campus)
+ - na [fup](campus)
+ - [darcy](campus)
+ - [fga](campus) 
+ - no campus do [gama](campus)
+ - [gama](campus)
+ - [ceilandia](campus)
+ - [planaltina](campus)
+ - [fup](campus)
+ - to no [gama](campus) meu bro
+ - vei to na [fga](campus)
+ - vei to na [FUP](campus)
+ - estou exatamente no [icc](campus) sul
+ - no [darcy](campus) meu chapa
+ - to em [pĺanaltina](campus) bro
+ - to em casa
+ - to onde judas perdeu as botas
+ - local sigiloso
+ - estou em um local secreto 
+ - to na [UCB](campus)
+ - to tranquilao no [gama](campus)
+ - me encontro agora na [fga](campus)
+ - to no [uniceub](campus) aqui
+ - to na [estácio](campus)
+ - to na ponte que partiu
+ - to numa festa aqui
+ - to no transito
+ - estou preso na [fup](campus)
+ - estou na Universidade de Brasília, campus da [Ceilândia](campus)
+ - estou na Universidade de Brasília, campus da [Faculdade de Planaltina](campus)
+ - estou na Universidade de Brasília, campus da [Faculdade do Gama](campus)
+ - [faculdade do Gama](campus)
+ - [faculdade da Ceilandia](campus)
+ - [faculdade de Planaltina](campus)
+ - minha localidade atual é: [Darcy Ribeiro](campus)
+
+
+## intent:politica
+ - Bolsonaro 
+ - Haddad
+ - esquerda ou direita?
+ - esquerdista
+ - mortadela
+ - pt
+ - psol
+ - psl
+ - votou em quem?f
+ 
