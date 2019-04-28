@@ -11,8 +11,8 @@ import pymongo
 from pymongo import MongoClient
 
 
-url = 'https://24232ae4.ngrok.io'# url da porta 5002 (ngrok)
-mongo_host = 'e4b07ec50c05:27017'
+url = 'https://e20440da.ngrok.io'# url da porta 5002 (ngrok)
+mongo_host = 'c1366e04d701:27017'# mongo id + porta do mongo 
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -105,7 +105,7 @@ class ActionFindProfessor(Action):
     name = ""
     room = ""
     email = ""
-    #Vendo se ha algum registro do professor informado
+    #Verificando se ha algum registro do professor informado
     for y in collection.find():
       if (professor in y['name']):
         name = y['name']
@@ -113,11 +113,11 @@ class ActionFindProfessor(Action):
         email = y['email']
         break
     if(name == ""):
-      dispatcher.utter_message('Não foi possivel encontrar este professor')
+      dispatcher.utter_message('Não foi possivel encontrar este professor...Verifique se o nome esta correto e com as iniciais maiusculas!')
       return []
 
-    dispatcher.utter_message('Professor da entity : {}'.format(professor))  
-    dispatcher.utter_message('Professor : {}'.format(name))
+    dispatcher.utter_message('Deixa comigo! ...')  
+    dispatcher.utter_message('Nome : {}'.format(name))
     dispatcher.utter_message('Sala : {}'.format(room))
     dispatcher.utter_message('E-mail : {}'.format(email))
 

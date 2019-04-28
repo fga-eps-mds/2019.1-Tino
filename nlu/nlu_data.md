@@ -613,9 +613,12 @@
 ## intent:find_professor
 <!---Como... -->
  - Como falo com o [Fragelli](professor)?
- - Como falo com o [Renato](professor)?
+ - Como falo com o professor [Rudi Henri](professor)?
  - Como falo com a [Carla](professor)?
  - Como falo com o [Chaim](professor)?
+ - Como falo com o professor [Ricardo Fragelli](professor)?
+ - Como falo com o professor [Leonardo](professor)? 
+ - Como falo com a professora [Bruna Mayara](professor) 
  - Como consigo o email do [Fulano Deutrano](professor)?
  - Como consigo o email do [Victor](professor)?
  - Como consigo o email do [Renato](professor)?
@@ -637,11 +640,15 @@
  - como me comunico com o [Giovanni Almeida Santos](professor)?
  - como encontro a professora [Fulana Fulanice](professor)?
 <!---Passa... -->
- - Passa o contato da [Bruna](professor)
- - Passa o contato da [Paola Lima](professor)
+ - Passa o contato da professora [Bruna](professor)
+ - Passa o contato da professora [Paola Lima](professor)
+ - Passa o contato da professora [Paula Meyer](professor)
  - Passa o contato da [Eneida](professor)
  - Passa o contato do [Ricardo](professor)
- - Passa o contato do [Renato](professor)
+ - Passa o contato do [Renato Coral](professor)
+ - Passa o contato do professor [Filomeno](professor)
+ - Passa o contato do professor [Nilton](professor) ai
+ - Passa o contato do professor [Giovanni Almeida](professor) 
  - Passa o contato do [Bernardo Farias](professor)
  - Passa ai o email do [Saleh](professor)
  - Passa ai o email do [Luis Filomeno](professor)
@@ -651,14 +658,17 @@
  - passa as informações do [Daniel Monteiro Rosa](professor)
  - passa as informações do [Renato](professor)
  - passa as informações do [Lucas](professor)
-<!---Quero... --> 
- - Quero o contato do [Morgado](professor)
+<!---Quero e qual... --> 
+ - Quero o contato do professor [Morgado](professor)
+ - Quero o contato do professor [Ricardo Matos](professor)
  - Quero o contato do [Renato](professor)
  - Quero o contato do [Ricardo](professor)
  - Quero o email da [Carla Rocha](professor)
  - Quero o contato do [Carla](professor)
  - Queria falar com o [Luis Filomeno](professor)
  - Queria falar com o [Renato](professor)
+ - Queria falar com o professor [Paolo Gessini](professor)
+ - Queria falar com o professor [Gabriel](professor)
  - quero entrar em contato com [Wander Cleber](professor)
  - quero que voce me passe o contato do [Ricardo Matos Chaim](professor)
  - quero que voce me passe o contato do [Chaim](professor)
@@ -666,8 +676,18 @@
  - quero saber em qual sala fica o [Sergio Antonio Andrade](professor)
  - quero o [Maurício Serrano](professor)
  - quero saber como falo com o [Renato Coral Sampaio](professor)
+ - qual a sala do professor [Sébastien Roland](professor)
+ - qual o email do professor [Rodrigo Andres](professor)
+ - qual o email do professor [Sérgio](professor)
+ - qual a sala da [Eneida](professor)?
+ - qual a sala do [Lucas](professor)?
+ - qual a sala do [Igor Reinaldo](professor)?
+ - qual a sala do professor [Rodrigo Andres](professor)?
+ - qual a sala do professor [Rodolfo](professor)?
+ - qual o email do [Sérgio Cabral](professor)?
 <!---Preciso... -->
- - preciso do contato do [Odair Perereira](professor)
+ - preciso do contato do professor [Odair Perereira](professor)
+ - preciso do contato do email do professor [Sergio Antonio](professor)
  - preciso do contato do [Giovanni](professor)
  - preciso do contato do [Filipe](professor)
  - preciso saber como falo com o [Adson Ferreira da Rocha](professor)
@@ -676,4 +696,11 @@
  - preciso falar com o [Fragelli](professor)
  - preciso achar o [Diogo Caetano](professor)
  - preciso saber a sala da [Cristiane Soares Ramos](professor)
-
+<!--Me ve...  --> 
+ - Me  ve o contato do professor [Saleh](professor)
+ - Me  ve o contato do professor [Vandor Roberto Vilardi](professor)
+ - Me  ve o contato do professor [Sérgio Antonio](professor)
+ - Me  ve o contato do [Wander Cleber](professor)
+ - Me  ve o contato da professora [Bruna Mayara](professor)
+ - Me  ve o contato da professora [Sandra](professor)
+ - me ve o email do [Vandor](professor)
