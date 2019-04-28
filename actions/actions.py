@@ -11,8 +11,8 @@ import pymongo
 from pymongo import MongoClient
 
 
-url = 'https://24232ae4.ngrok.io'# url da porta 5002 (ngrok)
-mongo_host = 'e4b07ec50c05:27017'
+url = 'https://1db95077.ngrok.io'# url da porta 5002 (ngrok)
+mongo_host = 'e4b07ec50c05:27017' # id do mongo (docker ps -a)
 
 class ActionCallapi(Action):
   def name(self) -> Text:

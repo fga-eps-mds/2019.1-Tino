@@ -614,11 +614,14 @@
 <!---Como... -->
  - Como falo com o [Fragelli](professor)?
  - Como falo com o [Renato](professor)?
+ - Como falo com o professor [Ricardo](professor)?
+ - Como falo com o professor [Thiago Felippe Kurudez Cordeiro](professor)?
+ - Como falo com o professor [Sérgio Antônio](professor)?
  - Como falo com a [Carla](professor)?
  - Como falo com o [Chaim](professor)?
  - Como consigo o email do [Fulano Deutrano](professor)?
  - Como consigo o email do [Victor](professor)?
- - Como consigo o email do [Renato](professor)?
+ - Como consigo o email do [Renato da Silva Evangelista](professor)?
  - Como consigo o email do [Marcelo](professor)?
  - Como consigo o email do [Paulo](professor)?
  - Como consigo o email da [Carla Silva Rocha](professor)?
@@ -626,7 +629,7 @@
  - como entro em contato com o [Luis Augusto Laranjeiras](professor)?
  - como acho o professor [Fabricio Braz](professor)?
  - como acho o professor [Renato](professor)?
- - como acho o professor [Ricardo](professor)
+ - como acho o professor [Ricardo Assunção da Rocha Filho](professor)
  - como acho o professor [João](professor)?
  - como acho a professora [Bruna](professor)?
  - como acho a professora [Carla Silva Rocha](professor)?
@@ -637,28 +640,42 @@
  - como me comunico com o [Giovanni Almeida Santos](professor)?
  - como encontro a professora [Fulana Fulanice](professor)?
 <!---Passa... -->
+ - Passa os dados do professor [Fabricio Lima](professor)
+ - Passa os dados do professor [Gabriel](professor)
+ - Passa os dados do professor [Rudi Henri Van Els](professor)
  - Passa o contato da [Bruna](professor)
+ - Passa o contato da prof [Carla](professor)
  - Passa o contato da [Paola Lima](professor)
+ - Passa o contato da professora [Bruna Nayara Lopes Gomes](professor)
  - Passa o contato da [Eneida](professor)
- - Passa o contato do [Ricardo](professor)
+ - Passa o contato do [Ricardo](professor) ai 
  - Passa o contato do [Renato](professor)
  - Passa o contato do [Bernardo Farias](professor)
  - Passa ai o email do [Saleh](professor)
  - Passa ai o email do [Luis Filomeno](professor)
  - me passa ai a sala do [Luiz Augusto Fontes Laranjeira](professor)
- - passa o do professor [Vandor Roberto](professor)
- - passa o do professor [Roberto](professor)
+ - passa o email do professor [Vandor Roberto](professor) ai 
+ - passa o do professor [Roberto Antonio Andrade](professor)
  - passa as informações do [Daniel Monteiro Rosa](professor)
  - passa as informações do [Renato](professor)
- - passa as informações do [Lucas](professor)
+ - passa as informações do [Lucas da Silva](professor)
 <!---Quero... --> 
  - Quero o contato do [Morgado](professor)
+ - Quero o contato do professor [Ronie](professor)
+ - Quero o contato do professor [Eberth Viana](professor)
+ - Quero o contato da professora [Carla Viana](professor)
  - Quero o contato do [Renato](professor)
  - Quero o contato do [Ricardo](professor)
  - Quero o email da [Carla Rocha](professor)
  - Quero o contato do [Carla](professor)
  - Queria falar com o [Luis Filomeno](professor)
- - Queria falar com o [Renato](professor)
+ - Queria falar com o [Vanessa Maria de Castro](professor)
+ - Queria falar com o [Igor](professor)
+ - Quero falar com o professor [Marcus Vinicius](professor) agora
+ - Quero falar com o professor [Sérgio](professor) 
+ - Quero falar com a professora [Bruna Nayara](professor)
+ - Quero falar com a professora [Marilia](professor)
+ - Queria falar com o professor [Wagner Lopes](professor)
  - quero entrar em contato com [Wander Cleber](professor)
  - quero que voce me passe o contato do [Ricardo Matos Chaim](professor)
  - quero que voce me passe o contato do [Chaim](professor)
@@ -669,11 +686,24 @@
 <!---Preciso... -->
  - preciso do contato do [Odair Perereira](professor)
  - preciso do contato do [Giovanni](professor)
- - preciso do contato do [Filipe](professor)
+ - preciso do contato do [Yevsey  Yehoshua  Sobolevsky](professor)
  - preciso saber como falo com o [Adson Ferreira da Rocha](professor)
  - preciso que voce me passe o contato da [Carla Tatiana](professor)
  - preciso falar com o [Artur Elias](professor)
  - preciso falar com o [Fragelli](professor)
  - preciso achar o [Diogo Caetano](professor)
  - preciso saber a sala da [Cristiane Soares Ramos](professor)
+ <!--Me ve... -->
+ - me ve o contato do [Filomeno](professor)
+ - me ve o contato da [Carla](professor)
+ - me ve o contato do [Ricardo](professor)
+ - me ve o contato do professor [Sandro Augusto Pavlik](professor)
+ - me ve o contato do professor [Sébastien Roland](professor)
+ - me ve o email do [Yevsey  Yehoshua  Sobolevsky](professor)
+ - me ve o email da [Rejane Maria](professor)
+ - me ve ai a a sala do professor [Renato](professor)
+ - me ve ai a a sala do professor [Ricardo Ajax Dias Kosloski](professor) ai 
+ - me ve ai a a sala do professor [Saleh Barbosa](professor)
+ - me ve ai a sala da [Marina Lima](professor)
+ - me ve urgente o contato do [Ciclano](professor)
 
