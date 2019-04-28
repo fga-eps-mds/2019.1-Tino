@@ -8,7 +8,7 @@ import os
 from datetime import datetime, timezone
 import pytz
 
-url = 'https://571cb042.ngrok.io'  # url da porta 5002 (ngrok)
+url = 'https://704362b8.ngrok.io'  # url da porta 5002 (ngrok)
 
 class ActionCallapi(Action):
   def name(self) -> Text:
@@ -70,7 +70,8 @@ class ActionCallapi(Action):
       if hora_atual.hour <= int(hora_intercampi[0]):
         dispatcher.utter_message('Destino: ' + y['destino'] + '\n' + "Horário de saída: " + y['horario_saida'])
         contador_proximos_intercampis += 1
-        dispatcher.utter_message('O local de embarque é ' + local_embarque + '. Se tiver mais alguma pergunta, é so mandar!')
+
+    dispatcher.utter_message('O local de embarque é ' + local_embarque + '.\nSe tiver mais alguma pergunta, é so mandar!')
 
     if contador_proximos_intercampis == 0:
       dispatcher.utter_message('Não há mais intercampis saindo hoje :/')

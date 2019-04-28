@@ -61,6 +61,12 @@
 - tenha um bom dia
 - Eu estou fora
 - nós falaremos em breve
+- Vou nessa
+- estou de saída
+- obrigado, tchau
+- falo com você depois
+- Nos vemos por aí
+- saindo aqui
 
 ## intent: tudo_bem
 - tudo bem?
@@ -189,6 +195,11 @@
 - incrível, obrigado
 - legal, obrigado
 - legal obrigado
+- Agradeço
+- Agradecido
+- Agradecida
+- Grato
+- Grata
 
 ## intent:random
 - você parece o lino
@@ -274,6 +285,12 @@
 - Você curte série?
 - Qual a sua série favorita?
 - Você prefere séries ou filmes?
+- Gosta de séries?
+- Curte séries?
+- Maratona séries?
+- Fala de série
+- séries
+- series
 
 ## intent:about_collor
 - Qual sua cor favorita?
@@ -452,6 +469,33 @@
 - documentos unb
 - documentos fga
 - retirar documentos
+- matricula
+- calendário de matrícula
+- calendário
+- calendário escolar
+- período de matrícula
+- período de pré-matricula
+- calendário de matrícula
+- matricula
+- matrícula
+- A matricula
+- A matrícula
+- período de matrícula
+- período de matrículas
+- O período de matrículas
+- Até quando vai o período de matrículas
+- Até quando vai o período de matrícula
+- Gostaria de saber sobre o período de matrícula
+- quero o calendário de matrículas
+- Quando começa o período de matrícula
+- Você sabe quando começa o período de matrícula?
+- Quando começa as matrículas
+- Quando vai rolar as matrículas
+- Manda o calendário aí
+- calendar
+- calendario
+- calendario de matrícula
+- Tem como você me mandar o calendario?
 - ru agora
 - manda o ru 
 - almoco
@@ -665,6 +709,8 @@
  - psol
  - psl
  - votou em quem?
+ - me fala sobre política
+ - Vamos falar sobre política
 
 ## intent:find_professor
 <!---Como... -->

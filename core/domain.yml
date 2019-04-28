@@ -22,12 +22,15 @@ intents:
 - intercampi_next
 - affirm_where
 - politica
+- tudo_bem
+- intercampi_all
 
 actions:
 - utter_thanks
 - utter_greet
 - utter_goodbye
 - action_callapi
+- action_callapi_all_intercampi
 - utter_out_of_scope
 - utter_about_name
 - utter_about_age
@@ -43,8 +46,7 @@ actions:
 - utter_intercampi_info
 - utter_where_next
 - utter_politica
-
-
+- utter_tudo_bem
 
 entities:
 - campus
@@ -59,62 +61,49 @@ templates:
   utter_tudo_bem:
   - text: "Opa, tudo ótimo! obrigado por perguntar."
   - text: "Tudo certo, obrigado!"
-  - text: "Bem demais, eu não tenho sentimentos, o que você precisa ?"
-  - text: "Opa, tudo ótimo!"
+  - text: "Tudo ótimo, obrigado!"
+  - text: "Melhor agora que vou poder te ajudar :)"
   - text: "Tranquilo demais!"
   - text: "Suave demais!"
   - text: "Tudo ótimo, do que você precisa?"
-
-templates:
   
   utter_greet:
-  - text: "Fala ai, beleza ? Sou o Tino e estou aqui para te ajudar!" 
-  - text: "Opa Eai! Sou o Tino e estou ansioso para te ajudar no que precisar" 
-  - text: "Eai,tranquilo? O que precisa?"
-  - text: "Oie, manda ai, o que precisa ?"
-  - text: "Eai meu patrão, do que precisa?"
-  - text: "Oi amigo, como posso te ajudar ? Eu estou aqui pra isso !"
-  - text: "Oi amigo, eu sou Tino, posso te ajudar ?"
+  - text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
+          Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
+          - Horários dos Intercampis\n
+          - Informações dos Professores" 
+          
+  - text: "Opa Eaí! Sou o Tino e estou ansioso para te ajudar no que precisar\n\n
+          Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
+          - Horários dos Intercampis\n
+          - Informações dos Professores" 
 
   utter_goodbye:
   - text: "Falo com você depois!"
-  - text: "Até mais broh"
-  - text: "Flw"
-  - text: "Xau"
-  - text: "Adeus"
-  - text: "Falo com você depois!"
   - text: "Falou amigo, até mais tarde"
   - text: "Tranquilo amigo, também estou indo nessa"
-  - text: "É isso então, falou "
-  - text: "De boa, até mais tarde então"
-  - text: "Vou indo nessa amigo"
-  - text: "Tô indo nessa amigo, falou"
-  
+  - text: "É isso então, falou"
+  - text: "De boa, até mais tarde!"
+  - text: "Até mais!"
+  - text: "Tchau!"
+  - text: "Tchau, qualquer coisa é só chamar!"
 
   utter_out_of_scope:
-  - text: "Não consegui entender nada do que voce falou, ta falando português ?"
-  - text: "Hmmm, não vou saber te responder isso agora...você parece meio confuso tente mais tarde"
-  - text: "Está falando português? Não entendi nada"
-  - text: "Eu ainda estou aprendendo algumas coisas amigo!"
-  - text: "Desculpe, não consegui entender"
-  - text: "Desculpe, por favor seja mais claro com as suas palavras"
-  - text: "Como assim amigo? não consigo te entender!"
-  - text: "O que você quis dizer com isso?"
-  - text: "Do que você está falando amigo?"
-  - text: "Tem coisas que eu não vou saber te responder"
+  - text: "Não consegui entender o que você falou, pode explicar melhor?"
+  - text: "Está falando em português? Não entendi muito bem"
+  - text: "Desculpe, não consegui entender..."
+  - text: "Desculpe, pode ser mais claro com as suas palavras?"
+  - text: "Como assim amigo? Não consigo te entender"
   
   utter_thanks:
   - text: "Por nada!"
   - text: "Estou aqui pra isso!"
-  - text: "Não há de que!"
+  - text: "Não há de quê!"
   - text: "De nada!"
   - text: "Que isso amigo, qualquer coisa só falar comigo!"
   - text: "De nada, esse é o meu trabalho"
   - text: "De nada, estou aqui pra te ajudar!"
-  - text: "Obrigado!"
-  - text: "Que isso, valeu mano!"
   - text: "Que isso, precisando tô por aqui"
-  - text: "Valeu amigo"
   - text: "De nada amigo"
   - text: "Que bom te ajudei amigo"
 
@@ -122,18 +111,17 @@ templates:
   - text: "Me chamo Tino"
   - text: "Meu nome é Tino"
   - text: "Eu me chamo Tino Theobaldo Terceiro"
-  - text: "Oi, eu sou o Tino"
-  - text: "Oie, eu sou o Tino, primo do Lino"
+  - text: "Eu sou o Tino"
+  - text: "Eu sou o Tino, primo do Lino"
 
   utter_about_age:
-  - text: "Eu nasci a 10mil anos atrás"
-  - text: "Eu sou velho em idade de bots"
-  - text: "Eu acho q tenho 10mil anos"
-  - text: "Nasci a 10mil anos atrás, faz as contas aí."
+  - text: "Eu nasci há 10 mil anos atrás"
+  - text: "10 mil anos, estou na flor da idade"
   - text: "Sou um pouco velho, ou não"
+  - text: "Que indelicado perguntar a idade dos outros"
 
   utter_offense:
-  - text: "Que feio! Devia ter mais educação!"
+  - text: "Que feio! Deveria ter mais educação!"
   - text: "Que deselegante... "
   - text: "Melhor ir lavar a boca"
   - text: "Que falta de respeito!"
@@ -143,7 +131,7 @@ templates:
   - text: "Que falta de educação"
 
   utter_im_bad:
-  - text: "Que pena amigo,desejo melhoras para voce!"
+  - text: "Que pena amigo, desejo melhoras para você!"
   - text: "Não desanime e siga em frente."
   - text: "Relaxa amigo, tudo vai da certo!"
   - text: "Que isso amigo, vai dar tudo certo!"
@@ -152,55 +140,58 @@ templates:
   - text: "Calma, tudo vai dar certo, pode ter certeza!"
 
   utter_call_lino:
-  - text: "Isso ai ja é com meu primo Lino, para encontra-lo no Telegram pesquise por: @lino_o_bot ou só Lino para o Facebook"
+  - text: "Isso aí já é com meu primo, o Lino. Para encontra-lo no Telegram pesquise por: @lino_o_bot ou apenas Lino para o Facebook"
+  - text: "Poxa, não vou conseguir te ajudar com isso... Mas sei quem pode te ajudar, o Lino (@lino_o_bot)! Também disponível no Telegram e Facebook"
   
   utter_about_location:
   - text: "Atualmente moro no telegram"
-  - text: "Por enquanto eu moro no telegram, quem sabe eu tenha novos endereços em breve"
-  - text: "Eu estou morando no telegram!"
+  - text: "Por enquanto eu moro no Telegram, quem sabe eu tenha novos endereços em breve"
+  - text: "Eu estou morando no Telegram!"
  
   utter_about_pet:
-  - text: "Doguinho né..."
-  - text: "Ainda não tenho um pet, será que existe um BotDog!"
-  - text: "Se eu tivesse um pet ele ia se chamar Tino Jr Primeiro"
-  - text: "Eu acho que meus favoritos são os doguinhos!"
+  - text: "Ainda não tenho um pet, será que existe um BotDog?"
+  - text: "Meus favoritos são os doguinhos!"
+  - text: "Cachorros são meus preferidos, woof!"
+  - text: "Se eu tivesse um pet ele iria se chamar Tino Jr Primeiro"
 
   utter_about_series:
-  - text: "Adoro séries... A grande família > Game of thrones"
-  - text: "Siiiiim, adoro séries, principalmente de ficção."
-  - text: "Gosto sim"
-  - text: "Prefiro filme, mas gosto de série sim"
+  - text: "Adoro séries... A Grande Família > Game of Thrones"
+  - text: "Siiim, adoro séries, principalmente de ficção."
+  - text: "Séries é comigo mesmo, se deixar faço maratona todos os dias!"
   - text: "Adoro, netflix and chill"
 
   utter_intercampi_info:
-  - text: "Certo, você quer saber sobre o intercampi...Mais especificamente, você quer saber de todos ou dos proximos partindo de onde esta?"
-  - text: "Com certeza poderei te ajudar, mas antes so me ajuda um pouco...Você quer visualizar os proximos a sair ou quer uma lista de todos ?"
+  - text: "Certo, você quer saber sobre o intercampi... Mais especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
+  - text: "Com certeza poderei te ajudar, mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
+
   utter_about_collor:
   - text: "Pretinho básico"
-  - text: "Eu gosto de todas, mas eu acho que preto é a minha cor favorita"
+  - text: "A cor da elegância: o preto"
+  - text: "Preto né... combina com tudo"
+  - text: "Adoro preto, minha cor favorita"
   - text: "Eu sou um pouco gótico, gosto de preto"
 
   utter_about_hobby:
   - text: "Prestar serviço"
   - text: "Ajudar"
-  - text: "Quando eu não estou ajudando alguem, eu gosto de dormir"
+  - text: "Quando eu não estou ajudando alguém, eu gosto de dormir"
   - text: "Gosto de ajudar as pessoas"
   - text: "Gosto de ajudar"
 
   utter_about_music:
   - text: "Darude-Sandstorm dududududududu"
-  - text: "Eu acho que a melhor música da história Darude-Sandstorm"
+  - text: "Eu acho que a melhor música da história é Darude-Sandstorm"
+  - text: "A melhor eletrônica, Darude-Sandstorm! dududududududu"
   - text: "Minha música favorita começa com dudududu e continua assim dudududududurururu"
-  - text: "Eu gosto de música"
-  - text: "Isso é fácil a melhor música da minha playlist é Dadure-Sandstorm"
+  - text: "Isso é fácil, a melhor música da minha playlist é Dadure-Sandstorm!"
 
   utter_where_next:
-  - text: "Por favor me diga então em que campus você esta para que eu possa te ajudar melhor ;)"  
+  - text: "Por favor, me diga então em qual campus você está para que eu possa te ajudar melhor ;)"
   - text: "Qual campus você está?"
 
   utter_politica:
   - text: "Não sou capaz de opinar"
   - text: "Eu nem posso votar!"
   - text: "Cada um tem a sua opnião e eu respeito a sua"
-  - text: "Politica?! Tô fora, pego o meu wifi e vou embora"
+  - text: "Política?! Tô fora, pego o meu wifi e vou embora"
   - text: "Vote Tino, por um modo com mais chatbots!"
