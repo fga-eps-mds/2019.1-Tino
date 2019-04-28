@@ -10,6 +10,10 @@ RUN pip install --upgrade pip && \
     pip install -r /tmp/requirements.txt && \
     pip install rasa_core_sdk && \
     pip install flask && \
+    pip install python-dotenv && \
+    pip install lxml && \
+    pip install html5lib && \
+    pip install BeautifulSoup4 && \
     python -m spacy download pt
 
 RUN mkdir /2019.1-Tino
