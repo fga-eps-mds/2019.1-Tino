@@ -17,6 +17,7 @@ services:
       TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
       TELEGRAM_WEBHOOK: ${TELEGRAM_WEBHOOK}
       ACTION_WEBHOOK: ${ACTION_WEBHOOK}
+      SENDPDF_WEBHOOK: ${SENDPDF_WEBHOOK}      
     ports:
       - 5000:5000
     volumes:
