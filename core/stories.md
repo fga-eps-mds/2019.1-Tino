@@ -9,10 +9,6 @@
 ## story_thanks
 * thanks
  - utter_thanks
- 
-## story_callapi
-* schedule
- - action_callapi
 
 ## story_out_of_scope
 * out_of_scope
@@ -30,9 +26,23 @@
 * about_location
  - utter_about_location
 
-## story_about_intercamp
-* about_intercamp
- - utter_about_intercamp 
+## story_tudo_bem
+* tudo_bem
+ - utter_tudo_bem
+
+## story_intercampi_info
+* intercampi_info
+ - utter_intercampi_info
+
+## story_intercampi_all
+* intercampi_all
+ - action_callapi_all_intercampi
+
+## story_intercampi_next
+* intercampi_next
+ - utter_where_next
+* affirm_where
+ - action_callapi
 
 ## story_about_pet
 * about_pet
@@ -65,4 +75,7 @@
 ## story_call_lino
 * call_lino
  - utter_call_lino  
- 
+
+## story_politica
+* politica
+ - utter_politica

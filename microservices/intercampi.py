@@ -16,39 +16,51 @@ import time
 
 app = Flask(__name__)
 
-MONGO_USER = os.environ['MONGO_USER']
+MONGO_USER = os.environ['MONGO_USER']    
 MONGO_USER = str(MONGO_USER)
 MONGO_PASSWORD = os.environ['MONGO_PASSWORD']
 MONGO_PASSWORD = str(MONGO_PASSWORD)
-
+MONGO_HOSTNAME = os.environ['MONGO_ID']
+MONGO_HOSTNAME = MONGO_HOSTNAME + ':27017'
 
 # accept telegram messages
-@app.route('/',methods=['POST','GET'])
+@app.route('/',methods=['POST','GET']) ##########-----ALL PATH-----#############
 def index():
     if(request.method == 'POST'):
         return Response('ok',status=200)
-    else:
-        collection = get_intercampi_collection()
-        #get data from fga site
-        intercampi_dados = get_from_fga_site()
+    else: 
+        intercampi_dados = ""
+        try:
+            collection = get_intercampi_collection()
+        except Exception as error:
+            print(error)
+     # Get data from FGA site
+        try:
+            intercampi_dados = get_from_fga_site()
+        except Exception as error:
+            print(error)
 
-       #data must exists to insert a new in mongo
-        if(len(intercampi_dados) != 0):
-            collection.delete_many({})#delete old files in collection
-            #insert each element on db    
-            for element in intercampi_dados:
+       # Data must exists to insert a new in mongo
+        print(intercampi_dados)
+        if(intercampi_dados != ""):
+            print('deletando')
+            collection.delete_many({})      # Delete old files in collection
+            # Insert each element on db    
+            for element in intercampi_dados :
                 collection.insert_one(element)
         json = []
-        #find inserted elements on db
+
+        # Find inserted elements on db
         for y in collection.find():
             print(y['_id'])
-            del y['_id']
-            json.append(y)
+            del y['_id']        # Delete the '_id' attribute.
+            json.append(y)      # Add the register in json list.
 
     return jsonify(json)
 
 def get_intercampi_collection():
-    client = MongoClient('e4b07ec50c05:27017', username=MONGO_USER,password=MONGO_PASSWORD)          
+    #acess mongo database
+    client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,password=MONGO_PASSWORD)          
     db = client.admin
     collection = db['intercampi-horario']
 
@@ -75,8 +87,6 @@ def get_from_fga_site():
       
     return json
 
-
-
 def get_ssl_certificate():
     
     url="https://fga.unb.br/guia-fga/horario-dos-onibus-intercampi"
@@ -91,11 +101,11 @@ def get_ssl_certificate():
 def get_from_darcy():
     collection = get_intercampi_collection()
 
-    json =[]
+    json = []
     for y in collection.find():
-        if(y['origem'] == "Darcy Ribeiro"):
-            del y['_id']
-            json.append(y)
+        if(y['origem'] == "Darcy Ribeiro"):     # Filter the registers with origem 'Darcy Ribeiro'.
+            del y['_id']                        # Delete the '_id' attribute.
+            json.append(y)                      # Add the register in json list.
         
 
     return jsonify(json)
