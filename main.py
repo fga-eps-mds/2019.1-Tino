@@ -7,6 +7,8 @@ from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.utils import EndpointConfig
 import os
+import pyfiglet
+
 
 # load trained models
 
@@ -14,11 +16,16 @@ import os
 interpreter = RasaNLUInterpreter('./models/current/nlu')
 ACTION_WEBHOOK = os.environ['ACTION_WEBHOOK']
 ACTION_WEBHOOK = ACTION_WEBHOOK + "/webhook"
-print(ACTION_WEBHOOK)
-agent = Agent.load('./models/current/dialogue', interpreter=interpreter, action_endpoint = EndpointConfig(url = ACTION_WEBHOOK))
+TELEGRAM_WEBHOOK = os.environ['TELEGRAM_WEBHOOK']
+TELEGRAM_WEBHOOK = str(TELEGRAM_WEBHOOK)
+SENDPDF_WEBHOOK = os.environ['SENDPDF_WEBHOOK']
+SENDPDF_WEBHOOK = str(SENDPDF_WEBHOOK)
 
-#token = os.environ['TELEGRAM_TOKEN']
-token = '754642432:AAGY8WA31VvMx9SVedXzS8IjNzSgLjG62HI'
+
+agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url=ACTION_WEBHOOK))
+
+token = os.environ['TELEGRAM_TOKEN']
+
 # https://api.telegram.org/bot{token}/deleteWebhook
 
 app = Flask(__name__)
@@ -28,12 +35,12 @@ app = Flask(__name__)
 def index():
     if(request.method == 'POST'):
         msg = request.get_json()
-        print('mensagem:', msg)
-        chat_id, message = parse_msg(msg)  # message é a mensagem do usuario, chat_id do user
-        print('message: {}'.format (message))
+        chat_id , message = parse_msg(msg) #message é a mensagem do usuario, chat_id do user
         response_messages = applyAi(message)
-        send_message(chat_id, response_messages)
-        return Response('ok', status=200)
+        if 'todos' in message:
+            requests.get("https://7cb5b992.ngrok.io/?chat_id="+str(chat_id))
+        send_message(chat_id,response_messages)
+        return Response('ok',status=200)
     
     else:
         return '<h1>Tino-Eps</h1>'
@@ -64,6 +71,18 @@ def applyAi(message):
             text.append(response["text"])
     return text
 
+def set_webhook():
+    deleteWebhook = requests.get("https://api.telegram.org/bot"+token+"/deleteWebhook")
+    createWebhook = requests.get("https://api.telegram.org/bot"+token+"/setWebhook?url="+TELEGRAM_WEBHOOK)
+
+    if createWebhook.status_code == 200:
+        return "web hook criado com sucesso"
+    else:
+        "falha ao criar o webhook"
 
 if(__name__ ==  '__main__'):
+    call_webhook = set_webhook()
+    ascii_banner = pyfiglet.figlet_format(call_webhook)
+    print(ascii_banner)
+
     app.run(debug=True, host='0.0.0.0')
