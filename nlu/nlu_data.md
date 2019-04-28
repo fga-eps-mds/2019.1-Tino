@@ -621,7 +621,7 @@
  - Como falo com a professora [Bruna Mayara](professor) 
  - Como consigo o email do [Fulano Deutrano](professor)?
  - Como consigo o email do [Victor](professor)?
- - Como consigo o email do [Renato](professor)?
+ - Como consigo o email do [Renato da Silva Evangelista](professor)?
  - Como consigo o email do [Marcelo](professor)?
  - Como consigo o email do [Paulo](professor)?
  - Como consigo o email da [Carla Silva Rocha](professor)?
@@ -629,7 +629,7 @@
  - como entro em contato com o [Luis Augusto Laranjeiras](professor)?
  - como acho o professor [Fabricio Braz](professor)?
  - como acho o professor [Renato](professor)?
- - como acho o professor [Ricardo](professor)
+ - como acho o professor [Ricardo Assunção da Rocha Filho](professor)
  - como acho o professor [João](professor)?
  - como acho a professora [Bruna](professor)?
  - como acho a professora [Carla Silva Rocha](professor)?
@@ -653,8 +653,8 @@
  - Passa ai o email do [Saleh](professor)
  - Passa ai o email do [Luis Filomeno](professor)
  - me passa ai a sala do [Luiz Augusto Fontes Laranjeira](professor)
- - passa o do professor [Vandor Roberto](professor)
- - passa o do professor [Roberto](professor)
+ - passa o email do professor [Vandor Roberto](professor) ai 
+ - passa o do professor [Roberto Antonio Andrade](professor)
  - passa as informações do [Daniel Monteiro Rosa](professor)
  - passa as informações do [Renato](professor)
  - passa as informações do [Lucas](professor)
@@ -689,7 +689,7 @@
  - preciso do contato do professor [Odair Perereira](professor)
  - preciso do contato do email do professor [Sergio Antonio](professor)
  - preciso do contato do [Giovanni](professor)
- - preciso do contato do [Filipe](professor)
+ - preciso do contato do [Yevsey  Yehoshua  Sobolevsky](professor)
  - preciso saber como falo com o [Adson Ferreira da Rocha](professor)
  - preciso que voce me passe o contato da [Carla Tatiana](professor)
  - preciso falar com o [Artur Elias](professor)
