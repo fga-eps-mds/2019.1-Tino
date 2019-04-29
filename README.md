@@ -13,7 +13,7 @@ Esse repositório contém o código do framework do chatbot Tino, e todos os seu
     
     
 ### Entenda um pouco da arquitetura:
-
+<a href="https://ibb.co/WyTpYBM"><img src="https://i.ibb.co/yy3BbgZ/architecture-3.png" alt="architecture-3" border="0"></a>
     
 ### Para testar a Tino utiizando o telegram, siga os seguintes comandos para subir os containers em seu computador:
 
