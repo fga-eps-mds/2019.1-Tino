@@ -7,30 +7,29 @@ import json
 import os
 from datetime import datetime, timezone
 import pytz
-import pymongo
-from pymongo import MongoClient
+import logging
 
+mongo_host = os.environ['MONGO_ID']
+mongo_host = MONGO_HOSTNAME + ':27017'
+url = os.environ['INTERCAMPI_WEBHOOK']
+url_darcy = url + "/darcy"
+url_gama = url + "/gama"
+url_planaltina = url + "/planaltina" 
+url_ceilandia = url + "/ceilandia" 
 
-url = 'https://e20440da.ngrok.io'# url da porta 5002 (ngrok)
-mongo_host = 'c1366e04d701:27017'# mongo id + porta do mongo 
+logger = logging.getLogger(__name__)
+
 
 class ActionCallapi(Action):
   def name(self) -> Text:
     return 'action_callapi'
 
   def run(self, dispatcher, tracker, domain):
-    url_darcy = url + "/darcy"
-    url_gama = url + "/gama"
-    url_planaltina = url + "/planaltina" 
-    url_ceilandia = url + "/ceilandia" 
 
     tracker_state = tracker.current_state()
     text = tracker_state['latest_message']['text']
     text = text.lower()
     words = text.split(' ')
-    origem = ""
-    request = ""
-    local_embarque = ""
 
     for word in words:
       if('darcy' in word or "plano" in word):
@@ -87,7 +86,8 @@ class ActionCallapiAll(Action):
     return 'action_callapi_all_intercampi'
 
   def run(self, dispatcher, tracker, domain):
-    dispatcher.utter_message('Espera um minuto, estamos providenciando')
+    requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
+
 
 class ActionFindProfessor(Action):
   def name(self) -> Text:

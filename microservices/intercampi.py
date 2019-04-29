@@ -16,7 +16,7 @@ import time
 
 app = Flask(__name__)
 
-MONGO_USER = os.environ['MONGO_USER']
+MONGO_USER = os.environ['MONGO_USER']    
 MONGO_USER = str(MONGO_USER)
 MONGO_PASSWORD = os.environ['MONGO_PASSWORD']
 MONGO_PASSWORD = str(MONGO_PASSWORD)
@@ -41,7 +41,7 @@ def index():
             print(error)
 
        # Data must exists to insert a new in mongo
-
+        print(intercampi_dados)
         if(intercampi_dados != ""):
             collection.delete_many({})      # Deleta arquivos antigos dentro da collection
             # Insere cada element no banco     
