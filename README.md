@@ -1,8 +1,6 @@
 # 2019.1-Tino [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Tino é um bot desenvolvido por alunos da FGA-Gama que consegue orientar sobre os horários e destinos do intercampi dos diversos campus da Universidade de Brasília, além de conseguir informar horário de atendimento, sala e contato dos professores que forem cadastrados no bot.
 
-<a href="https://ibb.co/dDnWRSc"><img style="max-width: 50%; max-height: 50%" src="https://i.ibb.co/WfSxLQ3/teste.gif" alt="teste" border="0"></a>
-
 Esse repositório contém o código do framework do chatbot Tino, e todos os seus microserviços utilizados.
 
 ### Tecnologias utilizadas
