@@ -29,7 +29,7 @@ def index():
             collection = get_intercampi_collection()
         except Exception as error:
             print(error)
-        # Get data from FGA site
+
         try:
             intercampi_dados = get_from_fga_site()
         except Exception as error:
@@ -38,18 +38,17 @@ def index():
         # Data must exists to insert a new in mongo
         print(intercampi_dados)
         if(intercampi_dados != ""):
-            print('deletando')
-            collection.delete_many({})      # Delete old files in collection
-            # Insert each element on db
-            for element in intercampi_dados:
+            collection.delete_many({})      # Deleta arquivos antigos dentro da collection
+            # Insere cada element no banco     
+            for element in intercampi_dados :
                 collection.insert_one(element)
         json = []
 
-        # Find inserted elements on db
+        # Find 
         for y in collection.find():
             print(y['_id'])
-            del y['_id']        # Delete the '_id' attribute.
-            json.append(y)      # Add the register in json list.
+            del y['_id']        # Deleta o atributo  '_id' .
+            json.append(y)      # Adiciona o registro a uma lista Json.
 
     return jsonify(json)
 
@@ -102,13 +101,10 @@ def get_from_darcy():
 
     json = []
     for y in collection.find():
-        # Filter the registers with origem 'Darcy Ribeiro'.
-        if(y['origem'] == "Darcy Ribeiro"):
-            # Delete the '_id' attribute.
-            del y['_id']
-            # Add the register in json list.
-            json.append(y)
-
+        if(y['origem'] == "Darcy Ribeiro"):     # Filtra os registros relacionados a 'Darcy Ribeiro'.
+            del y['_id']                        # Deleta o atributo '_id'
+            json.append(y)                      # Adiciona o registro a uma lista json.
+        
     return jsonify(json)
 
 
@@ -148,8 +144,7 @@ def get_from_planaltina():
             del y['_id']
             json.append(y)
 
-    return jsonify(json)
-
+    return jsonify(json)   
 
 if(__name__ == '__main__'):
     app.run(debug=True, host='0.0.0.0')

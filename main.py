@@ -24,8 +24,6 @@ agent = Agent.load('./models/current/dialogue', interpreter=interpreter,
 
 token = os.environ['TELEGRAM_TOKEN']
 
-# https://api.telegram.org/bot{token}/deleteWebhook
-
 app = Flask(__name__)
 
 # accept telegram messages
@@ -37,7 +35,8 @@ def index():
         chat_id, message = parse_msg(msg)
         response_messages = applyAi(message)
         if 'todos' in message:
-            requests.get("https://beda5d3f.ngrok.io/?chat_id=" + str(chat_id))
+            requests.get(SENDPDF_WEBHOOK+"/?chat_id=" + str(chat_id))
+            
         send_message(chat_id, response_messages)
         return Response('ok', status=200)
 
@@ -54,7 +53,6 @@ def parse_msg(message):
 
 # helper function to send message
 def send_message(chat_id, messages=[]):
-
     url = 'https://api.telegram.org/bot'+token+'/sendMessage'
     if messages:
         for message in messages:
@@ -74,8 +72,8 @@ def applyAi(message):
 
 
 def set_webhook():
-    # deleteWebhook = requests.get("https://api.telegram.org/bot"
-    #                              + token + "/deleteWebhook")
+    deleteWebhook = requests.get("https://api.telegram.org/bot"
+                                 + token + "/deleteWebhook")
     createWebhook = requests.get("https://api.telegram.org/bot"
                                  + token + "/setWebhook?url="+TELEGRAM_WEBHOOK)
 
@@ -85,7 +83,7 @@ def set_webhook():
         "falha ao criar o webhook"
 
 
-if(__name__ == '__main__'):
+if(__name__ ==  '__main__'):
     call_webhook = set_webhook()
     ascii_banner = pyfiglet.figlet_format(call_webhook)
     print(ascii_banner)
