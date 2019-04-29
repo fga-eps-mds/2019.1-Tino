@@ -6,6 +6,8 @@ services:
       environment:      
         ACTION_WEBHOOK: ${ACTION_WEBHOOK} 
         SENDPDF_WEBHOOK: ${SENDPDF_WEBHOOK}
+        INTERCAMPI_WEBHOOK: ${INTERCAMPI_WEBHOOK}
+        MONGO_ID: ${MONGO_ID}    
       ports:
         - 5055:5055
       volumes:
@@ -30,7 +32,6 @@ services:
       ACTION_WEBHOOK: ${ACTION_WEBHOOK}
       MONGO_USER: ${MONGO_USER}
       MONGO_USER: ${MONGO_PASSWORD}
-
     ports:
       - 5002:5002
     volumes:
