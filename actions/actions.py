@@ -9,7 +9,9 @@ from datetime import datetime, timezone
 import pytz
 import logging
 
-url = "https://75df786c.ngrok.io"
+mongo_host = os.environ['MONGO_ID']
+mongo_host = MONGO_HOSTNAME + ':27017'
+url = os.environ['INTERCAMPI_WEBHOOK']
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
 url_planaltina = url + "/planaltina" 
@@ -103,7 +105,7 @@ class ActionFindProfessor(Action):
     name = ""
     room = ""
     email = ""
-    #Vendo se ha algum registro do professor informado
+    #Verificando se ha algum registro do professor informado
     for y in collection.find():
       if (professor in y['name']):
         name = y['name']
@@ -111,11 +113,11 @@ class ActionFindProfessor(Action):
         email = y['email']
         break
     if(name == ""):
-      dispatcher.utter_message('Não foi possivel encontrar este professor')
+      dispatcher.utter_message('Não foi possivel encontrar este professor...Verifique se o nome esta correto e com as iniciais maiusculas!')
       return []
 
-    dispatcher.utter_message('Professor da entity : {}'.format(professor))  
-    dispatcher.utter_message('Professor : {}'.format(name))
+    dispatcher.utter_message('Deixa comigo! ...')  
+    dispatcher.utter_message('Nome : {}'.format(name))
     dispatcher.utter_message('Sala : {}'.format(room))
     dispatcher.utter_message('E-mail : {}'.format(email))
 
