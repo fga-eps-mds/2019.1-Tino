@@ -34,7 +34,7 @@ def index():
             collection = get_intercampi_collection()
         except Exception as error:
             print(error)
-     # Get data from FGA site
+     # Pegar dados do site da fga:
         try:
             intercampi_dados = get_from_fga_site()
         except Exception as error:
@@ -43,23 +43,22 @@ def index():
        # Data must exists to insert a new in mongo
         print(intercampi_dados)
         if(intercampi_dados != ""):
-            print('deletando')
-            collection.delete_many({})      # Delete old files in collection
-            # Insert each element on db    
+            collection.delete_many({})      # Deleta arquivos antigos dentro da collection
+            # Insere cada element no banco     
             for element in intercampi_dados :
                 collection.insert_one(element)
         json = []
 
-        # Find inserted elements on db
+        # Find 
         for y in collection.find():
             print(y['_id'])
-            del y['_id']        # Delete the '_id' attribute.
-            json.append(y)      # Add the register in json list.
+            del y['_id']        # Deleta o atributo  '_id' .
+            json.append(y)      # Adiciona o registro a uma lista Json.
 
     return jsonify(json)
 
 def get_intercampi_collection():
-    #acess mongo database
+    #Conecta com a collection no mongo :
     client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,password=MONGO_PASSWORD)          
     db = client.admin
     collection = db['intercampi-horario']
@@ -103,11 +102,10 @@ def get_from_darcy():
 
     json = []
     for y in collection.find():
-        if(y['origem'] == "Darcy Ribeiro"):     # Filter the registers with origem 'Darcy Ribeiro'.
-            del y['_id']                        # Delete the '_id' attribute.
-            json.append(y)                      # Add the register in json list.
+        if(y['origem'] == "Darcy Ribeiro"):     # Filtra os registros relacionados a 'Darcy Ribeiro'.
+            del y['_id']                        # Deleta o atributo '_id'
+            json.append(y)                      # Adiciona o registro a uma lista json.
         
-
     return jsonify(json)
 
 @app.route("/gama") ##########-----GAMA PATH-----#############
@@ -121,7 +119,6 @@ def get_from_gama():
             del y['_id']
             json.append(y)
         
-
     return jsonify(json)
 
 @app.route("/ceilandia") ##########-----CEILÂNDIA PATH-----#############
@@ -135,7 +132,6 @@ def get_from_ceilandia():
             del y['_id']
             json.append(y)
         
-
     return jsonify(json)
 
 @app.route("/planaltina") ##########-----PLANALTINA PATH-----#############
@@ -149,7 +145,6 @@ def get_from_planaltina():
             del y['_id']
             json.append(y)
         
-
     return jsonify(json)   
 
 if(__name__ ==  '__main__'):

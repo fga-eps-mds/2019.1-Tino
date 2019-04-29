@@ -17,6 +17,7 @@ url_ceilandia = url + "/ceilandia"
 
 logger = logging.getLogger(__name__)
 
+
 class ActionCallapi(Action):
   def name(self) -> Text:
     return 'action_callapi'
@@ -49,8 +50,7 @@ class ActionCallapi(Action):
         local_embarque = "em frente ao antigo Prédio"
         request = requests.get(url_planaltina).json()
         break
-      
-      
+       
     if(origem == ""):
       dispatcher.utter_message('Desculpe, não consegui entender onde você está... Pode falar de maneira mais clara?')
       return []
@@ -70,11 +70,12 @@ class ActionCallapi(Action):
       if hora_atual.hour <= int(hora_intercampi[0]):
         dispatcher.utter_message('Destino: ' + y['destino'] + '\n' + "Horário de saída: " + y['horario_saida'])
         contador_proximos_intercampis += 1
-        dispatcher.utter_message('O local de embarque é ' + local_embarque)
+        
 
     if contador_proximos_intercampis == 0:
       dispatcher.utter_message('Não há mais intercampis saindo hoje :/')
-
+    if(local_embarque != ""):
+      dispatcher.utter_message('O local de embarque é ' + local_embarque)
 
     return []
 
@@ -83,5 +84,39 @@ class ActionCallapiAll(Action):
     return 'action_callapi_all_intercampi'
 
   def run(self, dispatcher, tracker, domain):
-
     requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
+
+
+class ActionFindProfessor(Action):
+  def name(self) -> Text:
+    return 'action_find_professor'
+
+  def run(self, dispatcher, tracker, domain):
+    
+    #Acessando o slot professor.
+    professor = ""
+    professor = tracker.current_slot_values()['professor']
+    #Conectando com a collection no banco:
+    client = MongoClient(mongo_host, username='rasa',password='rasa')          
+    db = client.admin
+    collection = db['professor-contato']
+    name = ""
+    room = ""
+    email = ""
+    #Vendo se ha algum registro do professor informado
+    for y in collection.find():
+      if (professor in y['name']):
+        name = y['name']
+        room = y['room']
+        email = y['email']
+        break
+    if(name == ""):
+      dispatcher.utter_message('Não foi possivel encontrar este professor')
+      return []
+
+    dispatcher.utter_message('Professor da entity : {}'.format(professor))  
+    dispatcher.utter_message('Professor : {}'.format(name))
+    dispatcher.utter_message('Sala : {}'.format(room))
+    dispatcher.utter_message('E-mail : {}'.format(email))
+
+    return []

@@ -24,6 +24,7 @@ intents:
 - politica
 - tudo_bem
 - intercampi_all
+- find_professor
 
 actions:
 - utter_thanks
@@ -31,6 +32,7 @@ actions:
 - utter_goodbye
 - action_callapi
 - action_callapi_all_intercampi
+- action_find_professor
 - utter_out_of_scope
 - utter_about_name
 - utter_about_age
@@ -52,10 +54,14 @@ actions:
 entities:
 - campus
 - intercampi
+- professor
 
 slots:
+  professor:
+    type: unfeaturized  
   campus:
     type: unfeaturized  
+
 
 templates:
 

@@ -23,10 +23,7 @@ SENDPDF_WEBHOOK = str(SENDPDF_WEBHOOK)
 
 
 agent = Agent.load('./models/current/dialogue', interpreter=interpreter,action_endpoint=EndpointConfig(url=ACTION_WEBHOOK))
-
 token = os.environ['TELEGRAM_TOKEN']
-
-# https://api.telegram.org/bot{token}/deleteWebhook
 
 app = Flask(__name__)
 
@@ -50,7 +47,6 @@ def parse_msg(message):
     chat_id = message['message']['chat']['id']    
     txt = message['message']['text']
     return chat_id,txt
-
 
 # helper function to send message 
 def send_message(chat_id,messages=[]):
@@ -79,6 +75,7 @@ def set_webhook():
         return "web hook criado com sucesso"
     else:
         "falha ao criar o webhook"
+
 
 if(__name__ ==  '__main__'):
     call_webhook = set_webhook()
