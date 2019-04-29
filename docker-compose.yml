@@ -65,5 +65,3 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_PASSWORD}
   redis:
     image: redis:latest
-
-
