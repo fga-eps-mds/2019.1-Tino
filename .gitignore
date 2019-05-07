@@ -4,3 +4,5 @@
 .vscode
 __pycache__
 models/*
+
+csv/\.~lock\.professores\.csv#
