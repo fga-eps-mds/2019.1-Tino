@@ -8,19 +8,21 @@ import os
 from datetime import datetime, timezone
 import pytz
 import logging
+from pymongo import MongoClient
 
 mongo_host = os.environ['MONGO_ID']
-mongo_host = MONGO_HOSTNAME + ':27017'
+mongo_host = mongo_host + ':27017'
 url = os.environ['INTERCAMPI_WEBHOOK']
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
-url_planaltina = url + "/planaltina" 
-url_ceilandia = url + "/ceilandia" 
+url_planaltina = url + "/planaltina"
+url_ceilandia = url + "/ceilandia"
 
 logger = logging.getLogger(__name__)
 
 
 class ActionCallapi(Action):
+
   def name(self) -> Text:
     return 'action_callapi'
 
@@ -76,14 +78,14 @@ class ActionCallapi(Action):
 
     if contador_proximos_intercampis == 0:
       dispatcher.utter_message('Não há mais intercampis saindo hoje :/')
-    if(local_embarque != ""):
+    if(local_embarque != "" and contador_proximos_intercampis != 0):
       dispatcher.utter_message('O local de embarque é ' + local_embarque)
 
     return []
 
 class ActionCallapiAll(Action):
-  def name(self) -> Text:
-    return 'action_callapi_all_intercampi'
+  def name(self):
+      return 'action_callapi_all_intercampi'
 
   def run(self, dispatcher, tracker, domain):
     requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
