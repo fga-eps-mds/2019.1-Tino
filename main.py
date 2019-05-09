@@ -83,7 +83,7 @@ def set_webhook():
         "falha ao criar o webhook"
 
 
-if(__name__ ==  '__main__'):
+if(__name__ == '__main__'):
     call_webhook = set_webhook()
     ascii_banner = pyfiglet.figlet_format(call_webhook)
     print(ascii_banner)

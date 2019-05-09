@@ -144,7 +144,8 @@ def get_from_planaltina():
             del y['_id']
             json.append(y)
 
-    return jsonify(json)   
+    return jsonify(json)
+
 
 if(__name__ == '__main__'):
     app.run(debug=True, host='0.0.0.0')
