@@ -11,7 +11,7 @@ import ssl
 
 app = Flask(__name__)
 
-MONGO_USER = os.environ['MONGO_USER']    
+MONGO_USER = os.environ['MONGO_USER']
 MONGO_USER = str(MONGO_USER)
 MONGO_PASSWORD = os.environ['MONGO_PASSWORD']
 MONGO_PASSWORD = str(MONGO_PASSWORD)
@@ -38,13 +38,13 @@ def index():
         # Data must exists to insert a new in mongo
         print(intercampi_dados)
         if(intercampi_dados != ""):
-            collection.delete_many({})      # Deleta arquivos antigos dentro da collection
-            # Insere cada element no banco     
-            for element in intercampi_dados :
+            collection.delete_many({})  # Delete old registers
+            # Inserting element in db
+            for element in intercampi_dados:
                 collection.insert_one(element)
         json = []
 
-        # Find 
+        # Find
         for y in collection.find():
             print(y['_id'])
             del y['_id']        # Deleta o atributo  '_id' .
@@ -74,7 +74,7 @@ def get_from_fga_site():
     first_table = json.loads(first_table)
 
     result = []
-    # for each item,create a element and put on json list
+    # for each item, create a element and put on json list
     for item in first_table:
         element = {}
         element = {'horario_saida': item[0], 'destino': item[2],
@@ -101,10 +101,11 @@ def get_from_darcy():
 
     json = []
     for y in collection.find():
-        if(y['origem'] == "Darcy Ribeiro"):     # Filtra os registros relacionados a 'Darcy Ribeiro'.
-            del y['_id']                        # Deleta o atributo '_id'
-            json.append(y)                      # Adiciona o registro a uma lista json.
-        
+        # Filter the registers with 'origem' equals 'Darcy Ribeiro'.
+        if(y['origem'] == "Darcy Ribeiro"):
+            del y['_id']    # Delete the '_id' attribute
+            json.append(y)  # Add the register in json
+
     return jsonify(json)
 
 

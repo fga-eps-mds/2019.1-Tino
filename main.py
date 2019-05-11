@@ -31,12 +31,12 @@ app = Flask(__name__)
 def index():
     if(request.method == 'POST'):
         msg = request.get_json()
-        # message é a mensagem do usuario, chat_id do user
+
         chat_id, message = parse_msg(msg)
         response_messages = applyAi(message)
         if 'todos' in message:
             requests.get(SENDPDF_WEBHOOK+"/?chat_id=" + str(chat_id))
-            
+
         send_message(chat_id, response_messages)
         return Response('ok', status=200)
 
@@ -53,7 +53,7 @@ def parse_msg(message):
 
 # helper function to send message
 def send_message(chat_id, messages=[]):
-    url = 'https://api.telegram.org/bot'+token+'/sendMessage'
+    url = 'https://api.telegram.org/bot' + token + '/sendMessage'
     if messages:
         for message in messages:
             payload = {'chat_id': chat_id, 'text': message}
@@ -76,6 +76,7 @@ def set_webhook():
                                  + token + "/deleteWebhook")
     createWebhook = requests.get("https://api.telegram.org/bot"
                                  + token + "/setWebhook?url="+TELEGRAM_WEBHOOK)
+    print(deleteWebhook)
 
     if createWebhook.status_code == 200:
         return "web hook criado com sucesso"

@@ -1,6 +1,6 @@
 from rasa_core_sdk import Tracker
 from rasa_core_sdk.executor import CollectingDispatcher
-from typing import Dict, Text, Any, List
+from typing import Text
 from rasa_core_sdk import Action
 import requests
 import json

@@ -22,18 +22,19 @@ except IOError:
 # try:
 header = ['name', 'room', 'email']
 
+count = 0
+
 # Header file validation
 if reader.fieldnames[0] != 'name' or reader.fieldnames[1] != 'room' \
    or reader.fieldnames[2] != 'email':
-    print("O cabecalho do CSV esta incorreto.")
+    print("O cabeçalho do CSV está incorreto.")
 for each in reader:
     row = {}
     if each['name'] != "" and each['room'] != "" and each['email'] != "":
         row = each
-        print(row)
         collection.insert_one(row)
+        count = count + 1
     else:
         continue
 
-total = collection.count('professor-contato')
-print("Foram adicionado(s) {} professore(s)".format(total))
+print("Foram adicionado(s) {} professore(s)".format(count))
