@@ -5,7 +5,8 @@ LABEL AUTHOR="jp-gomes"
 
 #Instalando pacotes necessários
 RUN pip install --upgrade pip && \
-    pip install flask && \ 
+    pip install flask && \
+    pip3 install telegram && \ 
     pip install request
 
 RUN mkdir /2019.1-Tino
