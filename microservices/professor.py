@@ -2,7 +2,8 @@ from flask import Flask
 from pymongo import MongoClient
 import csv
 
-app = Flask(name)
+app = Flask(__name__)
+
 
 # Set db settings
 client = MongoClient('localhost:27017', username='rasa', password='rasa')
@@ -18,24 +19,29 @@ try:
 except IOError:
     print("Houve um erro na abertura do CSV.")
 
-reader = csv.DictReader(csv_professor)
+# try:
 header = ['name', 'room', 'email']
 
 # Header file validation
 if reader.fieldnames[0] != 'name' or reader.fieldnames[1] != 'room' or reader.fieldnames[2] != 'email':
     print("O cabecalho do CSV esta incorreto.")
 
-
+errado = 0 
 for each in reader:
     row = {}
     for field in header:
-     row[field] = each[field]
-     try:
-        assert each[field] != ""
-        print("Tudo Certo ")
-       
-     except AssertionError as e:
-        print("Ha um espaco em branco.") 
-
-    collection.insert_one(row)
      
+     try:
+         assert each[field] != ""
+         row[field] = each[field]
+     except AssertionError as e:
+         errado = errado+1
+         print("Ha  espacos em branco.")
+         
+    if (errado==0):
+        collection.insert_one(row)
+    
+total = collection.count('professor-contato')
+
+print("Foram adicionado(s) {} professore(s)".format(total))
+
