@@ -23,25 +23,17 @@ except IOError:
 header = ['name', 'room', 'email']
 
 # Header file validation
-if reader.fieldnames[0] != 'name' or reader.fieldnames[1] != 'room' or reader.fieldnames[2] != 'email':
+if reader.fieldnames[0] != 'name' or reader.fieldnames[1] != 'room' \
+   or reader.fieldnames[2] != 'email':
     print("O cabecalho do CSV esta incorreto.")
-
-errado = 0 
 for each in reader:
     row = {}
-    for field in header:
-     
-     try:
-         assert each[field] != ""
-         row[field] = each[field]
-     except AssertionError as e:
-         errado = errado+1
-         print("Ha  espacos em branco.")
-         
-    if (errado==0):
+    if each['name'] != "" and each['room'] != "" and each['email'] != "":
+        row = each
+        print(row)
         collection.insert_one(row)
-    
+    else:
+        continue
+
 total = collection.count('professor-contato')
-
 print("Foram adicionado(s) {} professore(s)".format(total))
-
