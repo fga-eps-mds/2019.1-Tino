@@ -7,7 +7,7 @@ import telegram
 
 
 app = Flask(__name__)
-BOT_TOKEN = os.environ['TELEGRAM_TOKEN']
+BOT_TOKEN = os.environ.get('TELEGRAM_TOKEN')
 BOT_TOKEN = str(BOT_TOKEN)
 
 # accept telegram messages

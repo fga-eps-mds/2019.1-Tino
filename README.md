@@ -21,7 +21,7 @@ Esse repositório contém o código do framework do chatbot Tino, e todos os seu
 
 #### 2 - Construir a imagem das ações personalizadas do RASA: `sudo docker build -t jp:latest .`
 
-#### 3 - Construir a imagem do microserviço que informa o intercampi: `sudo docker build -t jp-intercampi:latest -f Intercampi.Dockerfile .`
+#### 3 - Construir a imagem do microserviço que informa o intercampi: `sudo docker build -t jp-intercampi:latest -f Intercamping.Dockerfile .`
 
 #### 4 - Construir a imagem do microserviço que envia uma imagem com o horário de todos os intercampis: `sudo docker build -t jp-send-pdf:latest -f SendPdf.Dockerfile .`
 
