@@ -7,6 +7,7 @@ from flask import jsonify
 from urllib import request as rq
 import os
 import ssl
+import json
 
 app = Flask(__name__)
 
@@ -23,15 +24,20 @@ MONGO_HOSTNAME = str(MONGO_HOSTNAME) + ':27017'
 def index():
     if(request.method == 'POST'):
         return Response('ok', status=200)
+        
     else:
         intercampi_dados = ""
         try:
-            collection = get_intercampi_collection()
+            collection = get_intercampi_collection() 
+          
         except Exception as error:
             print(error)
+            print('ERRO AO ACESSAR COLEÇÃO')
 
         try:
             intercampi_dados = get_from_fga_site()
+            print(intercampi_dados)
+            
         except Exception as error:
             print(error)
 
@@ -43,7 +49,6 @@ def index():
             for element in intercampi_dados :
                 collection.insert_one(element)
         json = []
-
         # Find 
         for y in collection.find():
             print(y['_id'])
@@ -54,11 +59,12 @@ def index():
 
 def get_intercampi_collection():
 
-    # acess mongo database
+    # Acesso a barra de dados do mongo
     client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,
                          password=MONGO_PASSWORD)
     db = client.admin
     collection = db['intercampi-horario']
+   
 
     return collection
 
@@ -72,8 +78,8 @@ def get_from_fga_site():
     first_table = first_table.to_json(orient='values')
     # convert string to json
     first_table = json.loads(first_table)
-
     result = []
+    
     # for each item,create a element and put on json list
     for item in first_table:
         element = {}
@@ -82,6 +88,7 @@ def get_from_fga_site():
         result.append(element)
 
     print(result)
+   
 
     return result
 
@@ -103,8 +110,8 @@ def get_from_darcy():
     for y in collection.find():
         if(y['origem'] == "Darcy Ribeiro"):     # Filtra os registros relacionados a 'Darcy Ribeiro'.
             del y['_id']                        # Deleta o atributo '_id'
-            json.append(y)                      # Adiciona o registro a uma lista json.
-        
+            json.append(y)                              # Adiciona o registro a uma lista json.
+    
     return jsonify(json)
 
 
