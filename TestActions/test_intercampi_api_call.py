@@ -11,7 +11,8 @@ url_ceilandia = url + "/ceilandia"
 
 def test_all_path():
 
-    request = requests.get(url).json()
+    request = requests.get(url)
+    assert request.status_code == 200
 
 def test_gama_path():
 
