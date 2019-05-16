@@ -1,4 +1,3 @@
-import json
 from flask import Flask
 from flask import request
 from flask import Response
@@ -11,12 +10,13 @@ import ssl
 
 app = Flask(__name__)
 
-MONGO_USER = os.environ['MONGO_USER']
+MONGO_USER = os.environ.get('MONGO_USER')
 MONGO_USER = str(MONGO_USER)
-MONGO_PASSWORD = os.environ['MONGO_PASSWORD']
+MONGO_PASSWORD = os.environ.get('MONGO_PASSWORD')
 MONGO_PASSWORD = str(MONGO_PASSWORD)
-MONGO_HOSTNAME = os.environ['MONGO_ID']
-MONGO_HOSTNAME = MONGO_HOSTNAME + ':27017'
+MONGO_HOSTNAME = os.environ.get('MONGO_ID')
+MONGO_HOSTNAME = str(MONGO_HOSTNAME) + ':27017'
+
 
 # accept telegram messages
 @app.route('/', methods=['POST', 'GET'])  # ###----ALL PATH----####
@@ -38,9 +38,9 @@ def index():
         # Data must exists to insert a new in mongo
         print(intercampi_dados)
         if(intercampi_dados != ""):
-            collection.delete_many({})  # Delete old registers
-            # Inserting element in db
-            for element in intercampi_dados:
+            collection.delete_many({})
+            # Insere cada element no banco
+            for element in intercampi_dados :
                 collection.insert_one(element)
         json = []
 
@@ -52,8 +52,8 @@ def index():
 
     return jsonify(json)
 
-
 def get_intercampi_collection():
+
     # acess mongo database
     client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,
                          password=MONGO_PASSWORD)
