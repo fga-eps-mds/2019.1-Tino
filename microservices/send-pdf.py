@@ -19,8 +19,11 @@ def index():
         bot = telegram.Bot(token=BOT_TOKEN)
         chat_id = request.args.get('chat_id')
         json = {"chat_id": chat_id}
-        photo1 = open('/2019.1-Tino/assets/tabela.png', 'rb')
-        bot.send_photo(chat_id, photo1)
+        try:
+            photo1 = open('/2019.1-Tino/assets/tabela.png', 'rb')
+            bot.send_photo(chat_id, photo1)
+        except Exception as e:
+            print(e)
 
     return jsonify(json)
 
