@@ -35,55 +35,62 @@ class ActionCallapi(Action):
 
         for word in words:
             if('darcy' in word or "plano" in word):
-                origem = "Darcy Ribeiro"
-                local_embarque = "no Estacionamento do ICC sul"
-                request = requests.get(url_darcy).json()  # api call
+                origin = "Darcy Ribeiro"
+                boarding_location = "no Estacionamento do ICC sul"
                 break
             if("gama" in word or "fga" in word):
-                origem = "Gama-FGA"
-                local_embarque = "no \"Estacionamento\" do Prédio "
-                request = requests.get(url_gama).json()
+                origin = "Gama-FGA"
+                boarding_location = "no Estacionamento do Prédio"
                 break
             if("ceilandia" in word or "ceilândia" in word or "fce" in word):
-                origem = "Ceilândia"
-                local_embarque = "em frente a portaria central"
-                request = requests.get(url_ceilandia).json()
+                origin = "Ceilândia-FCE"
+                boarding_location = "em frente a portaria central"
                 break
             if("planaltina" in word or "fup" in word):
-                origem = "Planaltina"
-                local_embarque = "em frente ao antigo Prédio"
-                request = requests.get(url_planaltina).json()
+                origin = "Planaltina-FUP"
+                boarding_location = "em frente ao antigo Prédio"
                 break
 
-        if(origem == ""):
+        if(origin == ""):
             dispatcher.utter_message('Desculpe, não consegui entender onde' +
                                      'você está... Pode falar de maneira' +
                                      'mais clara?')
             return []
 
         dispatcher.utter_message('Verificando se há intercampis saindo de ' +
-                                 origem + '...')
+                                 origin + '...')
+
+        # Do request according the 'origin'.
+        if(origin == "Darcy Ribeiro"):
+            request = requests.get(url_darcy).json()
+        if(origin == "Gama-FGA"):
+            request = requests.get(url_gama).json()
+        if(origin == "Ceilândia-FCE"):
+            request = requests.get(url_ceilandia).json()
+        if(origin == "Planaltina"):
+            request = requests.get(url_planaltina).json()
 
         json_result = request
 
         time_zone = pytz.timezone('America/Sao_Paulo')
-        hora_atual = datetime.now(time_zone)
-        contador_proximos_intercampis = 0
+        current_time = datetime.now(time_zone)
+        intercampi_count = 0
 
         for y in json_result:
-            hora_intercampi = y['horario_saida']
-            hora_intercampi = hora_intercampi.split('h')
+            intercampi_time = y['horario_saida']
+            intercampi_time = intercampi_time.split('h')
 
-            if hora_atual.hour <= int(hora_intercampi[0]):
+            if current_time.hour <= int(intercampi_time[0]):
                 dispatcher.utter_message('Destino: ' + y['destino'] +
                                          '\n' + "Horário de saída: " +
                                          y['horario_saida'])
-                contador_proximos_intercampis += 1
+                intercampi_count += 1
 
-        if contador_proximos_intercampis == 0:
+        if intercampi_count == 0:
             dispatcher.utter_message('Não há mais intercampis saindo hoje :/')
-        if(local_embarque != "" and contador_proximos_intercampis != 0):
-            dispatcher.utter_message('O local de embarque é ' + local_embarque)
+        if(boarding_location != "" and intercampi_count != 0):
+            dispatcher.utter_message('O local de embarque é ' + 
+                                     boarding_location)
 
         return []
 
@@ -97,7 +104,8 @@ class ActionCallapiAll(Action):
                                  'intercampi')
         requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
 
-class ActionFindProfessor(Action): 
+
+class ActionFindProfessor(Action):
     def name(self) -> Text:
         return 'action_find_professor'
 
