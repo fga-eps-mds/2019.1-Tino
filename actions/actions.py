@@ -93,10 +93,11 @@ class ActionCallapiAll(Action):
         return 'action_callapi_all_intercampi'
 
     def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message('Este é um documento com o horario de todos' +
+                                 'intercampi')
         requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
 
-
-class ActionFindProfessor(Action):
+class ActionFindProfessor(Action): 
     def name(self) -> Text:
         return 'action_find_professor'
 

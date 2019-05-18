@@ -833,3 +833,11 @@
  - Me  ve o contato da professora [Bruna Mayara](professor)
  - Me  ve o contato da professora [Sandra](professor)
  - me ve o email do [Vandor](professor)
+ - [carla](professor)
+ - [matheus bernadini](professor)
+
+## intent:info_professor
+ - Informações sobre os professores
+ - quero saber sobre os professores
+ - informações dos professores
+
