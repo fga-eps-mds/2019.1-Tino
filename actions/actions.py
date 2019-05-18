@@ -100,8 +100,9 @@ class ActionCallapiAll(Action):
         return 'action_callapi_all_intercampi'
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message('Este é um documento com o horario de todos' +
-                                 'intercampi')
+        dispatcher.utter_message('Pronto! Aqui está um documento com ' +
+                                 'o horário de todos intercampi. Precisa ' +
+                                 'de mais alguma coisa?')
         requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
 
 

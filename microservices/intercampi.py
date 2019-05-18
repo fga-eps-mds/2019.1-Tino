@@ -40,7 +40,7 @@ def index():
         if(intercampi_dados != ""):
             collection.delete_many({})
             # Insere cada element no banco
-            for element in intercampi_dados :
+            for element in intercampi_dados:
                 collection.insert_one(element)
         json = []
 
@@ -51,6 +51,7 @@ def index():
             json.append(y)      # Adiciona o registro a uma lista Json.
 
     return jsonify(json)
+
 
 def get_intercampi_collection():
 

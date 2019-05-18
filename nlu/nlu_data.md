@@ -768,7 +768,6 @@
  - preciso falar com o [Artur Elias](professor)
  - preciso achar o [Diogo Caetano](professor)
  - preciso saber a sala da [Cristiane Soares Ramos](professor)
-
  - Passa o contato da professora [Bruna](professor)
  - Passa o contato da professora [Paola Lima](professor)
  - Passa o contato da professora [Paula Meyer](professor)
@@ -833,8 +832,39 @@
  - Me  ve o contato da professora [Bruna Mayara](professor)
  - Me  ve o contato da professora [Sandra](professor)
  - me ve o email do [Vandor](professor)
+ <!-- Do/Da... -->
+ - do [Fabricio](professor)
+ - do [Nilton](professor)
+ - do [Lindomar](professor)
+ - do [Ricardo](professor)
+ - do [Euler](professor)
+ - do professor [Giovanni](professor)
+ - do professor [Renato](professor)
+ - do professor [Vinicius](professor)
+ - do professor [Matheus](professor)
+ - da [Andréia](professor)
+ - da [Loana](professor)
+ - da [Maria](professor)
+ - da [Maria Alzira](professor)
+ - da [Maria Vitoria](professor)
+ - da [Marília](professor)
+ - da [Maura](professor)
+ - da professora [Patrícia](professor)
+ - da professora [Paula](professor)
+ - da professora [Sandra Maria](professor)
+ - da professora [Sandra Maria Faleiros](professor)
+ - da professora [Sandra Maria da Luz](professor)
+ - da professora [Tatiane](professor)
+<!-- Só o nome -->
  - [carla](professor)
  - [matheus bernadini](professor)
+ - [Wesley](professor)
+ - [Yevsey](professor)
+ - [Wellington](professor)
+ - [Wander](professor)
+ - [Vandor](professor)
+ - [Vanessa](professor)
+
 
 ## intent:info_professor
  - Informações sobre os professores
