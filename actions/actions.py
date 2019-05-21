@@ -67,7 +67,7 @@ class ActionCallapi(Action):
             request = requests.get(url_gama).json()
         if(origin == "Ceilândia-FCE"):
             request = requests.get(url_ceilandia).json()
-        if(origin == "Planaltina"):
+        if(origin == "Planaltina-FUP"):
             request = requests.get(url_planaltina).json()
 
         json_result = request
@@ -130,9 +130,9 @@ class ActionFindProfessor(Action):
                 email = y['email']
                 break
         if(name == ""):
-            dispatcher.utter_message('Não foi possivel encontrar este' +
-                                     'professor... Verifique se o nome' +
-                                     'está correto e com as iniciais' +
+            dispatcher.utter_message('Não foi possivel encontrar este ' +
+                                     'professor... Verifique se o nome ' +
+                                     'está correto e com as iniciais ' +
                                      'maiúsculas!')
             return []
 
