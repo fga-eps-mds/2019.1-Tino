@@ -49,7 +49,7 @@ def index():
             for element in intercampi_dados :
                 collection.insert_one(element)
         json = []
-        # Find 
+
         for y in collection.find():
             print(y['_id'])
             del y['_id']        # Deleta o atributo  '_id' .
@@ -79,8 +79,7 @@ def get_from_fga_site():
     # convert string to json
     first_table = json.loads(first_table)
     result = []
-    
-    # for each item,create a element and put on json list
+
     for item in first_table:
         element = {}
         element = {'horario_saida': item[0], 'destino': item[2],
@@ -112,6 +111,7 @@ def get_from_darcy():
             del y['_id']                        # Deleta o atributo '_id'
             json.append(y)                              # Adiciona o registro a uma lista json.
     
+
     return jsonify(json)
 
 
@@ -151,7 +151,8 @@ def get_from_planaltina():
             del y['_id']
             json.append(y)
 
-    return jsonify(json)   
+    return jsonify(json)
+
 
 if(__name__ == '__main__'):
     app.run(debug=True, host='0.0.0.0')
