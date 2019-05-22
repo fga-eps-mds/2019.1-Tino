@@ -6,14 +6,16 @@ stages:
 variables:
   ACTION_IMAGE: jppgomes/jp:latest
   TELEGRAM_IMAGE: jppgomes/jp-telegram:latest
-  INTERCAMPI_IMAGE: jppgomes/jp-intercampi:latest
+  INTERCAMPI_IMAGE: $jppgomes/jp-intercampi:latest
 
 
 ######################## Tests #############################
 test_flake8:
+  image: ejplatform/python:alpine
   stage: test
   script:
     - pip install pytest && source .env && cd TestActions && pytest
+
 
 
 
