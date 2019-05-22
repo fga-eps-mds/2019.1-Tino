@@ -26,7 +26,7 @@ services:
       - .:/2019.1-Tino
     command: sh -c "pip install pyfiglet && python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python main.py"
   intercampi:
-    image: jp-intercampi:latest
+    image: intercampi-jp:latest
     environment:      
       INTERCAMPI_WEBHOOK: ${INTERCAMPI_WEBHOOK}
       SENDPDF_WEBHOOK: ${SENDPDF_WEBHOOK}
