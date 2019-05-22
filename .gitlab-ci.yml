@@ -14,7 +14,7 @@ test_flake8:
   image: ejplatform/python:alpine
   stage: test
   script:
-    - pip install pytest && source .env && cd TestActions && pytest
+    - pip install requests && pip install pytest && source .env && cd TestActions && pytest
 
 
 
