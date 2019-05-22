@@ -20,17 +20,21 @@ except IOError:
     print("Houve um erro na abertura do CSV.")
 
 # try:
-header = ['name', 'room', 'email']
+header = ['name', 'room', 'email', 'coordination']
 
 count = 0
 
 # Header file validation
 if reader.fieldnames[0] != 'name' or reader.fieldnames[1] != 'room' \
-   or reader.fieldnames[2] != 'email':
+   or reader.fieldnames[2] != 'email' or reader.fieldnames[3] \
+   != 'coordination':
     print("O cabeçalho do CSV está incorreto.")
+
 for each in reader:
     row = {}
-    if each['name'] != "" and each['room'] != "" and each['email'] != "":
+    # Fields requireds
+    if each['name'] != "" and each['room'] != "" \
+       and each['coordination'] != "":
         row = each
         collection.insert_one(row)
         count = count + 1
