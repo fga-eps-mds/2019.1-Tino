@@ -25,6 +25,7 @@ intents:
 - tudo_bem
 - intercampi_all
 - find_professor
+- info_professor
 
 actions:
 - utter_thanks
@@ -49,6 +50,7 @@ actions:
 - utter_where_next
 - utter_politica
 - utter_tudo_bem
+- utter_info_professor
 
 entities:
 - campus
@@ -77,7 +79,7 @@ templates:
   - text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
           Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
           - Horários dos Intercampis\n
-          - Informações dos Professores" 
+          - Informações dos Professores\n"
           
   - text: "Opa Eaí! Sou o Tino e estou ansioso para te ajudar no que precisar\n\n
           Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
@@ -201,3 +203,6 @@ templates:
   - text: "Cada um tem a sua opnião e eu respeito a sua"
   - text: "Política?! Tô fora, pego o meu wifi e vou embora"
   - text: "Vote Tino, por um modo com mais chatbots!"
+  
+  utter_info_professor:
+  - text: "Ok. Qual professor deseja saber?"

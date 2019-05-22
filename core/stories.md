@@ -83,3 +83,7 @@
  - utter_where_next
 * affirm_where
  - action_callapi
+
+ ## story_info_professor
+ * info_professor
+  - utter_info_professor
