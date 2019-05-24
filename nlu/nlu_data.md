@@ -34,6 +34,32 @@
 - hahahaha
 - celular
 - objeto
+- cadeira
+- caderno
+- akadksas
+- kdajdiada
+- kaksa
+- ventilador
+- ar-condicionado
+- perfume
+- TV
+- notebook
+- geladeira
+- vento
+- luz
+- sol
+- água
+- vidro
+- mapa
+- chuva
+- globo
+- lapis
+- caneta
+- banana
+- maça
+- óculos
+- fone
+- interfone
 
 
 ## intent:goodbye <!--- The label of the intent --> 
@@ -47,9 +73,6 @@
 - te vejo mais tarde
 - tenho que ir
 - Até logo
-- boa noite
-- bom dia
-- boa tarde
 - xau
 - falou
 - falow
@@ -63,7 +86,7 @@
 - nós falaremos em breve
 - Vou nessa
 - estou de saída
-- obrigado, tchau
+- tchau
 - falo com você depois
 - Nos vemos por aí
 - saindo aqui
@@ -108,7 +131,6 @@
 - salve
 - qual foi
 - fala tu 
-- piei
 - ou
 - ow
 - eaew
@@ -119,8 +141,8 @@
 - vey
 - eaae vey
 - eai bixo
-- ea e
-- ea i
+- eae
+- eai
 - e ai
 - faala
 - ea aí man kk
@@ -155,14 +177,12 @@
 - ja voltei
 - to aqui
 - oieee
-- oi oi
 - olaa
 - de volta na area
 - muito prazer robo
 - prazer
 - prazer em conhece-lo
 - eaíí
-- e aí
 - eai meu bom 
 - manda o papo
 - salvee
@@ -177,7 +197,6 @@
 - Muito obrigado
 - bot obrigado
 - Obrigado por isso
-- Felicidades
 - Obrigado amigo!
 - Muito obrigado amigo!
 - Obrigado mesmo amigo!
@@ -200,35 +219,6 @@
 - Agradecida
 - Grato
 - Grata
-
-## intent:random
-- você parece o lino
-- o dia está lindo hoje
-- eu um ovni
-- você acredita em ovni?
-- o dia está chuvoso
-- você assisti televisão?
-- naruto
-- dragon ball
-- você joga poker?
-- caneta
-- borracha
-- corrida
-- televisão
-- controle remoto
-- parede
-- guarda roupa
-- medalha 
-- olimpiada
-- como deriva ?
-- como acho o limite de uma equação ?
-- como faço uma integral ?
-- quanto você tirou na prova ?
-- vai chover
-- nunca nem vi
-- kkkk
-- aleatorio
-- random
 
 ## intent:about_name
 - Qual é o seu nome?
@@ -337,12 +327,9 @@
 ## intent:offense
 - alma sebosa
 - ordinario
-- capa
 - escroto
 - cuzao
-- rauly
-- fela da puta
-- fela
+- puta
 - pqp
 - puta que pariu
 - viado
@@ -352,69 +339,27 @@
 - desgraçado
 - seu puto
 - fi de quenga
-- seu mané
 - robo idiota
-- fodasssse
+- foda
 - foda-se
-- que se foda
-- foda se
-- fodase
-- fi da puta
 - vai tomar no cu
 - vtnc
 - tnc
 - bosta
 - vai se fuder
 - vsf
-- batata
 - seu merda
-- lixo
-- escroto
-- burro
+- cretino
+- chato
+- caralho
+- porra
 - merda
-- jumento
-- pnc
-- pau no cu
-- pau no rego
-- abestado
-- jegão
-- desgraça
-- safado
-- puta
-- corno
-- puto
-- piranha
-- vigarista
-- sua puta
-- bobão
-- tu é um mosca
-- moscao
-- zé ruela
-- zé buceta
-- ameba
-- seu bot horrivel
-- vai se lascar
-- arrombado
-- vagabundo
-- chupa minha pica
-- retardado
-- petista
-- lacaio
-- froxo
-- covarde
-- tratante 
-- buceta
-- traste
-- embuste
-- ranço
-- burro pra caralho
 
 ## intent:im_bad
 - to mal
 - muito triste
 - triste
 - mais ou menos
-- mas ou menos
 - podia estar melhor
 - infeliz
 - cansado
@@ -716,7 +661,6 @@
 ## intent:find_professor
 <!---Como... -->
  - Como falo com o [Fragelli](professor)?
- - Como consigo o email do [Fulano Deutrano](professor)?
  - como entro em contato com o [Luis Augusto Laranjeiras](professor)?
  - como acho o professor [Fabricio Braz](professor)?
  - como faço pra falar com a [Rejane Maria](professor)? 
@@ -856,18 +800,42 @@
  - da professora [Sandra Maria da Luz](professor)
  - da professora [Tatiane](professor)
 <!-- Só o nome -->
- - [carla](professor)
- - [matheus bernadini](professor)
+ - [Carla](professor)
+ - [Matheus bernadini](professor)
  - [Wesley](professor)
  - [Yevsey](professor)
  - [Wellington](professor)
  - [Wander](professor)
  - [Vandor](professor)
  - [Vanessa](professor)
+ - [Sandra](professor)
+ - [Gabriela](professor)
+ - [Bruna](professor)
+ - [Lindomar](professor)
+ - [Paula](professor)
+ - [Fragelli](professor)
+ - [Tatiane](professor)
+ - [Taís](professor)
+ - [Maria](professor)
+ - [Maria Alzira](professor)
+ - [Marilia](professor)
+ - [Gilmar](professor)
+ - [Henrique](professor)
+ - [Vanessa](professor)
+ - [Giovanni](professor)
+ - [Jhon](professor)
+ - [Ricardo Fragelli](professor)
+ - [Yevsey](professor)
+ - [Luis Filomeno](professor)
+ - [Ricardo](professor)
+ - [Chaim](professor)
+ - [Thiago](professor)
+ - [Ricardo Matos](professor)
+ - [Fabiana](professor)
+ - [Rispoli](professor)
 
 
 ## intent:info_professor
  - Informações sobre os professores
  - quero saber sobre os professores
  - informações dos professores
-

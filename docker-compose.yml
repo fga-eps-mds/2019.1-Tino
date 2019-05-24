@@ -26,7 +26,7 @@ services:
       - .:/2019.1-Tino
     command: sh -c "pip install pyfiglet && python -m rasa_nlu.train -c nlu/nlu_config.yml --data nlu/nlu_data.md -o models --fixed_model_name nlu --project current --verbose && python -m rasa_core.train -d core/domain.yml -s core/stories.md -o models/current/dialogue && python main.py"
   intercampi:
-    image: intercampi-jp:latest
+    image: jp-intercampi:latest
     environment:      
       INTERCAMPI_WEBHOOK: ${INTERCAMPI_WEBHOOK}
       SENDPDF_WEBHOOK: ${SENDPDF_WEBHOOK}
@@ -38,7 +38,7 @@ services:
     volumes:
       - .:/2019.1-Tino
     command: sh -c "pip install pandas && export FLASK_APP=./microservices/intercampi.py && export FLASK_DEBUG=1 && flask run --host 0.0.0.0 --port 5002"
-  jp-send-pdf: 
+  send-pdf: 
     image: jp-send-pdf:latest 
     environment:      
       SENDPDF_WEBHOOK: ${SENDPDF_WEBHOOK}
