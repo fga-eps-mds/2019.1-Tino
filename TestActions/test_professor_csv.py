@@ -49,21 +49,17 @@ def test_csv_header():
         header_status = "Cabeçalho Inválido"
     assert header_status == "Sem erros"
     
-'''
 def test_csv_pofessor_count():
     count = 0
     reader = csv_open_read()
-    collection = get_mongo_collection()
-    
+
     for each in reader:
         row = {}
         # Fields requireds
         if each['name'] != "" and each['room'] != "" \
         and each['coordination'] != "":
             row = each
-            collection.insert_one(row)
             count = count + 1
         else:
             continue
     assert count == 110        
-'''
