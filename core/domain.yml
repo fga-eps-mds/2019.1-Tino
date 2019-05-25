@@ -11,7 +11,8 @@ intents:
 - about_age
 - about_location
 - about_pet
-- about_seriesnegative
+- about_series
+- negative
 - about_collor
 - about_hobby
 - about_music
