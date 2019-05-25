@@ -1,11 +1,8 @@
-from flask import Flask
 from pymongo import MongoClient
 import csv
 import os
 
-app = Flask(__name__)
-
-mongo_host = os.environ['MONGO_ID']
+mongo_host = 'localhost'     #os.environ['MONGO_ID']
 mongo_host = mongo_host + ':27017'
 
 def get_mongo_collection():
@@ -21,7 +18,7 @@ def csv_open_read():
     
     return reader   
 
-def test_mongo_connect_professor():
+def test_mongo_connect_professor_collection():
 # Set db settings
     connection_status = "OK"
     try:
