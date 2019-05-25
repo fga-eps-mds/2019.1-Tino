@@ -130,7 +130,6 @@ class ActionFindProfessor(Action):
                 email = y['email']
                 break
         if(name == ""):
-            dispatcher.utter_message("nome {}".format(name))
             dispatcher.utter_message('Não foi possivel encontrar este ' +
                                      'professor... Verifique se o nome ' +
                                      'está correto e com as iniciais ' +
@@ -152,12 +151,14 @@ class ActionFindProfessor(Action):
             dispatcher.utter_message('Sala : {}'.format(room))
             dispatcher.utter_message('E-mail : {}'.format(email))
             return []
+
         if(name == "Yevsey  Yehoshua  Sobolevsky"):
             dispatcher.utter_message('Se já é difícil escrever o nome, não quero nem ver a prova.')
             dispatcher.utter_message('Se liga só nos dados dele:')
             dispatcher.utter_message('Nome : {}'.format(name))
             dispatcher.utter_message('Sala : {}'.format(room))
             dispatcher.utter_message('E-mail : {}'.format(email))
+
             return []
 
         if(name == "Marília Miranda Forte Gomes"):
@@ -179,14 +180,15 @@ class ActionFindProfessor(Action):
 
         if(name == "Gerardo Antonio Idrobo  Pizo"):
             dispatcher.utter_message('Beleza meu companheiro')
-            dispatcher.utter_message('Procurando aqui nos meus arquivos")
+            dispatcher.utter_message('Procurando aqui nos meus arquivos')
+            dispatcher.utter_message('......')
             dispatcher.utter_message('Segue abaixo:')
             dispatcher.utter_message('Nome : {}'.format(name))
             dispatcher.utter_message('Sala : {}'.format(room))
             dispatcher.utter_message('E-mail : {}'.format(email))
             return []
-        
-        if(name = "Luiza Yoko Taneguti"):
+
+        if(name == "Luiza Yoko Taneguti"):
             dispatcher.utter_message('Ela é da China ou Japão?')
             dispatcher.utter_message('Voltando ao assunto,rs!')
             dispatcher.utter_message('Segue abaixo:')
@@ -195,7 +197,7 @@ class ActionFindProfessor(Action):
             dispatcher.utter_message('E-mail : {}'.format(email))
 
             return []
-        
+
         if (name == "Paula Meyer Soares" or name == "Patrícia Regina Sobral Braga"):
             dispatcher.utter_message('Eu tinha uma amiga de infância com esse nome, acredita?')
             dispatcher.utter_message('Lembro de quando brincávamos de quem gerava o maior número randômico')

@@ -11,7 +11,7 @@ intents:
 - about_age
 - about_location
 - about_pet
-- about_series
+- about_seriesnegative
 - about_collor
 - about_hobby
 - about_music
@@ -26,6 +26,7 @@ intents:
 - intercampi_all
 - find_professor
 - info_professor
+- negative
 
 actions:
 - utter_thanks
@@ -51,6 +52,8 @@ actions:
 - utter_politica
 - utter_tudo_bem
 - utter_info_professor
+- utter_continuar
+- utter_negative
 
 entities:
 - campus
@@ -206,3 +209,11 @@ templates:
   
   utter_info_professor:
   - text: "Ok. Qual professor deseja saber?"
+
+  utter_continuar:
+    - text: "Posso te ajudar em  mais alguma coisa?"
+    - text: "Precisa de mais algo? É so falar."
+
+  utter_negative:
+    - text: "Ok!Se precisar é so chamar."
+    - text: "Ok! Estou aqui, se caso precisar"

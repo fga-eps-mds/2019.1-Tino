@@ -57,9 +57,7 @@
 - caneta
 - banana
 - maça
-- óculos
-- fone
-- interfone
+-
 
 
 ## intent:goodbye <!--- The label of the intent --> 
@@ -391,6 +389,7 @@
 - situação ta ruim 
 - sou triste
 - acabou minhas esperanças
+
 
 ## intent:call_lino
 - me ve o cardapio do ru
@@ -807,10 +806,11 @@
  - [Wellington](professor)
  - [Wander](professor)
  - [Vandor](professor)
- - [Vanessa](professor)
+ - [Vanessa Maria de Castro](professor)
  - [Sandra](professor)
- - [Gabriela](professor)
+ - [Gabriela](professor)    
  - [Bruna](professor)
+ - [Bruna Nayara](professor)
  - [Lindomar](professor)
  - [Paula](professor)
  - [Fragelli](professor)
@@ -818,24 +818,35 @@
  - [Taís](professor)
  - [Maria](professor)
  - [Maria Alzira](professor)
- - [Marilia](professor)
- - [Gilmar](professor)
+ - [Gerardo](professor)
+ - [Gilmar Silva](professor)
  - [Henrique](professor)
  - [Vanessa](professor)
- - [Giovanni](professor)
- - [Jhon](professor)
+ - [Giovanni Almeida](professor)
+ - [Jhon Nero](professor)
  - [Ricardo Fragelli](professor)
- - [Yevsey](professor)
+ - [Yevsey Yehoshua Sobolevsky](professor)
  - [Luis Filomeno](professor)
  - [Ricardo](professor)
- - [Chaim](professor)
+ - [Luiz Augusto Fontes Laranjeira](professor)
  - [Thiago](professor)
  - [Ricardo Matos](professor)
  - [Fabiana](professor)
- - [Rispoli](professor)
+ - [Vinicius de Carvalho Rispoli](professor)
 
 
 ## intent:info_professor
  - Informações sobre os professores
  - quero saber sobre os professores
  - informações dos professores
+
+
+## intent:negative
+ - Não
+ - Não,Obrigado
+ - Não, vlw
+ - nops, ty
+ - no
+ - nao, valeu
+ - nao
+ - não
