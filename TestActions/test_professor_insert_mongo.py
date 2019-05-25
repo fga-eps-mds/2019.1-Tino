@@ -13,7 +13,7 @@ def get_mongo_collection():
     return collection
 
 def csv_open_read():
-    csv_professor = open('./csv/professores.csv', 'r')
+    csv_professor = open('../csv/professores.csv', 'r')
     reader = csv.DictReader(csv_professor)
     
     return reader   
@@ -40,8 +40,7 @@ def test_csv_read():
 
 def test_csv_header():
     # Check if CSV header is valid
-    csv_professor = open('./csv/professores.csv', 'r')
-    reader = csv.DictReader(csv_professor)     
+    reader = csv_open_read()     
     header_status = "Sem erros"
     if reader.fieldnames[0] != 'name' or reader.fieldnames[1] != 'room' \
     or reader.fieldnames[2] != 'email' or reader.fieldnames[3] \
