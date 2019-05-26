@@ -868,6 +868,45 @@
 
 ## intent:info_professor
  - Informações sobre os professores
- - quero saber sobre os professores
- - informações dos professores
-
+ - Informações dos professores
+ - Informações sobre os coordenadores
+ - Informações dos coordenadores
+<!-- Quero -->
+ - Quero saber sobre os professores
+ - Quero saber de um professor
+ - Quero saber o email de um professor
+ - Quero saber o email de uma professora
+ - Quero saber a sala de um professor
+ - Quero saber a sala de uma professora
+ - Quero saber sobre os coordenadores
+ - Quero saber de um coordenador
+ - Quero saber o email de um coordenador
+ - Quero saber o email de uma coordenadora
+ - Quero saber a sala de um coordenador
+ - Quero saber a sala de uma coordenadora
+<!-- Preciso -->
+ - Preciso das informações de um professor
+ - Preciso saber a sala de um professor
+ - Preciso saber o email de um professor
+ - Preciso das informações de uma professora
+ - Preciso saber a sala de uma professora
+ - Preciso saber o email de uma professora
+ - Preciso das informações de um coordenador
+ - Preciso saber a sala de um coordenador
+ - Preciso saber o email de um coordenador
+ - Preciso das informações de uma coordenadora
+ - Preciso saber a sala de uma coordenadora
+ - Preciso saber o email de uma coordenadora
+<!-- Me fala -->
+ - Me fala sobre um professor?
+ - Me fala sobre um coordenador?
+ - Me fala as informações de um professor?
+ - Me fala as informações de uma professora?
+ - Me fala o email de um professor?
+ - Me fala a sala de um professor?
+ - Me fala o email de uma professora?
+ - Me fala a sala de uma professora?
+ - Me fala o email de um coordenador?
+ - Me fala a sala de um coordenador?
+ - Me fala o email de uma coordenadora?
+ - Me fala a sala de uma coordenadora?

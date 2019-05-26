@@ -112,33 +112,40 @@ class ActionFindProfessor(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        # Acessando o slot professor.
+        # Access in 'professor' slot.
         professor = ""
         professor = tracker.current_slot_values()['professor']
-        # Conectando com a collection no banco:
+
+        # Connection with 'professor-contato' collection in data bank
         client = MongoClient(mongo_host, username='rasa', password='rasa')
         db = client.admin
         collection = db['professor-contato']
         name = ""
         room = ""
         email = ""
+        exist = False
         # Verificando se ha algum registro do professor informado
         for y in collection.find():
             if (professor in y['name']):
                 name = y['name']
                 room = y['room']
                 email = y['email']
+                coordination = y['coordination']
+                exist = True
                 break
-        if(name == ""):
-            dispatcher.utter_message('Não foi possivel encontrar este ' +
-                                     'professor... Verifique se o nome ' +
-                                     'está correto e com as iniciais ' +
-                                     'maiúsculas!')
+        if(exist):
+            dispatcher.utter_message('Deixa comigo! ...')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            if(coordination != "F"):
+                dispatcher.utter_message('Coordenação: {}'.format(coordination))    
+                            
             return []
 
-        dispatcher.utter_message('Deixa comigo! ...')
-        dispatcher.utter_message('Nome : {}'.format(name))
-        dispatcher.utter_message('Sala : {}'.format(room))
-        dispatcher.utter_message('E-mail : {}'.format(email))
+        dispatcher.utter_message('Não foi possivel encontrar este ' +
+                                 'professor... Verifique se o nome ' +
+                                 'está correto e com as iniciais ' +
+                                 'maiúsculas!')
 
         return []

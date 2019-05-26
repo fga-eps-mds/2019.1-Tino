@@ -45,22 +45,22 @@ def index():
         print(intercampi_dados)
         if(intercampi_dados != ""):
             collection.delete_many({})
-            # Insere cada element no banco
+            # insert elements
             for element in intercampi_dados:
                 collection.insert_one(element)
         json = []
 
         for y in collection.find():
             print(y['_id'])
-            del y['_id']        # Deleta o atributo  '_id' .
-            json.append(y)      # Adiciona o registro a uma lista Json.
+            del y['_id']        
+            json.append(y)      
 
     return jsonify(json)
 
 
 def get_intercampi_collection():
 
-    # Acesso a barra de dados do mongo
+    # Acess mongo db
     client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,
                          password=MONGO_PASSWORD)
     db = client.admin
@@ -108,9 +108,9 @@ def get_from_darcy():
 
     json = []
     for y in collection.find():
-        if(y['origem'] == "Darcy Ribeiro"):     # Filtra os registros relacionados a 'Darcy Ribeiro'.
-            del y['_id']                        # Deleta o atributo '_id'
-            json.append(y)                              # Adiciona o registro a uma lista json.
+        if(y['origem'] == "Darcy Ribeiro"):     
+            del y['_id']                        
+            json.append(y)                              
     
 
     return jsonify(json)
