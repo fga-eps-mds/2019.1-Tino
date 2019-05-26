@@ -216,6 +216,69 @@ class ActionFindProfessor(Action):
             dispatcher.utter_message('E-mail : {}'.format(email))
             return []
 
+        if (name == "Renato Coral Sampaio"):
+            dispatcher.utter_message('Opa, desse eu sou fã')
+            dispatcher.utter_message('Deixa eu dar uma olhadinha aqui nos meus arquivos...')
+            dispatcher.utter_message('Pronto mandei pra você =)')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+        
+        if (name == "Leandro Xavier Cardoso"):
+            dispatcher.utter_message('Um carro a 80km/h e um Leopardo a 80km/h, quem vence?)
+            dispatcher.utter_message('Brincadeira kkkkk')
+            dispatcher.utter_message('Prontinho, ai estão os seus dados!')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+        
+        if (name == "Ronni Geraldo Gomes de Amorim"):
+            dispatcher.utter_message('O que será que o Ronni pensa dos terraplanistas?!')
+            dispatcher.utter_message('kkkkkkkkk, é cada uma viu...vou procurar aqui nos meus arquivos')
+            dispatcher.utter_message('Pronto, encontrei =)')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+
+        if (name == "Wander  Cleber Maria Pereira da Silva"):
+            dispatcher.utter_message('Faça felicidade com o Wander, é legal demais! uma dica do seu amiguinho Tino')
+            dispatcher.utter_message('kkkkkkkkkkk')
+            dispatcher.utter_message('Pronto encontrei os dados que você me pediu =)')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+
+        if (name == "Nilton Correia da Silva"):
+            dispatcher.utter_message('Isaac Nilton?!')
+            dispatcher.utter_message('Brincadeira kkkkk')
+            dispatcher.utter_message('Pronto mandei os dados pra você =)')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+
+        if (name == "Glauceny Cirne de Medeiros"):
+            dispatcher.utter_message('Tenho medo de MecSol...')
+            dispatcher.utter_message('Falo sério, tenho medo de MecSol kkkkkkk')
+            dispatcher.utter_message('Pronto mandei pra você ;)')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+
+        if (name == "Tatiane  da Silva Evangelista"):
+            dispatcher.utter_message('Gosto demais! ótima professora!')
+            dispatcher.utter_message('Olahndo aqui meus arquivos...')
+            dispatcher.utter_message('Pronto mandei pra você =)')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+
         else:
             dispatcher.utter_message('Deixa comigo! ...')
             dispatcher.utter_message('Nome : {}'.format(name))

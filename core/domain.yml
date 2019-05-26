@@ -78,17 +78,22 @@ templates:
   - text: "Tranquilo demais!"
   - text: "Suave demais!"
   - text: "Tudo ótimo, do que você precisa?"
+  - text: "Tudo ótimo amigo, como posso te ajudar?"
+  - text: "Tudo certo amigo, você quer ajuda em que?"
+  - text: "Tudo tranquilo amigo, quer ajuda em alguma coisa?"
   
   utter_greet:
   - text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
           Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
           - Horários dos Intercampis\n
-          - Informações dos Professores\n"
+          - Informações dos Professores\n
+          Qual desses assuntos você gostaria de ter informações?
           
   - text: "Opa Eaí! Sou o Tino e estou ansioso para te ajudar no que precisar\n\n
           Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
           - Horários dos Intercampis\n
-          - Informações dos Professores" 
+          - Informações dos Professores\n
+          Quer uma ajuda? Só falar qual desses assuntos você gostaria de receber informações" 
 
   utter_goodbye:
   - text: "Falo com você depois!"
@@ -99,7 +104,10 @@ templates:
   - text: "Até mais!"
   - text: "Tchau!"
   - text: "Tchau, qualquer coisa é só chamar!"
-
+  - text: "Falou amigo, até mais tarde!"
+  - text: "Flws amigo, qualquer só chamar!"
+  - text: "Flws mano, qualquer coisa tô por aqui, só chamar"
+  
   utter_out_of_scope:
   - text: "Não consegui entender o que você falou, pode explicar melhor?"
   - text: "Está falando em português? Não entendi muito bem"
