@@ -226,7 +226,7 @@ class ActionFindProfessor(Action):
             return []
         
         if (name == "Leandro Xavier Cardoso"):
-            dispatcher.utter_message('Um carro a 80km/h e um Leopardo a 80km/h, quem vence?)
+            dispatcher.utter_message('Um carro a 80km/h e um Leopardo a 80km/h, quem vence?')
             dispatcher.utter_message('Brincadeira kkkkk')
             dispatcher.utter_message('Prontinho, ai estão os seus dados!')
             dispatcher.utter_message('Nome : {}'.format(name))
@@ -272,7 +272,25 @@ class ActionFindProfessor(Action):
 
         if (name == "Tatiane  da Silva Evangelista"):
             dispatcher.utter_message('Gosto demais! ótima professora!')
-            dispatcher.utter_message('Olahndo aqui meus arquivos...')
+            dispatcher.utter_message('Olhando aqui meus arquivos...')
+            dispatcher.utter_message('Pronto mandei pra você =)')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+
+        if (name == "Eneida González Valdés"):
+            dispatcher.utter_message('Tem q instalar o catia v5r19')
+            dispatcher.utter_message('Brincadeira kkkkkkk)
+            dispatcher.utter_message('Pronto mandei pra você ;)')
+            dispatcher.utter_message('Nome : {}'.format(name))
+            dispatcher.utter_message('Sala : {}'.format(room))
+            dispatcher.utter_message('E-mail : {}'.format(email))
+            return []
+
+        if (name == "Olexiy Shynkarenko"):
+            dispatcher.utter_message('Que nome dificil! kkkkkkkk')
+            dispatcher.utter_message('vou olhar aqui nos meus arquivos...')
             dispatcher.utter_message('Pronto mandei pra você =)')
             dispatcher.utter_message('Nome : {}'.format(name))
             dispatcher.utter_message('Sala : {}'.format(room))

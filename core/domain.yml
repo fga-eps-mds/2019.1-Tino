@@ -221,8 +221,11 @@ templates:
 
   utter_continuar:
     - text: "Posso te ajudar em  mais alguma coisa?"
-    - text: "Precisa de mais algo? É so falar."
-
+    - text: "Precisa de mais alguma informação? É so falar."
+    - text: "Posso te ajudar em algo mais? Alguma outra informação?"
+    
   utter_negative:
     - text: "Ok! Se precisar é so chamar."
     - text: "Ok! Estou aqui, se caso precisar"
+    - text: "Tranquilo amigo, precisando de ajuda estou aqui!"
+    - text: "Ok! se precisar de ajuda eu estou aqui!"
