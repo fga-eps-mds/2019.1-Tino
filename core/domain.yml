@@ -216,5 +216,5 @@ templates:
     - text: "Precisa de mais algo? É so falar."
 
   utter_negative:
-    - text: "Ok!Se precisar é so chamar."
+    - text: "Ok! Se precisar é so chamar."
     - text: "Ok! Estou aqui, se caso precisar"
