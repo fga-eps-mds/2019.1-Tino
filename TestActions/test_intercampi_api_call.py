@@ -3,7 +3,7 @@ import json
 from urllib import request as rq
 import os
 
-url ='https://b01bf78c.ngrok.io' #os.environ.get('INTERCAMPI_WEBHOOK')
+url ='https://b41fc682.ngrok.io' #os.environ.get('INTERCAMPI_WEBHOOK')
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
 url_planaltina = url + "/planaltina"

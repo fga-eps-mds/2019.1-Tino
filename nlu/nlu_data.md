@@ -810,6 +810,7 @@
  - [Sandra](professor)
  - [Gabriela](professor)    
  - [Bruna](professor)
+ - [Wellington Avelino](professor)
  - [Bruna Nayara](professor)
  - [Lindomar](professor)
  - [Paula](professor)

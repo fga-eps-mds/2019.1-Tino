@@ -281,7 +281,7 @@ class ActionFindProfessor(Action):
 
         if (name == "Eneida González Valdés"):
             dispatcher.utter_message('Tem q instalar o catia v5r19')
-            dispatcher.utter_message('Brincadeira kkkkkkk')
+            dispatcher.utter_message('Brincadeira kkkkk')
             dispatcher.utter_message('Pronto mandei pra você ;)')
             dispatcher.utter_message('Nome : {}'.format(name))
             dispatcher.utter_message('Sala : {}'.format(room))
