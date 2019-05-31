@@ -65,6 +65,22 @@
 - suco
 - máquina
 - gás
+- mesa
+- mesário
+- mesada
+- dinheiro
+- blusa
+- camiseta
+- camisa
+- corda
+- praia
+- uva
+- sahsahsa
+- sasauue
+- jgjfgjf
+- osapsao
+- idis
+- fpdfpod
 
 
 ## intent:goodbye <!--- The label of the intent --> 

@@ -98,10 +98,11 @@ templates:
 
   utter_out_of_scope:
   - text: "Não consegui entender o que você falou, pode explicar melhor?"
-  - text: "Está falando em português? Não entendi muito bem"
+  - text: "Não consegui te entender. Poderia reformular a pergunta por favor?"
   - text: "Desculpe, não consegui entender..."
   - text: "Desculpe, pode ser mais claro com as suas palavras?"
   - text: "Como assim amigo? Não consigo te entender"
+  - text: "Infelizmente não consegui te entender. Tente reformular sua dúvida por favor."
   
   utter_thanks:
   - text: "Por nada!"
