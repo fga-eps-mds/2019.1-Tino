@@ -206,3 +206,5 @@ templates:
   
   utter_info_professor:
   - text: "Ok. Qual professor deseja saber?"
+  - text: "Certo. Agora me diz de qual professor deseja saber"
+  - text: "Beleza. De qual professor deseja saber?"

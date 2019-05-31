@@ -34,6 +34,37 @@
 - hahahaha
 - celular
 - objeto
+- micro
+- nano
+- brinquedo
+- perfume
+- criança
+- imperssora
+- banco
+- papel
+- pamonha
+- polido
+- jogo
+- jaula
+- leão
+- onça
+- tigre
+- botao
+- congelador
+- congela
+- gelo
+- miojo
+- fogão
+- copa
+- torneira
+- água
+- biscoito
+- bolacha
+- cafeteira
+- café
+- suco
+- máquina
+- gás
 
 
 ## intent:goodbye <!--- The label of the intent --> 

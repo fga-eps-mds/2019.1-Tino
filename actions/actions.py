@@ -136,7 +136,15 @@ class ActionFindProfessor(Action):
         if(exist):
             dispatcher.utter_message('Deixa comigo! ...')
             dispatcher.utter_message('Nome : {}'.format(name))
-            dispatcher.utter_message('Sala : {}'.format(room))
+            if(room <"19"):
+                dispatcher.utter_message('Sala : {}'.format(room))
+                dispatcher.utter_message('Como sou legal,vou te ajudar a chegar lá.')
+                dispatcher.utter_message('Tendo como rêferencia a rampa, a sala fica ao lado direito.')
+            if(room >="19"):
+                dispatcher.utter_message('Sala : {}'.format(room))
+                dispatcher.utter_message('Como sou legal,vou te ajudar a chegar lá.')
+                dispatcher.utter_message('Tendo como rêferencia a rampa, a sala fica ao lado esquerdo.')
+
             dispatcher.utter_message('E-mail : {}'.format(email))
             if(coordination != "F"):
                 dispatcher.utter_message('Coordenação: {}'.format(coordination))    
