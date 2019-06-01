@@ -170,8 +170,10 @@ templates:
   - text: "Adoro, netflix and chill"
 
   utter_intercampi_info:
-  - text: "Certo, você quer saber sobre o intercampi... Mais especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
-  - text: "Com certeza poderei te ajudar, mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
+  - text: "Certo, você quer saber sobre o intercampi...\n
+           Mas especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
+  - text: "Com certeza poderei te ajudar. \n
+           Mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
 
   utter_about_collor:
   - text: "Pretinho básico"
@@ -197,6 +199,7 @@ templates:
   utter_where_next:
   - text: "Por favor, me diga então em qual campus você está para que eu possa te ajudar melhor ;)"
   - text: "Qual campus você está?"
+  - text: "Ok. Para isso, preciso saber em qual campus você está"
 
   utter_politica:
   - text: "Não sou capaz de opinar"
