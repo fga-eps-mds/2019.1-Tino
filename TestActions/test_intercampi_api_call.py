@@ -1,13 +1,16 @@
 import requests
 import json
 from urllib import request as rq
-import os
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 url ='https://5c50e905.ngrok.io'    #os.environ.get('INTERCAMPI_WEBHOOK')
 =======
 url ='https://4f759d37.ngrok.io'    #os.environ.get('INTERCAMPI_WEBHOOK')
 >>>>>>> 1b907baf9d316e0a662c15ebf1b309fe7a818093
+=======
+url ='https://0dc0667e.ngrok.io'    #os.environ.get('INTERCAMPI_WEBHOOK')
+>>>>>>> bc991322d5d21e3974938a2c4fec3ede74ba426e
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
 url_planaltina = url + "/planaltina"

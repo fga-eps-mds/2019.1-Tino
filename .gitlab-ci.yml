@@ -14,7 +14,7 @@ test_flake8:
   image: ejplatform/python:alpine
   stage: test
   script:
-    - pip install requests && pip install pytest && pip install pymongo && source .env && cd TestActions && pytest
+    pip install --upgrade pip && pip install requests && pip install pytest && pip install --upgrade setuptools && pip install numpy && pip install pymongo && pip install pandas && source .env && cd TestActions && pytest
 
 
 
