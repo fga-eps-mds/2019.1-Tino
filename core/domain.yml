@@ -76,15 +76,15 @@ templates:
   - text: "Tudo ótimo, do que você precisa?"
   
   utter_greet:
-  - text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
-          Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
-          - Horários dos Intercampis\n
-          - Informações dos Professores\n"
-          
-  - text: "Opa Eaí! Sou o Tino e estou ansioso para te ajudar no que precisar\n\n
-          Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
-          - Horários dos Intercampis\n
-          - Informações dos Professores" 
+  - buttons:
+    - payload: Horários dos Intercampi
+      title: Horários dos Intercampi
+    - payload: Informações dos professores
+      title: Informações dos professores
+    text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
+            Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
+            - Horários dos Intercampis\n
+            - Informações dos Professores\n"
 
   utter_goodbye:
   - text: "Falo com você depois!"
