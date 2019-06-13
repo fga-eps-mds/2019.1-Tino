@@ -37,6 +37,7 @@
 ## story_intercampi_all
 * intercampi_all
  - action_callapi_all_intercampi
+  - utter_continuar
 
 ## story_about_pet
 * about_pet
@@ -77,6 +78,7 @@
 ## story_find_professor
 * find_professor
  - action_find_professor
+  - utter_continuar
 
 ## story_intercampi_next
 * intercampi_next
@@ -87,3 +89,7 @@
  ## story_info_professor
  * info_professor
   - utter_info_professor
+
+## story_negative
+ * negative
+  - utter_negative

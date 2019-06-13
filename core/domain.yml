@@ -12,6 +12,7 @@ intents:
 - about_location
 - about_pet
 - about_series
+- negative
 - about_collor
 - about_hobby
 - about_music
@@ -26,6 +27,7 @@ intents:
 - intercampi_all
 - find_professor
 - info_professor
+- negative
 
 actions:
 - utter_thanks
@@ -51,6 +53,8 @@ actions:
 - utter_politica
 - utter_tudo_bem
 - utter_info_professor
+- utter_continuar
+- utter_negative
 
 entities:
 - campus
@@ -74,17 +78,22 @@ templates:
   - text: "Tranquilo demais!"
   - text: "Suave demais!"
   - text: "Tudo ótimo, do que você precisa?"
+  - text: "Tudo ótimo amigo, como posso te ajudar?"
+  - text: "Tudo certo amigo, você quer ajuda em que?"
+  - text: "Tudo tranquilo amigo, quer ajuda em alguma coisa?"
   
   utter_greet:
   - text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
           Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
           - Horários dos Intercampis\n
-          - Informações dos Professores\n"
+          - Informações dos Professores\n
+          Qual desses assuntos você gostaria de ter informações?"
           
   - text: "Opa Eaí! Sou o Tino e estou ansioso para te ajudar no que precisar\n\n
           Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
           - Horários dos Intercampis\n
-          - Informações dos Professores" 
+          - Informações dos Professores\n
+          Quer uma ajuda? Só falar qual desses assuntos você gostaria de receber informações" 
 
   utter_goodbye:
   - text: "Falo com você depois!"
@@ -95,7 +104,10 @@ templates:
   - text: "Até mais!"
   - text: "Tchau!"
   - text: "Tchau, qualquer coisa é só chamar!"
-
+  - text: "Falou amigo, até mais tarde!"
+  - text: "Flws amigo, qualquer só chamar!"
+  - text: "Flws mano, qualquer coisa tô por aqui, só chamar"
+  
   utter_out_of_scope:
   - text: "Não consegui entender o que você falou, pode explicar melhor?"
   - text: "Está falando em português? Não entendi muito bem"
@@ -206,3 +218,14 @@ templates:
   
   utter_info_professor:
   - text: "Ok. Qual professor deseja saber?"
+
+  utter_continuar:
+    - text: "Posso te ajudar em  mais alguma coisa?"
+    - text: "Precisa de mais alguma informação? É so falar."
+    - text: "Posso te ajudar em algo mais? Alguma outra informação?"
+    
+  utter_negative:
+    - text: "Ok! Se precisar é so chamar."
+    - text: "Ok! Estou aqui, se caso precisar"
+    - text: "Tranquilo amigo, precisando de ajuda estou aqui!"
+    - text: "Ok! se precisar de ajuda eu estou aqui!"
