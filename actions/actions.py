@@ -9,16 +9,51 @@ from datetime import datetime
 import pytz
 import logging
 from pymongo import MongoClient
+import telegram
 
 mongo_host = os.environ['MONGO_ID']
 mongo_host = mongo_host + ':27017'
+bot_token = '817438100:AAFinhUm4zCFKkBRZMtL7ez3paLekIs0p4E'
+chat_id = '126478234'
 url = os.environ['INTERCAMPI_WEBHOOK']
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
 url_planaltina = url + "/planaltina"
 url_ceilandia = url + "/ceilandia"
-
 logger = logging.getLogger(__name__)
+
+
+class ActionGreet(Action):
+    def name(self) -> Text:
+        return 'action_greet'
+
+    def run(self, dispatcher, tracker, domain):
+
+        message = ('Fala aí, beleza?\nSou o Tino e estou aqui ' +
+                   'para te ajudar com os seguintes assuntos:\n' +
+                   ' - Horários dos Intercampi\n' +
+                   ' - Informações dos Professores')
+
+        buttons = []
+
+        buttons.append(telegram.InlineKeyboardButton(
+                text="Horários dos Intercampi",
+                callback_data="Quero saber sobre o intercampi"))
+
+        buttons.append(telegram.InlineKeyboardButton(
+                text="Informações dos Professores",
+                callback_data="Informações dos professores"))
+
+        options = [[buttons[0], buttons[1]]]
+        bot = telegram.Bot(token=bot_token)
+
+        reply_markup = telegram.InlineKeyboardMarkup(options)
+
+        bot.send_message(chat_id=chat_id,
+                         text=message,
+                         reply_markup=reply_markup)
+
+        return []
 
 
 class ActionCallapi(Action):

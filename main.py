@@ -46,8 +46,12 @@ def index():
 
 # helper function to extract chat id and text
 def parse_msg(message):
-    chat_id = message['message']['chat']['id']
-    txt = message['message']['text']
+    try:
+        chat_id = message['callback_query']['message']['chat']['id']
+        txt = message['callback_query']['data']
+    except KeyError:
+        chat_id = message['message']['chat']['id']
+        txt = message['message']['text']
     return chat_id, txt
 
 
