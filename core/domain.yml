@@ -27,11 +27,12 @@ intents:
 - intercampi_all
 - find_professor
 - info_professor
-- negative
+- ajuda
 
 actions:
 - utter_thanks
 - action_greet
+- utter_help
 - utter_goodbye
 - action_callapi
 - action_callapi_all_intercampi
@@ -65,7 +66,7 @@ slots:
   professor:
     type: unfeaturized  
   campus:
-    type: unfeaturized  
+    type: unfeaturized
 
 
 templates:
@@ -92,6 +93,18 @@ templates:
   - text: "Flws amigo, qualquer só chamar!"
   - text: "Flws mano, qualquer coisa tô por aqui, só chamar"
   
+  utter_help: 
+    - text: |
+          Eu estou aqui para te ajudar com os seguintes assuntos:
+
+          Horários dos Intercampi:
+              Eu posso te enviar uma lista com os horários de todos intercampi ou, se preferir, posso te mostrar apenas os próximos partindo de onde está.
+              Basta pedir por "Horários dos intercampi" que irei lhe perguntar qual opção deseja, e então você me diz se quer "Todos" ou "Apenas os próximos". ;)
+
+          Informações dos Professores:
+              Eu posso te enviar o nome, e-mail, sala e coordenação (caso tenha) de um professor.
+              Basta me pedir "Informações dos professores", ou algo como "Quero o contato do professor Fulano" que irei te enviar tudo que sei sobre ele. ;)
+
   utter_out_of_scope:
   - text: "Não consegui entender o que você falou, pode explicar melhor?"
   - text: "Não consegui te entender. Poderia reformular a pergunta por favor?"

@@ -93,3 +93,7 @@
 ## story_negative
  * negative
   - utter_negative
+
+## story_help
+ * ajuda{"command": "/ajuda"}
+  - utter_help
