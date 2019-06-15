@@ -12,6 +12,7 @@ intents:
 - about_location
 - about_pet
 - about_series
+- negative
 - about_collor
 - about_hobby
 - about_music
@@ -26,6 +27,7 @@ intents:
 - intercampi_all
 - find_professor
 - info_professor
+- negative
 
 actions:
 - utter_thanks
@@ -51,6 +53,8 @@ actions:
 - utter_politica
 - utter_tudo_bem
 - utter_info_professor
+- utter_continuar
+- utter_negative
 
 entities:
 - campus
@@ -74,6 +78,9 @@ templates:
   - text: "Tranquilo demais!"
   - text: "Suave demais!"
   - text: "Tudo ótimo, do que você precisa?"
+  - text: "Tudo ótimo amigo, como posso te ajudar?"
+  - text: "Tudo certo amigo, você quer ajuda em que?"
+  - text: "Tudo tranquilo amigo, quer ajuda em alguma coisa?"
   
   utter_greet:
   - buttons:
@@ -95,7 +102,10 @@ templates:
   - text: "Até mais!"
   - text: "Tchau!"
   - text: "Tchau, qualquer coisa é só chamar!"
-
+  - text: "Falou amigo, até mais tarde!"
+  - text: "Flws amigo, qualquer só chamar!"
+  - text: "Flws mano, qualquer coisa tô por aqui, só chamar"
+  
   utter_out_of_scope:
   - text: "Não consegui entender o que você falou, pode explicar melhor?"
   - text: "Não consegui te entender. Poderia reformular a pergunta por favor?"
