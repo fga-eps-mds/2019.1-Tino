@@ -31,7 +31,7 @@ intents:
 
 actions:
 - utter_thanks
-- utter_greet
+- action_greet
 - utter_goodbye
 - action_callapi
 - action_callapi_all_intercampi
@@ -78,20 +78,6 @@ templates:
   - text: "Tranquilo demais!"
   - text: "Suave demais!"
   - text: "Tudo ótimo, do que você precisa?"
-  - text: "Tudo ótimo amigo, como posso te ajudar?"
-  - text: "Tudo certo amigo, você quer ajuda em que?"
-  - text: "Tudo tranquilo amigo, quer ajuda em alguma coisa?"
-  
-  utter_greet:
-  - buttons:
-    - payload: Horários dos Intercampi
-      title: Horários dos Intercampi
-    - payload: Informações dos professores
-      title: Informações dos professores
-    text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
-            Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
-            - Horários dos Intercampis\n
-            - Informações dos Professores\n"
 
   utter_goodbye:
   - text: "Falo com você depois!"
@@ -181,9 +167,9 @@ templates:
 
   utter_intercampi_info:
   - text: "Certo, você quer saber sobre o intercampi...\n
-           Mas especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
-  - text: "Com certeza poderei te ajudar. \n
-           Mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
+          Mais especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
+  - text: "Com certeza poderei te ajudar.\n
+          Mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
 
   utter_about_collor:
   - text: "Pretinho básico"
