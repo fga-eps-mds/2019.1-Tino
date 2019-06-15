@@ -47,9 +47,12 @@ def index():
 # helper function to extract chat id and text
 def parse_msg(message):
     try:
+        # Checks if the message has been sended by button
+        # (with 'callback_query' attribute)
         chat_id = message['callback_query']['message']['chat']['id']
         txt = message['callback_query']['data']
     except KeyError:
+        # Here the message was directly sent by the user
         chat_id = message['message']['chat']['id']
         txt = message['message']['text']
     return chat_id, txt

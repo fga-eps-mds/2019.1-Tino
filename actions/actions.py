@@ -36,6 +36,7 @@ class ActionGreet(Action):
 
         buttons = []
 
+        # Defines the buttons.
         buttons.append(telegram.InlineKeyboardButton(
                 text="Horários dos Intercampi",
                 callback_data="Quero saber sobre o intercampi"))
@@ -44,9 +45,11 @@ class ActionGreet(Action):
                 text="Informações dos Professores",
                 callback_data="Informações dos professores"))
 
+        # Defines the bot from bot_token
         options = [[buttons[0], buttons[1]]]
         bot = telegram.Bot(token=bot_token)
 
+        # Defines the options in reply_markup
         reply_markup = telegram.InlineKeyboardMarkup(options)
 
         bot.send_message(chat_id=chat_id,
