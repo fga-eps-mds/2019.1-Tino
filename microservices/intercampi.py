@@ -154,15 +154,18 @@ def get_from_planaltina():
 
     return jsonify(json)
 
-@app.route("/profcount")  # #########----PROFESSOR COUNT-ASSERT PATH----#############
+@app.route("/count")  # #########----PROFESSOR COUNT-ASSERT PATH----#############
 def get_profcount():
 
     client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,
                          password=MONGO_PASSWORD)
     db = client.admin
-    collection = db['professor-contato']
-    count = collection.count_documents({})
-    obj = {"profcount": count}
+    prof_collection = db['professor-contato']
+    intercampi_collection = db['intercampi-horario']
+    profcount = prof_collection.count_documents({})
+    intercampicount = intercampi_collection.count_documents({})
+
+    obj = {"profcount": profcount,"intercampicount": intercampicount}
 
     return jsonify(obj)
 
