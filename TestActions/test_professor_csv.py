@@ -30,7 +30,7 @@ def test_csv_header():
         header_status = "Cabeçalho Inválido"
     assert header_status == "Sem erros"
     
-def test_csv_pofessor_count():
+def test_csv_professor_count():
     count = 0
     reader = csv_open_read()
 

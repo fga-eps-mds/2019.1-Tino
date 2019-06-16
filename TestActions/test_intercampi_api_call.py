@@ -2,7 +2,7 @@ import requests
 import json
 from urllib import request as rq
 
-url ='https://8333f94e.ngrok.io'    #os.environ.get('INTERCAMPI_WEBHOOK')
+url ='https://25a22b51.ngrok.io'    #specify which host you're going to use (production or local)
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
 url_planaltina = url + "/planaltina"
