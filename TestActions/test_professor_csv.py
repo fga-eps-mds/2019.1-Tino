@@ -15,10 +15,10 @@ def test_csv_read():
     try:
         # Open CSV file in /csv directory
         reader = csv_open_read()
-        csv_status = "Leitura do csv realizada com sucesso"
+        csv_status = "Leitura do CSV realizada com sucesso"
     except IOError:
         csv_status = "Houve um erro na abertura do CSV"
-    assert csv_status == "Leitura do csv realizada com sucesso"
+    assert csv_status == "Leitura do CSV realizada com sucesso"
 
 def test_csv_header():
     # Check if CSV header is valid
@@ -30,7 +30,7 @@ def test_csv_header():
         header_status = "Cabeçalho Inválido"
     assert header_status == "Sem erros"
     
-def test_csv_pofessor_count():
+def test_csv_professor_count():
     count = 0
     reader = csv_open_read()
 
