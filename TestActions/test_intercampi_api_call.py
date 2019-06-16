@@ -19,7 +19,7 @@ def test_gama_path():
     requestConn = requests.get(url_gama)
     json = request  
     assert requestConn.status_code == 200
-    assert json[0]['origem'] == 'Gama'
+    assert json[0]['origem'] == 'Gama' #asserts data is comming
     
 
 def test_planaltina_path():
