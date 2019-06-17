@@ -34,30 +34,53 @@
 - hahahaha
 - celular
 - objeto
-- cadeira
-- caderno
-- akadksas
-- kdajdiada
-- kaksa
-- ventilador
-- ar-condicionado
+- micro
+- nano
+- brinquedo
 - perfume
-- TV
-- notebook
-- geladeira
-- vento
-- luz
-- sol
+- criança
+- imperssora
+- banco
+- papel
+- pamonha
+- polido
+- jogo
+- jaula
+- leão
+- onça
+- tigre
+- botao
+- congelador
+- congela
+- gelo
+- miojo
+- fogão
+- copa
+- torneira
 - água
-- vidro
-- mapa
-- chuva
-- globo
-- lapis
-- caneta
-- banana
-- maça
--
+- biscoito
+- bolacha
+- cafeteira
+- café
+- suco
+- máquina
+- gás
+- mesa
+- mesário
+- mesada
+- dinheiro
+- blusa
+- camiseta
+- camisa
+- corda
+- praia
+- uva
+- sahsahsa
+- sasauue
+- jgjfgjf
+- osapsao
+- idis
+- fpdfpod
 
 
 ## intent:goodbye <!--- The label of the intent --> 
@@ -88,6 +111,22 @@
 - falo com você depois
 - Nos vemos por aí
 - saindo aqui
+
+## intent:help
+ - [/ajuda](command)
+ - ajuda
+ - help
+ - me ajuda
+ - me dá um help
+ - o que você faz?
+ - qual sua função?
+ - como você me ajuda?
+ - com o que pode me ajudar?
+ - como pode me ajudar?
+ - me dá uma ajuda
+ - ajudinha
+ - como usar?
+ - como usar suas funcionalidades?
 
 ## intent: tudo_bem
 - tudo bem?
@@ -153,6 +192,10 @@
 - eaeee
 - oiiii
 - oii
+- ooi
+- oi Tino
+- Eai Tino
+- Tino
 - oiee
 - fala ai 
 - ola senhor
@@ -379,13 +422,11 @@
 - cansei dessa vida
 - acho que vou me matar
 - aqui to mal
-- não me sinto feliz
 - sou infeliz
 - sou titi
 - depre aqui
 - depressivo estou
 - estou depressivo
-- não ageunto mais 
 - situação ta ruim 
 - sou triste
 - acabou minhas esperanças
@@ -840,17 +881,6 @@
  - Informações sobre os professores
  - quero saber sobre os professores
  - informações dos professores
-
-
-## intent:negative
- - Não
- - Não,Obrigado
- - Não, vlw
- - nops, ty
- - no
- - nao, valeu
- - nao
- - não
  - Informações dos professores
  - Informações sobre os coordenadores
  - Informações dos coordenadores
@@ -893,3 +923,13 @@
  - Me fala a sala de um coordenador?
  - Me fala o email de uma coordenadora?
  - Me fala a sala de uma coordenadora?
+
+## intent:negative
+ - Não
+ - Não,Obrigado
+ - Não, vlw
+ - nops, ty
+ - no
+ - nao, valeu
+ - nao
+ - não

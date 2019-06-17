@@ -27,11 +27,12 @@ intents:
 - intercampi_all
 - find_professor
 - info_professor
-- negative
+- ajuda
 
 actions:
 - utter_thanks
-- utter_greet
+- action_greet
+- utter_help
 - utter_goodbye
 - action_callapi
 - action_callapi_all_intercampi
@@ -65,7 +66,7 @@ slots:
   professor:
     type: unfeaturized  
   campus:
-    type: unfeaturized  
+    type: unfeaturized
 
 
 templates:
@@ -78,22 +79,6 @@ templates:
   - text: "Tranquilo demais!"
   - text: "Suave demais!"
   - text: "Tudo ótimo, do que você precisa?"
-  - text: "Tudo ótimo amigo, como posso te ajudar?"
-  - text: "Tudo certo amigo, você quer ajuda em que?"
-  - text: "Tudo tranquilo amigo, quer ajuda em alguma coisa?"
-  
-  utter_greet:
-  - text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
-          Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
-          - Horários dos Intercampis\n
-          - Informações dos Professores\n
-          Qual desses assuntos você gostaria de ter informações?"
-          
-  - text: "Opa Eaí! Sou o Tino e estou ansioso para te ajudar no que precisar\n\n
-          Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
-          - Horários dos Intercampis\n
-          - Informações dos Professores\n
-          Quer uma ajuda? Só falar qual desses assuntos você gostaria de receber informações" 
 
   utter_goodbye:
   - text: "Falo com você depois!"
@@ -108,12 +93,25 @@ templates:
   - text: "Flws amigo, qualquer só chamar!"
   - text: "Flws mano, qualquer coisa tô por aqui, só chamar"
   
+  utter_help: 
+    - text: |
+          Eu estou aqui para te ajudar com os seguintes assuntos:
+
+          Horários dos Intercampi:
+              Eu posso te enviar uma lista com os horários de todos intercampi ou, se preferir, posso te mostrar apenas os próximos partindo de onde está.
+              Basta pedir por "Horários dos intercampi" que irei lhe perguntar qual opção deseja, e então você me diz se quer "Todos" ou "Apenas os próximos". ;)
+
+          Informações dos Professores:
+              Eu posso te enviar o nome, e-mail, sala e coordenação (caso tenha) de um professor.
+              Basta me pedir "Informações dos professores", ou algo como "Quero o contato do professor Fulano" que irei te enviar tudo que sei sobre ele. ;)
+
   utter_out_of_scope:
   - text: "Não consegui entender o que você falou, pode explicar melhor?"
-  - text: "Está falando em português? Não entendi muito bem"
+  - text: "Não consegui te entender. Poderia reformular a pergunta por favor?"
   - text: "Desculpe, não consegui entender..."
   - text: "Desculpe, pode ser mais claro com as suas palavras?"
   - text: "Como assim amigo? Não consigo te entender"
+  - text: "Infelizmente não consegui te entender. Tente reformular sua dúvida por favor."
   
   utter_thanks:
   - text: "Por nada!"
@@ -181,8 +179,10 @@ templates:
   - text: "Adoro, netflix and chill"
 
   utter_intercampi_info:
-  - text: "Certo, você quer saber sobre o intercampi... Mais especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
-  - text: "Com certeza poderei te ajudar, mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
+  - text: "Certo, você quer saber sobre o intercampi...\n
+          Mais especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
+  - text: "Com certeza poderei te ajudar.\n
+          Mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
 
   utter_about_collor:
   - text: "Pretinho básico"
@@ -208,6 +208,7 @@ templates:
   utter_where_next:
   - text: "Por favor, me diga então em qual campus você está para que eu possa te ajudar melhor ;)"
   - text: "Qual campus você está?"
+  - text: "Ok. Para isso, preciso saber em qual campus você está"
 
   utter_politica:
   - text: "Não sou capaz de opinar"
@@ -218,14 +219,5 @@ templates:
   
   utter_info_professor:
   - text: "Ok. Qual professor deseja saber?"
-
-  utter_continuar:
-    - text: "Posso te ajudar em  mais alguma coisa?"
-    - text: "Precisa de mais alguma informação? É so falar."
-    - text: "Posso te ajudar em algo mais? Alguma outra informação?"
-    
-  utter_negative:
-    - text: "Ok! Se precisar é so chamar."
-    - text: "Ok! Estou aqui, se caso precisar"
-    - text: "Tranquilo amigo, precisando de ajuda estou aqui!"
-    - text: "Ok! se precisar de ajuda eu estou aqui!"
+  - text: "Certo. Agora me diz de qual professor deseja saber"
+  - text: "Beleza. De qual professor deseja saber?"
