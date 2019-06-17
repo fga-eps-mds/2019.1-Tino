@@ -1,9 +1,5 @@
-from pymongo import MongoClient
 import csv
 import os
-
-mongo_host = 'localhost'     #os.environ['MONGO_ID']
-mongo_host = mongo_host + ':27017'
 
 def csv_open_read():
     csv_professor = open('../csv/professores.csv', 'r')
