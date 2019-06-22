@@ -12,6 +12,13 @@
 <p align="justify"> &emsp;&emsp;
    Tino é um bot desenvolvido por alunos da FGA-Gama que consegue orientar sobre os horários e destinos do intercampi dos diversos campus da Universidade de Brasília, além de conseguir informar horário de atendimento, sala e contato dos professores que forem cadastrados no bot. Este repositório contém o código do framework do chatbot Tino, e todos os seus microserviços utilizados.</p>
 
+### Documentação
+
+<p align="justify"> &emsp;&emsp;Todos os arquivos de documentação estão disponiveis no <a href="http://tino-1-2019.com.br/">site do Tino</a> de maneira organizada, neste repositório é possivel encontrar os documentos de arquitetura e visão na pasta `/docs`</p>
+
+### Licença
+
+<p align="justify"> &emsp;&emsp;Tino é distribuído sob a licença MIT disponível <a href="https://github.com/fga-eps-mds/2019.1-Tino/blob/master/LICENSE">aqui</a>.</p>
 
 ### Utilização
 
@@ -34,6 +41,7 @@
   <li> Rasa NLU ( Processamento e extração de informações) </li>
   <li> Flask (microframework utilizado para os microserviços) </li>
   <li> MongoDB (NoSQL database) </li>
+  <li> GitLab CI (Ferramenta responsável pela integração contínua e deploy contínuo.) </li>
 </ul>
     
     
