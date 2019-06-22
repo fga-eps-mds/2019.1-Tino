@@ -22,14 +22,14 @@
 
 ### Utilização
 
-&emsp;&emsp; O Tino se encontra na plataforma <a href="https://web.telegram.org/#/im?p=@tino_bot">Telegram</a>
+&emsp;&emsp; O Tino se encontra na plataforma <a href="https://web.telegram.org/#/im?p=@tino_bot">Telegram</a> (@tino_bot).
 
 ### Principais funcionalidades
 <html>
  <ul>
-  <li>Mostrar os dados de contato  do professor(nome, email e localização)</li>
-  <li>Mostrar qual a sala do professor solicitado. Fornecendo tambem instruções de onde encontra-lo</li>
-  <li>Mostrar horarios do intercampi de todos os campus da UnB</li>
+  <li>Mostrar os dados de contato  do professor (nome, email e localização)</li>
+  <li>Mostrar qual a sala do professor solicitado. Fornecendo tambem instruções de onde encontrá-lo</li>
+  <li>Mostrar horários do intercampi de todos os campus da UnB</li>
   <li>Manter uma relação interativa e amigável com o usuário.</li>
   <li>Realizar uma conversação com caráter informativo.</li>
  </ul>
@@ -38,10 +38,10 @@
 ### Principais Tecnologias utilizadas
 <ul>
   <li> Rasa Core (Fluxo de conversa) </li>
-  <li> Rasa NLU ( Processamento e extração de informações) </li>
+  <li> Rasa NLU (Processamento e extração de informações) </li>
   <li> Flask (microframework utilizado para os microserviços) </li>
   <li> MongoDB (NoSQL database) </li>
-  <li> GitLab CI (Ferramenta responsável pela integração contínua e deploy contínuo.) </li>
+  <li> GitLab CI (Ferramenta responsável pela integração contínua e deploy contínuo). </li>
 </ul>
     
     
@@ -86,7 +86,7 @@ Depois de utilizar o ngrok nas portas necessárias, é preciso alterar as variá
 
 1. Altere o valor atribuido a variavel 'MONGO_ID' para o nome do conteiner(mongo) ou seu id;
 
-2. Altere o valor atribuido a váriavel 'TELEGRAM_TOKEN' para o token do seu telegram-bot, gerado por meio do BotFather(bot presente no telegram).
+2. Altere o valor atribuido a váriavel 'TELEGRAM_TOKEN' para o token do seu telegram-bot, gerado por meio do @BotFather (bot presente no telegram).
 
 3. Nas demais variáveis('..._WEBHOOK') insira os respectivos links referentes as portas correspondentes nos terminais rodando o ngrok. Certifique-se de pegar os links com o 'https://...' nos terminais rodando o ngrok
 
@@ -96,7 +96,7 @@ Ufa! Até que enfim estamos prontos para subir o ChatBot Tino, agora é só exec
 1. sudo docker-compose up
 
 
-### Agora sim esta tudo pronto para testar o Tino no Telegram... Manda um oi la !    
+### Agora sim está tudo pronto para testar o Tino no Telegram... Manda um 'Oi' lá!    
 
 
 
