@@ -1,9 +1,32 @@
 # 2019.1-Tino [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-Tino é um bot desenvolvido por alunos da FGA-Gama que consegue orientar sobre os horários e destinos do intercampi dos diversos campus da Universidade de Brasília, além de conseguir informar horário de atendimento, sala e contato dos professores que forem cadastrados no bot.
+<p align="center">
+  ![diagrama de relacoes](./docs/imagens/logowolf.png)
+</p>
+<h1 align="center"> Tino - O bot </h1>
+<p align="center">
+  <img width="15" src="https://user-images.githubusercontent.com/18364727/46376121-9a759e80-c66b-11e8-8aa0-6c4cf887089e.png">
+</p>
 
-Esse repositório contém o código do framework do chatbot Tino, e todos os seus microserviços utilizados.
+<p align="justify"> &emsp;&emsp;
+   Tino é um bot desenvolvido por alunos da FGA-Gama que consegue orientar sobre os horários e destinos do intercampi dos diversos campus da Universidade de Brasília, além de conseguir informar horário de atendimento, sala e contato dos professores que forem cadastrados no bot.Esse repositório contém o código do framework do chatbot Tino, e todos os seus microserviços utilizados.</p>
 
-### Tecnologias utilizadas
+
+### Utilização
+
+&emsp;&emsp; O Tino se encontra na plataforma <a href="https://web.telegram.org/#/im?p=@tino_bot">Telegram</a>
+
+### Principais funcionalidades
+<html>
+ <ul>
+  <li>Mostrar os dados de contato  do professor(nome, email e localização)</li>
+  <li>Mostrar qual a sala do professor solicitado. Fornecendo tambem instruções de onde encontra-lo</li>
+  <li>Mostrar horarios do intercampi de todos os campus da UnB</li>
+  <li>Manter uma relação interativa e amigável com o usuário.</li>
+  <li>Realizar uma conversação com caráter informativo.</li>
+ </ul>
+</html>
+
+### Principais Tecnologias utilizadas
 <ul>
   <li> Rasa Core (Fluxo de conversa) </li>
   <li> Rasa NLU ( Processamento e extração de informações) </li>
