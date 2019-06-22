@@ -53,7 +53,7 @@ Para começar o desenvolvimento do ChatBot, é necessário montar as imagens des
 3. Construir a imagem do microserviço que envia uma imagem com o horário de todos os intercampis: `sudo cd docker/ && docker build -t jp-send-pdf:latest -f SendPdf.Dockerfile .`
 
 
-4. Construir a imagem das ações personalizadas do RASA: `sudo cd.. && docker build -t jp:latest .`
+4. Construir a imagem das ações personalizadas do RASA: `sudo cd .. && docker build -t jp:latest .`
 
 
 Após montar as imagens necessárias, use o ngrok para ser possivel estabelecer uma conexão com as URL's e o Tino de forma segura por meio de https:
