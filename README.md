@@ -53,49 +53,49 @@
 Para começar o desenvolvimento do ChatBot, é necessário montar as imagens descritas pelos Dockerfiles utilizando a ferramenta docker :
 
 1. Construir imagem do telegram: `sudo cd docker/ && docker build -t telegram-jp:latest -f Telegram.Dockerfile .`
-
+'''
 
 2. Construir a imagem do microserviço que informa o intercampi: `sudo cd docker/ && docker build -t jp-intercampi:latest -f Intercamping.Dockerfile .`
-
+'''
 
 3. Construir a imagem do microserviço que envia uma imagem com o horário de todos os intercampis: `sudo cd docker/ && docker build -t jp-send-pdf:latest -f SendPdf.Dockerfile .`
+'''
 
-
-4. Construir a imagem das ações personalizadas do RASA: `sudo cd .. && docker build -t jp:latest .`
-
+4. Construir a imagem das ações personalizadas do RASA: `sudo cd.. && docker build -t jp:latest .`
+'''
 
 Após montar as imagens necessárias, use o ngrok para ser possivel estabelecer uma conexão com as URL's e o Tino de forma segura por meio de https:
 
 ### No diretório onde se encontra seu Ngrok, abra o terminal e execute os seguintes comandos em janelas separadas :
 
 1. `./ngrok http 5000`
-
+'''
 
 2. `./ngrok http 5055`
-
+'''
 
 3. `./ngrok http 5002`
-
+'''
 
 4. `./ngrok http 5003`
-
+'''
 
 ### Após executar os comandos acima certifique-se de que os terminais permaneçam abertos e executando o Ngrok
-
+'''
 
 Depois de utilizar o ngrok nas portas necessárias, é preciso alterar as variáveis de ambiente localizadas no arquivo .env :
 
 1. Altere o valor atribuido a variavel 'MONGO_ID' para o nome do conteiner(mongo) ou seu id;
-
+'''
 2. Altere o valor atribuido a váriavel 'TELEGRAM_TOKEN' para o token do seu telegram-bot, gerado por meio do BotFather(bot presente no telegram).
-
+'''
 3. Nas demais variáveis('..._WEBHOOK') insira os respectivos links referentes as portas correspondentes nos terminais rodando o ngrok. Certifique-se de pegar os links com o 'https://...' nos terminais rodando o ngrok
-
+'''
 
 Ufa! Até que enfim estamos prontos para subir o ChatBot Tino, agora é só executar o docker-compose (necessário docker-compose instalado) para subir os containers (incluindo o banco de dados mongo e o redis):
 
 1. sudo docker-compose up
-
+'''
 
 ### Agora sim esta tudo pronto para testar o Tino no Telegram... Manda um oi la !    
 

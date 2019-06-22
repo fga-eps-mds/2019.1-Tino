@@ -1,9 +1,17 @@
 # Histórico de Revisão
 
+| Data   | Versão | Modificação  | Autor  |
+| :------- | :--------- | :---------------- | :------- |
+| 02/04/2019 | 0.1   |  Criação de todos os tópicos do documento  |  Lucas Leite, Lucas Lopes, Luís Bruno, Luiz Gustavo |
+| 12/04/2019 | 0.2   | Definição das tecnologias e arquitetura  | Lucas Leite  |
+| 24/04/2019 | 0.3   | Adição de mais tópicos  | MDS(Todos)  |
+| 07/05/2019 | 0.4   | Modificação da parte de representação da arquitetura| Luis Bruno, Lucas Leite e Luiz Gustavo |
+| 02/06/2019 | 0.5   | Modificação Introdução e topico de tecnologias usadas | Luis Gustavo e Lucas Leite |
+
 
 
 # 1. Introdução 
-<p  align="justify">Este documento tem como objetivo apresentar de forma abrangente a arquitetura do sistema de ChatBot Tino, utilizando diversas visões de arquitetura para representar os aspectos da aplicação.</p> 
+<p  align="justify">Este documento tem como objetivo apresentar de forma abrangente a arquitetura do sistema do ChatBot Tino.</p> 
 
 ## 1.1 Finalidade  
 
@@ -52,7 +60,7 @@ Estrutura do documento:
 > André; Gabriel; Guilherme; ALMEIDA; Weyler. <b>Cidade Democrática:</b> Documento de Arquitetura. Disponível em: <https://github.com/fga-gpp-mds/2016.2-CidadeDemocratica/wiki/Documento-de-Arquitetura>.
 
 > RODRIGUES, Pedro; BLANCO, Matheus; BRAGA, Gabriel; FILA herme; DE SOUZA, Letícia. <b>Lino:</b> Documento de Arquitetura. Disponível em:
-<https://github.com/fga-eps-mds/2018.2-Lino/blob/master/>.
+<https://github.com/fga-eps-mds/2018.2-Lino/docs/>.
 
 
 
@@ -144,7 +152,7 @@ WerkZeug é uma biblioteca para desenvolvimento de apps WSGI que é a especifica
 <html>
 <ul>
 <li>O Pacote 2019.1-Tino é o pacote principal do projeto e contém todos os outros sub-pacotes e documentos disponíveis no projeto.</li>
-<li>No Pacote docs, no interior de 2019.1-Tino, estão contidos todos os documentos necessários para o entendimento do projeto e sua arquitetura como um todo.</li>
+<li>No Pacote docs, no interior de 2019.1-Tino, estão contidos os documentos de visão e de arquitetura para melhor compreesão dos detalhes acerca da proposta.</li>
 <li>O Pacote microservices contém todos os microsserviços externos relacionados à arquitetura do Bot.</li>
 <li>O Pacote csv contém o arquivo CSV com todos os dados dos professores e coordenadores, que é atualizado manualmente, utilizado pelo microservice de professor para a atualização dos dados dos professores no banco de dados. O nome do arquivo .csv deve ser professores.csv</li>    
 </ul>
