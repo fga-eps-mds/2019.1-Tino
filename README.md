@@ -48,7 +48,7 @@
 ### Entenda um pouco da arquitetura:
 ![diagrama de relacoes](./docs/imagens/diagrama-relacoes.png)
 
-## Guia de Contribuição
+## Como testar o Tino no Telegram
 
 Para começar o desenvolvimento do ChatBot, é necessário montar as imagens descritas pelos Dockerfiles utilizando a ferramenta docker :
 
