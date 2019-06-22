@@ -96,7 +96,7 @@ O público-alvo do ChatBot são alunos e, possivelmente, funcionários da FGA.</
 <tr><th>Problemas/comentários</th><td>Inexperiência da equipe com as principais tecnologias utilizadas para o desenvolvimento na fase inicial do projeto.</td></tr>
 </table>
 
-## 3.3.2 Equipe de engenharia de produto de software (EPS)
+### 3.3.2 Equipe de engenharia de produto de software (EPS)
 
 <table> 
 <tr><th>Representantes</th><td>João Pedro e Henrique Lopes Dutra</td></tr>
@@ -108,7 +108,7 @@ O público-alvo do ChatBot são alunos e, possivelmente, funcionários da FGA.</
 <tr><th>Problemas/comentários</th><td>Organizar prazos e metas de acordo com o tempo disponível</td></tr>
 </table>
 
-## 3.3.3 Orientadores
+### 3.3.3 Orientadores
 
 <table> 
 <tr><th>Representantes</th><td>Carla Rocha Rocha e Bruna Nayara Moreira</td></tr>
