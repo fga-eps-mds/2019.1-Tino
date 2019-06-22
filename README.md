@@ -1,6 +1,6 @@
 # 2019.1-Tino [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <p align="center">
-  ![diagrama de relacoes](./docs/imagens/logowolf.png)
+  <img src="http://tino-1-2019.com.br/wp-content/uploads/2019/04/logowolf-uai-258x254.png">
 </p>
 <h1 align="center"> Tino - O bot </h1>
 <p align="center">
