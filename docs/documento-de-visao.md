@@ -7,11 +7,11 @@
 
 # 1. Introdução
 
-<p align = "justify">Neste documento serão definidas as necessidades,razões e motivações que compõem o escopo do projeto, bem como os propósitos para realização do mesmo.O objetivo deste documento de visão é reduzir riscos que circundam a criação do produto de modo a estabelecer expectativas e proteger as partes envolvidas no desenvolvimento do projeto.</p>
+<p align = "justify">Neste documento serão definidas as necessidades, razões e motivações que compõem o escopo do projeto, bem como os propósitos para realização do mesmo. O objetivo deste documento de visão é reduzir riscos que circundam a criação do produto de modo a estabelecer expectativas e proteger as partes envolvidas no desenvolvimento do projeto.</p>
 
 ## 1.1 Propósito
 
-<p align = "justify">Este documento tem, por finalidade, estabelecer de modo amplo uma visão geral  a respeito da criação de um novo ChatBot destinado aos alunos da Universidade de Brasília -UnB-FGA  de maneira a definir as características e utilidades de cada funcionalidade e também o propósito e contexto nas quais se inserem,deixando claro assim sua proposta e peculiaridades..</p>
+<p align = "justify">Este documento tem, por finalidade, estabelecer de modo amplo uma visão geral a respeito da criação de um novo ChatBot destinado aos alunos da Universidade de Brasília - UnB-FGA de maneira a definir as características e utilidades de cada funcionalidade e também o propósito e contexto nas quais se inserem, deixando claro assim sua proposta e peculiaridades.</p>
 
 ## 1.2 Escopo
 
@@ -215,7 +215,7 @@ O ChatBot Tino é capaz de:
 
 ## 8.2 Requisitos de desempenho
 
-<p align = "justify"> No que se refere a requisitos de desempenho o usuário deve possuir uma conexão estável com a internet que lhe possibilite o acesso ao Telegram ou Facebook Mensseger, plataformas que fazem a interação com o ChatBot.</p>
+<p align = "justify"> No que se refere a requisitos de desempenho o usuário deve possuir uma conexão estável com a internet que lhe possibilite o acesso ao Telegram, plataforma que faz a interação com o ChatBot.</p>
 
 ## 9.4 Requisitos Ambientais
 
