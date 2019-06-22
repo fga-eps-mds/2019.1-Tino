@@ -1,9 +1,7 @@
 import requests
 import json
-from urllib import request as rq
-import os
 
-url ='https://73b3d842.ngrok.io'    #os.environ.get('INTERCAMPI_WEBHOOK')
+url ='https://d6e910f1.ngrok.io'    #specify which host you're going to use (production or local)
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
 url_planaltina = url + "/planaltina"
@@ -20,7 +18,7 @@ def test_gama_path():
     requestConn = requests.get(url_gama)
     json = request  
     assert requestConn.status_code == 200
-    assert json[0]['origem'] == 'Gama'
+    assert json[0]['origem'] == 'Gama' #asserts data is comming
     
 
 def test_planaltina_path():
