@@ -12,6 +12,7 @@ intents:
 - about_location
 - about_pet
 - about_series
+- negative
 - about_collor
 - about_hobby
 - about_music
@@ -26,10 +27,12 @@ intents:
 - intercampi_all
 - find_professor
 - info_professor
+- ajuda
 
 actions:
 - utter_thanks
-- utter_greet
+- action_greet
+- utter_help
 - utter_goodbye
 - action_callapi
 - action_callapi_all_intercampi
@@ -51,6 +54,8 @@ actions:
 - utter_politica
 - utter_tudo_bem
 - utter_info_professor
+- utter_continuar
+- utter_negative
 
 entities:
 - campus
@@ -61,7 +66,7 @@ slots:
   professor:
     type: unfeaturized  
   campus:
-    type: unfeaturized  
+    type: unfeaturized
 
 
 templates:
@@ -74,17 +79,6 @@ templates:
   - text: "Tranquilo demais!"
   - text: "Suave demais!"
   - text: "Tudo ótimo, do que você precisa?"
-  
-  utter_greet:
-  - text: "Fala aí, beleza? Sou o Tino e estou aqui para te ajudar!\n\n
-          Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
-          - Horários dos Intercampis\n
-          - Informações dos Professores\n"
-          
-  - text: "Opa Eaí! Sou o Tino e estou ansioso para te ajudar no que precisar\n\n
-          Estou em desenvolvimento, mas já posso te ajudar com os seguintes assuntos:\n
-          - Horários dos Intercampis\n
-          - Informações dos Professores" 
 
   utter_goodbye:
   - text: "Falo com você depois!"
@@ -95,6 +89,21 @@ templates:
   - text: "Até mais!"
   - text: "Tchau!"
   - text: "Tchau, qualquer coisa é só chamar!"
+  - text: "Falou amigo, até mais tarde!"
+  - text: "Flws amigo, qualquer só chamar!"
+  - text: "Flws mano, qualquer coisa tô por aqui, só chamar"
+  
+  utter_help: 
+    - text: |
+          Eu estou aqui para te ajudar com os seguintes assuntos:
+
+          Horários dos Intercampi:
+              Eu posso te enviar uma lista com os horários de todos intercampi ou, se preferir, posso te mostrar apenas os próximos partindo de onde está.
+              Basta pedir por "Horários dos intercampi" que irei lhe perguntar qual opção deseja, e então você me diz se quer "Todos" ou "Apenas os próximos". ;)
+
+          Informações dos Professores:
+              Eu posso te enviar o nome, e-mail, sala e coordenação (caso tenha) de um professor.
+              Basta me pedir "Informações dos professores", ou algo como "Quero o contato do professor Fulano" que irei te enviar tudo que sei sobre ele. ;)
 
   utter_out_of_scope:
   - text: "Não consegui entender o que você falou, pode explicar melhor?"
@@ -171,9 +180,9 @@ templates:
 
   utter_intercampi_info:
   - text: "Certo, você quer saber sobre o intercampi...\n
-           Mas especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
-  - text: "Com certeza poderei te ajudar. \n
-           Mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
+          Mais especificamente, você quer saber de todos ou dos próximos partindo de onde está?"
+  - text: "Com certeza poderei te ajudar.\n
+          Mas antes só me ajuda um pouco... Você quer visualizar os próximos a sairem ou quer uma lista de todos?"
 
   utter_about_collor:
   - text: "Pretinho básico"

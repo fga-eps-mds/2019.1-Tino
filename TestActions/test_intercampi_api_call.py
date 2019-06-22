@@ -1,7 +1,6 @@
 import requests
 import json
 
-
 url ='https://d6e910f1.ngrok.io'    #specify which host you're going to use (production or local)
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
