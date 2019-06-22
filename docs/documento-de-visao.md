@@ -27,10 +27,9 @@
 
 ## 1.4 Referências
 
-https://github.com/fga-eps-mds/2018.2-Lino/blob/master/docs/documento-de-visao.md
-https://fga-eps-mds.github.io/2018.2-ComexStat/docs/docVisao
+<p>https://github.com/fga-eps-mds/2018.2-Lino/blob/master/docs/documento-de-visao.md</p>
+<p>https://fga-eps-mds.github.io/2018.2-ComexStat/docs/docVisao</p>
 
-https://botlino.github.io/docs/doc-visao
 
 ## 1.5 Visão geral
 
