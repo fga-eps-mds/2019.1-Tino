@@ -1,4 +1,9 @@
-
+| Data   | Versão | Modificação  | Autor  |
+| :------- | :--------- | :---------------- | :------- |
+| 26/03/2019 | 0.1   |  Criação de todos os tópicos do documento  |  Lucas Leite, Lucas Lopes, Luís Bruno, Luiz Gustavo |
+| 30/04/2019 | 0.2   | Finalizando perfis envolvidos  | Luis Bruno e Lucas Leite  |
+| 30/04/2019 | 0.3   | Finalizando Tópico 9 | MDS(Todos)  |
+| 07/05/2019 | 0.4   | Diminuição de escopo| Luis Bruno, Lucas Leite e Luiz Gustavo |
 
 # 1. Introdução
 
@@ -201,6 +206,24 @@ O ChatBot Tino é capaz de:
 ## 7.2 Requisitos de Design
 
 <p align = "justify">A aplicação é auto explicativa de forma que, para obter os resultados e informações desejadas, o usuário deve interagir com o ChatBot da mesma forma que interage com um usuário comum nas plataformas. Além disso, o ChatBot colabora com a experiência do usuário dando dicas de possíveis perguntas/opções e suas funcionalidades.</p>
+
+# 8. Outros requisitos do produto
+
+## 8.1 Requisitos do sistema
+
+<p align = "justify">A aplicação deverá ser acessada por dispositivos que possuem compatibilidade com Telegram.</p>
+
+## 8.2 Requisitos de desempenho
+
+<p align = "justify"> No que se refere a requisitos de desempenho o usuário deve possuir uma conexão estável com a internet que lhe possibilite o acesso ao Telegram ou Facebook Mensseger, plataformas que fazem a interação com o ChatBot.</p>
+
+## 9.4 Requisitos Ambientais
+
+<p align="justify">A aplicação não possui requisitos ambientais referentes a hardware e software que possam ser considerados, visto que se trata de um software sem interação ambiental direta e que possui uma interação rápida e prática com o usuário. </p>
+
+
+
+
 
 
 
