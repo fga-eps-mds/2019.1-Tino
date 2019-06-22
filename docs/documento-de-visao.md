@@ -116,6 +116,7 @@ O público-alvo do ChatBot são alunos e, possivelmente, funcionários da FGA.</
 <tr><th>Responsabilidades</th><td>Orientar, avaliar e sancionar dúvidas das equipes de desenvolvimento e gestão.</td></tr>
 <tr><th>Critérios de Aceitação</th><td>Orientar e observar o sucesso dos estudantes no desenvolvimento do software </td></tr>
 <tr><th>Envolvimento</th><td>Médio</td></tr>
+</table>
 
 ## 3.4 Perfil do Usuário
 
