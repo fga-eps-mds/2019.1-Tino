@@ -52,7 +52,7 @@ Estrutura do documento:
 > André; Gabriel; Guilherme; ALMEIDA; Weyler. <b>Cidade Democrática:</b> Documento de Arquitetura. Disponível em: <https://github.com/fga-gpp-mds/2016.2-CidadeDemocratica/wiki/Documento-de-Arquitetura>.
 
 > RODRIGUES, Pedro; BLANCO, Matheus; BRAGA, Gabriel; FILA herme; DE SOUZA, Letícia. <b>Lino:</b> Documento de Arquitetura. Disponível em:
-<https://github.com/fga-eps-mds/2018.2-Lino/blob/master/A utilização das ferramentas proporcionadas pelo Framework Rasa nos permitem uma interação mais humanizada com o usuário, possibilitando também,depois de algumas interações com usuários, um auto-treinamento para melhor se comunicar com o exterior. Este é o principal objetivo da utilização do Rasa NLU para o processamento de linguagem. Alguns benefícios do Framework são:ra.md>.
+<https://github.com/fga-eps-mds/2018.2-Lino/blob/master/>.
 
 
 
