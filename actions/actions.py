@@ -72,24 +72,25 @@ class ActionCallapi(Action):
         words = text.split(' ')
 
         for word in words:
-            if('darcy' in word or "plano" in word):
+            if ('darcy' in word or "plano" in word):
                 origin = "Darcy Ribeiro"
                 boarding_location = "no Estacionamento do ICC sul"
                 break
-            if("gama" in word or "fga" in word):
+            if ("gama" in word or "fga" in word):
                 origin = "Gama-FGA"
                 boarding_location = "no Estacionamento do Prédio"
                 break
-            if("ceilandia" in word or "ceilândia" in word or "fce" in word):
+            if ("ceilandia" in word or "ceilândia" in word or "fce" in word):
                 origin = "Ceilândia-FCE"
                 boarding_location = "em frente a portaria central"
                 break
-            if("planaltina" in word or "fup" in word):
+            if ("planaltina" in word or "fup" in word):
                 origin = "Planaltina-FUP"
                 boarding_location = "em frente ao antigo Prédio"
                 break
 
-        if(origin == ""):
+        # If don't finds the key word, sends this message to user.
+        if (origin == ""):
             dispatcher.utter_message('Desculpe, não consegui entender onde' +
                                      'você está... Pode falar de maneira' +
                                      'mais clara?')
@@ -99,13 +100,13 @@ class ActionCallapi(Action):
                                  origin + '...')
 
         # Do request according the 'origin'.
-        if(origin == "Darcy Ribeiro"):
+        if (origin == "Darcy Ribeiro"):
             request = requests.get(url_darcy).json()
-        if(origin == "Gama-FGA"):
+        if (origin == "Gama-FGA"):
             request = requests.get(url_gama).json()
-        if(origin == "Ceilândia-FCE"):
+        if (origin == "Ceilândia-FCE"):
             request = requests.get(url_ceilandia).json()
-        if(origin == "Planaltina-FUP"):
+        if (origin == "Planaltina-FUP"):
             request = requests.get(url_planaltina).json()
 
         json_result = request
@@ -118,15 +119,15 @@ class ActionCallapi(Action):
             intercampi_time = y['horario_saida']
             intercampi_time = intercampi_time.split('h')
 
-            if current_time.hour <= int(intercampi_time[0]):
+            if (current_time.hour <= int(intercampi_time[0])):
                 dispatcher.utter_message('Destino: ' + y['destino'] +
                                          '\n' + "Horário de saída: " +
                                          y['horario_saida'])
                 intercampi_count += 1
 
-        if intercampi_count == 0:
+        if (intercampi_count == 0):
             dispatcher.utter_message('Não há mais intercampis saindo hoje :/')
-        if(boarding_location != "" and intercampi_count != 0):
+        if (boarding_location != "" and intercampi_count != 0):
             dispatcher.utter_message('O local de embarque é ' + 
                                      boarding_location)
 
