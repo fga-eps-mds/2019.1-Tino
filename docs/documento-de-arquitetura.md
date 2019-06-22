@@ -6,7 +6,7 @@
 | 12/04/2019 | 0.2   | Definição das tecnologias e arquitetura  | Lucas Leite  |
 | 24/04/2019 | 0.3   | Adição de mais tópicos  | MDS(Todos)  |
 | 07/05/2019 | 0.4   | Modificação da parte de representação da arquitetura| Luis Bruno, Lucas Leite e Luiz Gustavo |
-| 02/06/2019 | 0.5   | Modificação Introdução e topico de tecnologias usadas | Luis Gustavo e Lucas Leite |
+| 02/06/2019 | 0.5   | Modificação Introdução e topico de tecnologias usadas | Luiz Gustavo e Lucas Leite |
 
 
 
