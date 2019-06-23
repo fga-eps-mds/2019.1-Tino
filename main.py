@@ -27,7 +27,7 @@ token = os.environ['TELEGRAM_TOKEN']
 app = Flask(__name__)
 
 # accept telegram messages
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/telegram/', methods=['POST', 'GET'])
 def index():
     if(request.method == 'POST'):
         msg = request.get_json()
