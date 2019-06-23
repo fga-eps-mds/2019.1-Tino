@@ -29,8 +29,8 @@ class ActionGreet(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        message = ('Fala aí, beleza?\nSou o Tino e estou aqui ' +
-                   'para te ajudar com os seguintes assuntos:\n' +
+        message = ('Fala aí, beleza?\nSou o Tino e estou aqui '
+                   'para te ajudar com os seguintes assuntos:\n'
                    ' - Horários dos Intercampi\n' +
                    ' - Informações dos Professores')
 
@@ -71,6 +71,7 @@ class ActionCallapi(Action):
         text = text.lower()
         words = text.split(' ')
 
+        # Searchs the key words in user message to define 'origin'
         for word in words:
             if ('darcy' in word or "plano" in word):
                 origin = "Darcy Ribeiro"
@@ -111,6 +112,7 @@ class ActionCallapi(Action):
 
         json_result = request
 
+        # Sets current time according with the time zone.
         time_zone = pytz.timezone('America/Sao_Paulo')
         current_time = datetime.now(time_zone)
         intercampi_count = 0
@@ -128,7 +130,7 @@ class ActionCallapi(Action):
         if (intercampi_count == 0):
             dispatcher.utter_message('Não há mais intercampis saindo hoje :/')
         if (boarding_location != "" and intercampi_count != 0):
-            dispatcher.utter_message('O local de embarque é ' + 
+            dispatcher.utter_message('O local de embarque é ' +
                                      boarding_location)
 
         return []
@@ -139,9 +141,9 @@ class ActionCallapiAll(Action):
         return 'action_callapi_all_intercampi'
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message('Pronto! Aqui está um documento com ' +
-                                 'o horário de todos intercampi. Precisa ' +
-                                 'de mais alguma coisa?')
+        dispatcher.utter_message('Pronto! Aqui está um documento com '
+                                 'o horário de todos intercampi. Se precisar'
+                                 ' de mais alguma coisa, é só falar!')
         requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
 
 
@@ -163,7 +165,7 @@ class ActionFindProfessor(Action):
         room = ""
         email = ""
 
-        # Verificando se ha algum registro do professor informado
+        # Checks if exists register of professor
         for y in collection.find():
             if (professor in y['name']):
                 name = y['name']
@@ -189,57 +191,72 @@ class ActionFindProfessor(Action):
             dispatcher.utter_message('Eai meu maratonista preferido')
             dispatcher.utter_message('Está ai os dados dele:')
 
-        elif (name == "Yevsey  Yehoshua  Sobolevsky"):
-            dispatcher.utter_message('Se já é difícil escrever o nome, não quero nem ver a prova.')
+        elif (name == "Yevsey Yehoshua Sobolevsky"):
+            dispatcher.utter_message('Se já é difícil escrever o nome, não'
+                                     ' quero nem ver a prova.')
             dispatcher.utter_message('Se liga só nos dados dele:')
 
         elif (name == "Marília Miranda Forte Gomes"):
             dispatcher.utter_message('Quando for a aula do bolo, me avisa.')
             dispatcher.utter_message('Segue os dados dela:')
 
-        elif (name == "Bruna Nayara Moreira Lima" or name == "Carla Silva Rocha Aguiar"):
+        elif (name == "Bruna Nayara Moreira Lima" or
+              name == "Carla Silva Rocha Aguiar"):
             dispatcher.utter_message('Como anda a vida em software meu amigo?')
-            dispatcher.utter_message('Eu sei que é sofrido. Mas não desanima não')
-            dispatcher.utter_message('Voltando ao assunto,rs!. Segue abaixo os dados dela')
+            dispatcher.utter_message('Eu sei que é sofrido. Mas não desanima')
+            dispatcher.utter_message('Voltando ao assunto,rs!. Segue abaixo os'
+                                     ' dados dela')
 
-        elif (name == "Gerardo Antonio Idrobo  Pizo"):
+        elif (name == "Gerardo Antonio Idrobo Pizo"):
             dispatcher.utter_message('Beleza meu companheiro')
             dispatcher.utter_message('Procurando aqui nos meus arquivos...')
             dispatcher.utter_message('Segue abaixo:')
+
         elif (name == "Luiza Yoko Taneguti"):
             dispatcher.utter_message('Ela é da China ou Japão?')
             dispatcher.utter_message('Voltando ao assunto,rs!')
             dispatcher.utter_message('Segue abaixo:')
 
-        elif (name == "Paula Meyer Soares" or name == "Patrícia Regina Sobral Braga"):
-            dispatcher.utter_message('Eu tinha uma amiga de infância com esse nome, acredita?')
-            dispatcher.utter_message('Lembro de quando brincávamos de quem gerava o maior número randômico')
-            dispatcher.utter_message('Voltando... Foco né... ')
+        elif (name == "Paula Meyer Soares" or
+              name == "Patrícia Regina Sobral Braga"):
+            dispatcher.utter_message('Eu tinha uma amiga de infância com esse'
+                                     ' nome, acredita?')
+            dispatcher.utter_message('Lembro de quando brincávamos de quem'
+                                     ' gerava o maior número randômico')
+            dispatcher.utter_message('Voltando... Foco né...')
 
-        elif (name == "Luiz Augusto Fontes Laranjeira" or name == "Luís Filomeno de Jesus Fernandes"):
-            dispatcher.utter_message('So vou te dar essa informação se me der exemplos de  silogismo hipotético')
+        elif (name == "Luiz Augusto Fontes Laranjeira" or
+              name == "Luís Filomeno de Jesus Fernandes"):
+            dispatcher.utter_message('So vou te dar essa informação se me der'
+                                     ' exemplos de silogismo hipotético')
             dispatcher.utter_message('Brincadeira kkkkk')
             dispatcher.utter_message('Pronto mandei pra você ;)')
 
         elif (name == "Renato Coral Sampaio"):
             dispatcher.utter_message('Opa, desse eu sou fã')
-            dispatcher.utter_message('Deixa eu dar uma olhadinha aqui nos meus arquivos...')
+            dispatcher.utter_message('Deixa eu dar uma olhadinha aqui nos meus'
+                                     ' arquivos...')
             dispatcher.utter_message('Pronto mandei pra você =)')
 
         elif (name == "Leandro Xavier Cardoso"):
-            dispatcher.utter_message('Um carro a 80km/h e um Leopardo a 80km/h, quem vence?')
+            dispatcher.utter_message('Um carro a 80km/h e um Leopardo a '
+                                     '80km/h, quem vence?')
             dispatcher.utter_message('Brincadeira kkkkk')
-            dispatcher.utter_message('Prontinho, ai estão os seus dados!')
+            dispatcher.utter_message('Prontinho, aí estão os seus dados!')
 
         elif (name == "Ronni Geraldo Gomes de Amorim"):
-            dispatcher.utter_message('O que será que o Ronni pensa dos terraplanistas?!')
-            dispatcher.utter_message('kkkkkkkkk, é cada uma viu...vou procurar aqui nos meus arquivos')
+            dispatcher.utter_message('O que será que o Ronni pensa '
+                                     'dos terraplanistas?!')
+            dispatcher.utter_message('kkkkkkkkk, é cada uma viu... vou '
+                                     'procurar aqui nos meus arquivos')
             dispatcher.utter_message('Pronto, encontrei =)')
 
         elif (name == "Wander Cleber Maria Pereira da Silva"):
-            dispatcher.utter_message('Faça felicidade com o Wander, é legal demais! uma dica do seu amiguinho Tino')
-            dispatcher.utter_message('kkkkkkkkkkk')
-            dispatcher.utter_message('Pronto, encontrei os dados que você me pediu =)')
+            dispatcher.utter_message('Faça felicidade com o Wander, é legal '
+                                     'demais! uma dica do seu amiguinho Tino'
+                                     ' kkkk')
+            dispatcher.utter_message('Pronto, encontrei os dados que você '
+                                     'me pediu =)')
 
         elif (name == "Nilton Correia da Silva"):
             dispatcher.utter_message('Isaac Nilton?!')
@@ -247,14 +264,14 @@ class ActionFindProfessor(Action):
             dispatcher.utter_message('Pronto mandei os dados pra você =)')
 
         elif (name == "Glauceny Cirne de Medeiros"):
-            dispatcher.utter_message('Falo sério, tenho medo de MecSol kkkkkkk')
+            dispatcher.utter_message('Falo sério, tenho medo de MecSol kkkkk')
             dispatcher.utter_message('Pronto mandei pra você ;)')
 
         elif (name == "Tatiane da Silva Evangelista"):
             dispatcher.utter_message('Gosto demais! ótima professora!')
             dispatcher.utter_message('Olhando aqui meus arquivos...')
             dispatcher.utter_message('Pronto mandei pra você =)')
-            
+
         elif (name == "Eneida González Valdés"):
             dispatcher.utter_message('Tem q instalar o catia v5r19')
             dispatcher.utter_message('Brincadeira kkkkk')
@@ -277,6 +294,8 @@ class ActionFindProfessor(Action):
 
         dispatcher.utter_message('Como sou legal, vou te ajudar a chegar lá.')
         if (room < "19"):
-            dispatcher.utter_message('Tendo como rêferencia a rampa, a sala fica ao lado direito.')
+            dispatcher.utter_message('Tendo como rêferencia a rampa, a '
+                                     'sala fica ao lado direito.')
         if (room >= "19"):
-            dispatcher.utter_message('Tendo como rêferencia a rampa, a sala fica ao lado esquerdo.')
+            dispatcher.utter_message('Tendo como rêferencia a rampa, a '
+                                     'sala fica ao lado esquerdo.')
