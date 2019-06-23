@@ -3,6 +3,7 @@ import pandas as pd
 import json
 from urllib import request as rq
 
+
 def get_ssl_certificate():
 
     url = "https://fga.unb.br/guia-fga/horario-dos-onibus-intercampi"
@@ -11,6 +12,7 @@ def get_ssl_certificate():
     html = response.read()
 
     return html
+
 
 def test_get_from_fga_site():
 
@@ -30,13 +32,9 @@ def test_get_from_fga_site():
                    'origem': item[1]}
         result.append(element)
 
-    first = "" 
+    first = ""
     for each in result:
         first = each['destino']
         break
 
     assert first == 'Darcy Ribeiro'
-   
-
-
-
