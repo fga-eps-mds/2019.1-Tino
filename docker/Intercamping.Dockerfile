@@ -8,8 +8,6 @@ ADD ./requirements.txt /tmp
 #Instalando pacotes necessários
 RUN pip install --upgrade pip && \ 
 	pip install pandas && \   
-    pip install flask && \
-    pip3 install pymongo && \
     pip install python-dotenv && \
     pip install lxml && \
     pip install html5lib && \
