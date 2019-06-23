@@ -24,12 +24,12 @@ MONGO_HOSTNAME = str(MONGO_HOSTNAME) + ':27017'
 def index():
     if(request.method == 'POST'):
         return Response('ok', status=200)
-        
+
     else:
         intercampi_dados = ""
         try:
-            collection = get_intercampi_collection() 
-          
+            collection = get_intercampi_collection()
+
         except Exception as error:
             print(error)
             print('ERRO AO ACESSAR COLEÇÃO')
@@ -37,7 +37,7 @@ def index():
         try:
             intercampi_dados = get_from_fga_site()
             print(intercampi_dados)
-            
+
         except Exception as error:
             print(error)
 
@@ -52,8 +52,8 @@ def index():
 
         for y in collection.find():
             print(y['_id'])
-            del y['_id']        
-            json.append(y)      
+            del y['_id']
+            json.append(y)
 
     return jsonify(json)
 
@@ -65,7 +65,6 @@ def get_intercampi_collection():
                          password=MONGO_PASSWORD)
     db = client.admin
     collection = db['intercampi-horario']
-   
 
     return collection
 
@@ -88,7 +87,6 @@ def get_from_fga_site():
         result.append(element)
 
     print(result)
-   
 
     return result
 
@@ -108,10 +106,9 @@ def get_from_darcy():
 
     json = []
     for y in collection.find():
-        if(y['origem'] == "Darcy Ribeiro"):     
-            del y['_id']                        
-            json.append(y)                              
-    
+        if(y['origem'] == "Darcy Ribeiro"):
+            del y['_id']
+            json.append(y)
 
     return jsonify(json)
 
@@ -153,6 +150,22 @@ def get_from_planaltina():
             json.append(y)
 
     return jsonify(json)
+
+
+@app.route("/count")  # #########----PROFESSOR COUNT-ASSERT PATH----##########
+def get_profcount():
+
+    client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,
+                         password=MONGO_PASSWORD)
+    db = client.admin
+    prof_collection = db['professor-contato']
+    intercampi_collection = db['intercampi-horario']
+    profcount = prof_collection.count_documents({})
+    intercampicount = intercampi_collection.count_documents({})
+
+    obj = {"profcount": profcount, "intercampicount": intercampicount}
+
+    return jsonify(obj)
 
 
 if(__name__ == '__main__'):
