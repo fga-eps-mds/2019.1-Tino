@@ -11,7 +11,7 @@ BOT_TOKEN = os.environ.get('TELEGRAM_TOKEN')
 BOT_TOKEN = str(BOT_TOKEN)
 
 # accept telegram messages
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/pdf/', methods=['POST', 'GET'])
 def index():
     if(request.method == 'POST'):
         return Response('ok', status=200)

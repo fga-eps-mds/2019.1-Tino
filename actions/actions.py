@@ -14,12 +14,12 @@ import telegram
 mongo_host = os.environ['MONGO_ID']
 mongo_host = mongo_host + ':27017'
 url = os.environ['INTERCAMPI_WEBHOOK']
-url_darcy = url + "/darcy"
-url_gama = url + "/gama"
-url_planaltina = url + "/planaltina"
-url_ceilandia = url + "/ceilandia"
+url_darcy = url + "/darcy/"
+url_gama = url + "/gama/"
+url_planaltina = url + "/planaltina/"
+url_ceilandia = url + "/ceilandia/"
 logger = logging.getLogger(__name__)
-
+send_pdf = os.environ['SENDPDF_WEBHOOK']
 
 class ActionGreet(Action):
     def name(self) -> Text:
@@ -146,10 +146,14 @@ class ActionCallapiAll(Action):
         return 'action_callapi_all_intercampi'
 
     def run(self, dispatcher, tracker, domain):
+        client = MongoClient(mongo_host, username='rasa',password='rasa')
+        db = client.admin
+        collection = db['dados-conversa-atual']
+        chat_id = collection.find()[0]['chat_id']
         dispatcher.utter_message('Pronto! Aqui está um documento com '
                                  'o horário de todos intercampi. Se precisar'
                                  ' de mais alguma coisa, é só falar!')
-        requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
+        requests.get(send_pdf + "?chat_id=" + str(chat_id))
 
 
 class ActionFindProfessor(Action):

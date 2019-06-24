@@ -9,6 +9,7 @@ import os
 import ssl
 import json
 
+
 app = Flask(__name__)
 
 MONGO_USER = os.environ.get('MONGO_USER')
@@ -20,7 +21,7 @@ MONGO_HOSTNAME = str(MONGO_HOSTNAME) + ':27017'
 
 
 # accept telegram messages
-@app.route('/', methods=['POST', 'GET'])  # ###----ALL PATH----####
+@app.route('/intercampi/', methods=['POST', 'GET'])  # ###----ALL PATH----####
 def index():
     if(request.method == 'POST'):
         return Response('ok', status=200)
@@ -66,8 +67,8 @@ def get_intercampi_collection():
     db = client.admin
     collection = db['intercampi-horario']
 
-    return collection
 
+    return collection
 
 def get_from_fga_site():
     html = get_ssl_certificate()
@@ -88,32 +89,33 @@ def get_from_fga_site():
 
     print(result)
 
+
     return result
 
 
 def get_ssl_certificate():
     url = "https://fga.unb.br/guia-fga/horario-dos-onibus-intercampi"
     context = ssl._create_unverified_context()
-    response = rq.urlopen(url, context=context)
+    response = urllib.urlopen(url, context=context)
     html = response.read()
 
     return html
 
 
-@app.route("/darcy")  # ###-----DARCY PATH-----####
+@app.route("/intercampi/darcy/")  # ###-----DARCY PATH-----####
 def get_from_darcy():
     collection = get_intercampi_collection()
 
     json = []
     for y in collection.find():
         if(y['origem'] == "Darcy Ribeiro"):
-            del y['_id']
-            json.append(y)
+            del y['_id']                        
+            json.append(y)                              
+    
 
     return jsonify(json)
 
-
-@app.route("/gama")  # #########-----GAMA PATH-----#############
+@app.route("/intercampi/gama/")  # #########-----GAMA PATH-----#############
 def get_from_gama():
     collection = get_intercampi_collection()
 
@@ -126,7 +128,7 @@ def get_from_gama():
     return jsonify(json)
 
 
-@app.route("/ceilandia")  # #####-----CEILÂNDIA PATH-----######
+@app.route("/intercampi/ceilandia/")  # #####-----CEILÂNDIA PATH-----######
 def get_from_ceilandia():
     collection = get_intercampi_collection()
 
@@ -135,11 +137,12 @@ def get_from_ceilandia():
         if(y['origem'] == "Ceilândia"):
             del y['_id']
             json.append(y)
+    
 
     return jsonify(json)
 
 
-@app.route("/planaltina")  # #########-----PLANALTINA PATH-----#############
+@app.route("/intercampi/planaltina/")  # #########-----PLANALTINA PATH-----#############
 def get_from_planaltina():
     collection = get_intercampi_collection()
 
@@ -150,22 +153,6 @@ def get_from_planaltina():
             json.append(y)
 
     return jsonify(json)
-
-
-@app.route("/count")  # #########----PROFESSOR COUNT-ASSERT PATH----##########
-def get_profcount():
-
-    client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,
-                         password=MONGO_PASSWORD)
-    db = client.admin
-    prof_collection = db['professor-contato']
-    intercampi_collection = db['intercampi-horario']
-    profcount = prof_collection.count_documents({})
-    intercampicount = intercampi_collection.count_documents({})
-
-    obj = {"profcount": profcount, "intercampicount": intercampicount}
-
-    return jsonify(obj)
 
 
 if(__name__ == '__main__'):

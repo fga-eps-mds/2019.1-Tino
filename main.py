@@ -10,9 +10,11 @@ import os
 import pyfiglet
 
 
-# load trained models
+#load trained models
+
 MONGOHOSTNAME = os.environ.get('MONGO_ID')
 MONGOHOSTNAME = str(MONGOHOSTNAME) + ':27017'
+
 interpreter = RasaNLUInterpreter('./models/current/nlu')
 ACTION_WEBHOOK = os.environ['ACTION_WEBHOOK']
 ACTION_WEBHOOK = ACTION_WEBHOOK + "/webhook"
@@ -31,15 +33,13 @@ token = os.environ['TELEGRAM_TOKEN']
 app = Flask(__name__)
 
 # accept telegram messages
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/telegram/', methods=['POST', 'GET'])
 def index():
     if(request.method == 'POST'):
         msg = request.get_json()
-
+        print(ACTION_WEBHOOK)
         chat_id, message = parse_msg(msg)
         response_messages = applyAi(message)
-        if 'todos' in message:
-            requests.get(SENDPDF_WEBHOOK+"/?chat_id=" + str(chat_id))
 
         client = MongoClient(MONGOHOSTNAME, username='rasa',password='rasa')
         db = client.admin
@@ -52,7 +52,7 @@ def index():
         return Response('ok', status=200)
 
     else:
-        return '<h1>Tino-Eps</h1>'
+        return '<h1>Tino-Eps</h1>' + ACTION_WEBHOOK
 
 
 # helper function to extract chat id and text
