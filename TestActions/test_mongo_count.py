@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import requests
 import json
 
-url_count = 'https://8a8e50e8.ngrok.io'  # intercampi local ngrok url 5002
+url_count = 'https://7c0eb0b6.ngrok.io'  # intercampi local ngrok url 5002
 url_count = url_count + '/count'
 mongo_host_prod = ''    # production mongo ip
 mongo_host_prod = 'mongodb://' + mongo_host_prod + ':27017'

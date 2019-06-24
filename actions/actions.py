@@ -13,8 +13,6 @@ import telegram
 
 mongo_host = os.environ['MONGO_ID']
 mongo_host = mongo_host + ':27017'
-bot_token = '817438100:AAFinhUm4zCFKkBRZMtL7ez3paLekIs0p4E'
-chat_id = '126478234'
 url = os.environ['INTERCAMPI_WEBHOOK']
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
@@ -47,10 +45,17 @@ class ActionGreet(Action):
 
         # Defines the bot from bot_token
         options = [[buttons[0], buttons[1]]]
-        bot = telegram.Bot(token=bot_token)
+        client = MongoClient(mongo_host, username='rasa',password='rasa')
+        db = client.admin
+        collection = db['dados-conversa-atual']
+        chat_id = collection.find()[0]['chat_id']
+        token = collection.find()[0]['token']
+        bot = telegram.Bot(token=token)
 
         # Defines the options in reply_markup
         reply_markup = telegram.InlineKeyboardMarkup(options)
+
+        
 
         bot.send_message(chat_id=chat_id,
                          text=message,
@@ -148,6 +153,7 @@ class ActionCallapiAll(Action):
 
 
 class ActionFindProfessor(Action):
+
     def name(self) -> Text:
         return 'action_find_professor'
 

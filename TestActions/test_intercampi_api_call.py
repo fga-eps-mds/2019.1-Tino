@@ -2,7 +2,7 @@ import requests
 import json
 
 # specify which host you're going to use (production or local)
-url = 'https://8a8e50e8.ngrok.io'
+url = 'https://7c0eb0b6.ngrok.io'
 url_darcy = url + "/darcy"
 url_gama = url + "/gama"
 url_planaltina = url + "/planaltina"

@@ -5,11 +5,14 @@ from flask import Response
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.utils import EndpointConfig
+from pymongo import MongoClient
 import os
 import pyfiglet
 
-# load trained models
 
+# load trained models
+MONGOHOSTNAME = os.environ.get('MONGO_ID')
+MONGOHOSTNAME = str(MONGOHOSTNAME) + ':27017'
 interpreter = RasaNLUInterpreter('./models/current/nlu')
 ACTION_WEBHOOK = os.environ['ACTION_WEBHOOK']
 ACTION_WEBHOOK = ACTION_WEBHOOK + "/webhook"
@@ -17,6 +20,7 @@ TELEGRAM_WEBHOOK = os.environ['TELEGRAM_WEBHOOK']
 TELEGRAM_WEBHOOK = str(TELEGRAM_WEBHOOK)
 SENDPDF_WEBHOOK = os.environ['SENDPDF_WEBHOOK']
 SENDPDF_WEBHOOK = str(SENDPDF_WEBHOOK)
+
 
 
 agent = Agent.load('./models/current/dialogue', interpreter=interpreter,
@@ -36,6 +40,13 @@ def index():
         response_messages = applyAi(message)
         if 'todos' in message:
             requests.get(SENDPDF_WEBHOOK+"/?chat_id=" + str(chat_id))
+
+        client = MongoClient(MONGOHOSTNAME, username='rasa',password='rasa')
+        db = client.admin
+        collection = db['dados-conversa-atual']
+        collection.delete_many({})
+        chat_data = { 'chat_id': chat_id,'token':token }
+        collection.insert_one(chat_data)
 
         send_message(chat_id, response_messages)
         return Response('ok', status=200)
