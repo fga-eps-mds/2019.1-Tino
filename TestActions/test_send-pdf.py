@@ -1,6 +1,6 @@
 import requests
 
-url = 'https://90ca1ab7.ngrok.io'
+url = 'https://tinopro.com/pdf/'
 
 
 def test_send_pdf():

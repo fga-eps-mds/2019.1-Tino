@@ -15,21 +15,6 @@ total_intercampi_lines = 16
 # mongo collection.
 
 
-def get_local_count():
-    # GET HTTP REQUEST ON INTERCAMPI MICROSERVICE
-    return requests.get(url_count).json()
-
-
-def test_local_professor_count():
-    obj = get_local_count()
-    count = obj['profcount']
-    assert count == total_professors_registred
-
-
-def test_local_intercampi_count():
-    obj = get_local_count()
-    count = obj['intercampicount']
-    assert count == total_intercampi_lines
 
 # ###PROD MONGO TESTS
 # def connect_prod_mongo_db():
