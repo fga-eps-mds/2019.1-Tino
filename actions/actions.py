@@ -13,8 +13,7 @@ import telegram
 
 mongo_host = os.environ['MONGO_ID']
 mongo_host = mongo_host + ':27017'
-bot_token = '739701752:AAEu1dcyxVeTNf8pgyN5FfMZx-2Te3PwprA'
-chat_id = '126478234'
+bot_token = '810210390:AAEOIp4lD3gnnWykAaxLlIRDKcBjkDeCpzU'
 url = os.environ['INTERCAMPI_WEBHOOK']
 url_darcy = url + "/darcy/"
 url_gama = url + "/gama/"
@@ -47,14 +46,17 @@ class ActionGreet(Action):
 
         # Defines the bot from bot_token
         options = [[buttons[0], buttons[1]]]
-        bot = telegram.Bot(token=bot_token)
+
+        dispatcher.utter_message(message)
+            
+        #bot = telegram.Bot(token=bot_token)
 
         # Defines the options in reply_markup
-        reply_markup = telegram.InlineKeyboardMarkup(options)
+        #reply_markup = telegram.InlineKeyboardMarkup(options)
 
-        bot.send_message(chat_id=chat_id,
-                         text=message,
-                         reply_markup=reply_markup)
+        #bot.send_message(chat_id=chat_id,
+        #                 text=message,
+        #                 reply_markup=reply_markup)
 
         return []
 
