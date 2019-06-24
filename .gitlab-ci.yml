@@ -11,10 +11,11 @@ variables:
 
 ######################## Tests #############################
 test_flake8:
-  image: ejplatform/python:alpine
+  image: ejplatform/python:latest
   stage: test
   script:
-    - flake8
+    pip install --upgrade pip && pip install lxml && pip install bs4 && pip install html5lib && pip install progressbar33 && pip install pytest && pip install --upgrade setuptools && pip install ez_setup && ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install --upgrade numpy pandas && pip install requests && pip install pymongo && source .env && cd TestActions && pytest
+
 
 
 

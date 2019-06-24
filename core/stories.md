@@ -1,6 +1,6 @@
 ## story_greet <!--- The name of the story. It is not mandatory, but useful for debugging. --> 
 * greet <!--- User input expressed as intent. In this case it represents users message 'Hello'. --> 
- - utter_greet <!--- The response of the chatbot expressed as an action. In this case it represents chatbot's response 'Hello, how can I help?' --> 
+ - action_greet <!--- The response of the chatbot expressed as an action. In this case it represents chatbot's response 'Hello, how can I help?' --> 
  
 ## story_goodbye
 * goodbye
@@ -37,6 +37,7 @@
 ## story_intercampi_all
 * intercampi_all
  - action_callapi_all_intercampi
+  - utter_continuar
 
 ## story_about_pet
 * about_pet
@@ -77,9 +78,22 @@
 ## story_find_professor
 * find_professor
  - action_find_professor
+  - utter_continuar
 
 ## story_intercampi_next
 * intercampi_next
  - utter_where_next
 * affirm_where
  - action_callapi
+
+ ## story_info_professor
+ * info_professor
+  - utter_info_professor
+
+## story_negative
+ * negative
+  - utter_negative
+
+## story_help
+ * ajuda{"command": "/ajuda"}
+  - utter_help

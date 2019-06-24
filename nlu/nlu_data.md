@@ -34,6 +34,53 @@
 - hahahaha
 - celular
 - objeto
+- micro
+- nano
+- brinquedo
+- perfume
+- criança
+- imperssora
+- banco
+- papel
+- pamonha
+- polido
+- jogo
+- jaula
+- leão
+- onça
+- tigre
+- botao
+- congelador
+- congela
+- gelo
+- miojo
+- fogão
+- copa
+- torneira
+- água
+- biscoito
+- bolacha
+- cafeteira
+- café
+- suco
+- máquina
+- gás
+- mesa
+- mesário
+- mesada
+- dinheiro
+- blusa
+- camiseta
+- camisa
+- corda
+- praia
+- uva
+- sahsahsa
+- sasauue
+- jgjfgjf
+- osapsao
+- idis
+- fpdfpod
 
 
 ## intent:goodbye <!--- The label of the intent --> 
@@ -47,9 +94,6 @@
 - te vejo mais tarde
 - tenho que ir
 - Até logo
-- boa noite
-- bom dia
-- boa tarde
 - xau
 - falou
 - falow
@@ -63,10 +107,26 @@
 - nós falaremos em breve
 - Vou nessa
 - estou de saída
-- obrigado, tchau
+- tchau
 - falo com você depois
 - Nos vemos por aí
 - saindo aqui
+
+## intent:help
+ - [/ajuda](command)
+ - ajuda
+ - help
+ - me ajuda
+ - me dá um help
+ - o que você faz?
+ - qual sua função?
+ - como você me ajuda?
+ - com o que pode me ajudar?
+ - como pode me ajudar?
+ - me dá uma ajuda
+ - ajudinha
+ - como usar?
+ - como usar suas funcionalidades?
 
 ## intent: tudo_bem
 - tudo bem?
@@ -108,7 +168,6 @@
 - salve
 - qual foi
 - fala tu 
-- piei
 - ou
 - ow
 - eaew
@@ -119,8 +178,8 @@
 - vey
 - eaae vey
 - eai bixo
-- ea e
-- ea i
+- eae
+- eai
 - e ai
 - faala
 - ea aí man kk
@@ -133,6 +192,10 @@
 - eaeee
 - oiiii
 - oii
+- ooi
+- oi Tino
+- Eai Tino
+- Tino
 - oiee
 - fala ai 
 - ola senhor
@@ -155,14 +218,12 @@
 - ja voltei
 - to aqui
 - oieee
-- oi oi
 - olaa
 - de volta na area
 - muito prazer robo
 - prazer
 - prazer em conhece-lo
 - eaíí
-- e aí
 - eai meu bom 
 - manda o papo
 - salvee
@@ -177,7 +238,6 @@
 - Muito obrigado
 - bot obrigado
 - Obrigado por isso
-- Felicidades
 - Obrigado amigo!
 - Muito obrigado amigo!
 - Obrigado mesmo amigo!
@@ -200,35 +260,6 @@
 - Agradecida
 - Grato
 - Grata
-
-## intent:random
-- você parece o lino
-- o dia está lindo hoje
-- eu um ovni
-- você acredita em ovni?
-- o dia está chuvoso
-- você assisti televisão?
-- naruto
-- dragon ball
-- você joga poker?
-- caneta
-- borracha
-- corrida
-- televisão
-- controle remoto
-- parede
-- guarda roupa
-- medalha 
-- olimpiada
-- como deriva ?
-- como acho o limite de uma equação ?
-- como faço uma integral ?
-- quanto você tirou na prova ?
-- vai chover
-- nunca nem vi
-- kkkk
-- aleatorio
-- random
 
 ## intent:about_name
 - Qual é o seu nome?
@@ -337,12 +368,9 @@
 ## intent:offense
 - alma sebosa
 - ordinario
-- capa
 - escroto
 - cuzao
-- rauly
-- fela da puta
-- fela
+- puta
 - pqp
 - puta que pariu
 - viado
@@ -352,69 +380,27 @@
 - desgraçado
 - seu puto
 - fi de quenga
-- seu mané
 - robo idiota
-- fodasssse
+- foda
 - foda-se
-- que se foda
-- foda se
-- fodase
-- fi da puta
 - vai tomar no cu
 - vtnc
 - tnc
 - bosta
 - vai se fuder
 - vsf
-- batata
 - seu merda
-- lixo
-- escroto
-- burro
+- cretino
+- chato
+- caralho
+- porra
 - merda
-- jumento
-- pnc
-- pau no cu
-- pau no rego
-- abestado
-- jegão
-- desgraça
-- safado
-- puta
-- corno
-- puto
-- piranha
-- vigarista
-- sua puta
-- bobão
-- tu é um mosca
-- moscao
-- zé ruela
-- zé buceta
-- ameba
-- seu bot horrivel
-- vai se lascar
-- arrombado
-- vagabundo
-- chupa minha pica
-- retardado
-- petista
-- lacaio
-- froxo
-- covarde
-- tratante 
-- buceta
-- traste
-- embuste
-- ranço
-- burro pra caralho
 
 ## intent:im_bad
 - to mal
 - muito triste
 - triste
 - mais ou menos
-- mas ou menos
 - podia estar melhor
 - infeliz
 - cansado
@@ -436,16 +422,15 @@
 - cansei dessa vida
 - acho que vou me matar
 - aqui to mal
-- não me sinto feliz
 - sou infeliz
 - sou titi
 - depre aqui
 - depressivo estou
 - estou depressivo
-- não ageunto mais 
 - situação ta ruim 
 - sou triste
 - acabou minhas esperanças
+
 
 ## intent:call_lino
 - me ve o cardapio do ru
@@ -716,7 +701,6 @@
 ## intent:find_professor
 <!---Como... -->
  - Como falo com o [Fragelli](professor)?
- - Como consigo o email do [Fulano Deutrano](professor)?
  - como entro em contato com o [Luis Augusto Laranjeiras](professor)?
  - como acho o professor [Fabricio Braz](professor)?
  - como faço pra falar com a [Rejane Maria](professor)? 
@@ -768,7 +752,6 @@
  - preciso falar com o [Artur Elias](professor)
  - preciso achar o [Diogo Caetano](professor)
  - preciso saber a sala da [Cristiane Soares Ramos](professor)
-
  - Passa o contato da professora [Bruna](professor)
  - Passa o contato da professora [Paola Lima](professor)
  - Passa o contato da professora [Paula Meyer](professor)
@@ -833,3 +816,120 @@
  - Me  ve o contato da professora [Bruna Mayara](professor)
  - Me  ve o contato da professora [Sandra](professor)
  - me ve o email do [Vandor](professor)
+ <!-- Do/Da... -->
+ - do [Fabricio](professor)
+ - do [Nilton](professor)
+ - do [Lindomar](professor)
+ - do [Ricardo](professor)
+ - do [Euler](professor)
+ - do professor [Giovanni](professor)
+ - do professor [Renato](professor)
+ - do professor [Vinicius](professor)
+ - do professor [Matheus](professor)
+ - da [Andréia](professor)
+ - da [Loana](professor)
+ - da [Maria](professor)
+ - da [Maria Alzira](professor)
+ - da [Maria Vitoria](professor)
+ - da [Marília](professor)
+ - da [Maura](professor)
+ - da professora [Patrícia](professor)
+ - da professora [Paula](professor)
+ - da professora [Sandra Maria](professor)
+ - da professora [Sandra Maria Faleiros](professor)
+ - da professora [Sandra Maria da Luz](professor)
+ - da professora [Tatiane](professor)
+<!-- Só o nome -->
+ - [Carla](professor)
+ - [Matheus bernadini](professor)
+ - [Wesley](professor)
+ - [Yevsey](professor)
+ - [Wellington](professor)
+ - [Wander](professor)
+ - [Vandor](professor)
+ - [Vanessa Maria de Castro](professor)
+ - [Sandra](professor)
+ - [Gabriela](professor)    
+ - [Bruna](professor)
+ - [Wellington Avelino](professor)
+ - [Bruna Nayara](professor)
+ - [Lindomar](professor)
+ - [Paula](professor)
+ - [Fragelli](professor)
+ - [Tatiane](professor)
+ - [Taís](professor)
+ - [Maria](professor)
+ - [Maria Alzira](professor)
+ - [Gerardo](professor)
+ - [Gilmar Silva](professor)
+ - [Henrique](professor)
+ - [Vanessa](professor)
+ - [Giovanni Almeida](professor)
+ - [Jhon Nero](professor)
+ - [Ricardo Fragelli](professor)
+ - [Yevsey Yehoshua Sobolevsky](professor)
+ - [Luis Filomeno](professor)
+ - [Ricardo](professor)
+ - [Luiz Augusto Fontes Laranjeira](professor)
+ - [Thiago](professor)
+ - [Ricardo Matos](professor)
+ - [Fabiana](professor)
+ - [Vinicius de Carvalho Rispoli](professor)
+
+
+## intent:info_professor
+ - Informações sobre os professores
+ - quero saber sobre os professores
+ - informações dos professores
+ - Informações dos professores
+ - Informações sobre os coordenadores
+ - Informações dos coordenadores
+<!-- Quero -->
+ - Quero saber sobre os professores
+ - Quero saber de um professor
+ - Quero saber o email de um professor
+ - Quero saber o email de uma professora
+ - Quero saber a sala de um professor
+ - Quero saber a sala de uma professora
+ - Quero saber sobre os coordenadores
+ - Quero saber de um coordenador
+ - Quero saber o email de um coordenador
+ - Quero saber o email de uma coordenadora
+ - Quero saber a sala de um coordenador
+ - Quero saber a sala de uma coordenadora
+<!-- Preciso -->
+ - Preciso das informações de um professor
+ - Preciso saber a sala de um professor
+ - Preciso saber o email de um professor
+ - Preciso das informações de uma professora
+ - Preciso saber a sala de uma professora
+ - Preciso saber o email de uma professora
+ - Preciso das informações de um coordenador
+ - Preciso saber a sala de um coordenador
+ - Preciso saber o email de um coordenador
+ - Preciso das informações de uma coordenadora
+ - Preciso saber a sala de uma coordenadora
+ - Preciso saber o email de uma coordenadora
+<!-- Me fala -->
+ - Me fala sobre um professor?
+ - Me fala sobre um coordenador?
+ - Me fala as informações de um professor?
+ - Me fala as informações de uma professora?
+ - Me fala o email de um professor?
+ - Me fala a sala de um professor?
+ - Me fala o email de uma professora?
+ - Me fala a sala de uma professora?
+ - Me fala o email de um coordenador?
+ - Me fala a sala de um coordenador?
+ - Me fala o email de uma coordenadora?
+ - Me fala a sala de uma coordenadora?
+
+## intent:negative
+ - Não
+ - Não,Obrigado
+ - Não, vlw
+ - nops, ty
+ - no
+ - nao, valeu
+ - nao
+ - não

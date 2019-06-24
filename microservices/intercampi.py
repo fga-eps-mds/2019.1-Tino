@@ -7,6 +7,8 @@ from flask import jsonify
 from urllib import request as rq
 import os
 import ssl
+import json
+
 
 app = Flask(__name__)
 
@@ -19,19 +21,24 @@ MONGO_HOSTNAME = str(MONGO_HOSTNAME) + ':27017'
 
 
 # accept telegram messages
-@app.route('/', methods=['POST', 'GET'])  # ###----ALL PATH----####
+@app.route('/intercampi/', methods=['POST', 'GET'])  # ###----ALL PATH----####
 def index():
     if(request.method == 'POST'):
         return Response('ok', status=200)
+
     else:
         intercampi_dados = ""
         try:
             collection = get_intercampi_collection()
+
         except Exception as error:
             print(error)
+            print('ERRO AO ACESSAR COLEÇÃO')
 
         try:
             intercampi_dados = get_from_fga_site()
+            print(intercampi_dados)
+
         except Exception as error:
             print(error)
 
@@ -39,29 +46,29 @@ def index():
         print(intercampi_dados)
         if(intercampi_dados != ""):
             collection.delete_many({})
-            # Insere cada element no banco
-            for element in intercampi_dados :
+            # insert elements
+            for element in intercampi_dados:
                 collection.insert_one(element)
         json = []
 
-        # Find 
         for y in collection.find():
             print(y['_id'])
-            del y['_id']        # Deleta o atributo  '_id' .
-            json.append(y)      # Adiciona o registro a uma lista Json.
+            del y['_id']
+            json.append(y)
 
     return jsonify(json)
 
+
 def get_intercampi_collection():
 
-    # acess mongo database
+    # Acess mongo db
     client = MongoClient(MONGO_HOSTNAME, username=MONGO_USER,
                          password=MONGO_PASSWORD)
     db = client.admin
     collection = db['intercampi-horario']
 
-    return collection
 
+    return collection
 
 def get_from_fga_site():
     html = get_ssl_certificate()
@@ -72,9 +79,8 @@ def get_from_fga_site():
     first_table = first_table.to_json(orient='values')
     # convert string to json
     first_table = json.loads(first_table)
-
     result = []
-    # for each item,create a element and put on json list
+
     for item in first_table:
         element = {}
         element = {'horario_saida': item[0], 'destino': item[2],
@@ -83,32 +89,33 @@ def get_from_fga_site():
 
     print(result)
 
+
     return result
 
 
 def get_ssl_certificate():
     url = "https://fga.unb.br/guia-fga/horario-dos-onibus-intercampi"
     context = ssl._create_unverified_context()
-    response = rq.urlopen(url, context=context)
+    response = urllib.urlopen(url, context=context)
     html = response.read()
 
     return html
 
 
-@app.route("/darcy")  # ###-----DARCY PATH-----####
+@app.route("/intercampi/darcy/")  # ###-----DARCY PATH-----####
 def get_from_darcy():
     collection = get_intercampi_collection()
 
     json = []
     for y in collection.find():
-        if(y['origem'] == "Darcy Ribeiro"):     # Filtra os registros relacionados a 'Darcy Ribeiro'.
-            del y['_id']                        # Deleta o atributo '_id'
-            json.append(y)                      # Adiciona o registro a uma lista json.
-        
+        if(y['origem'] == "Darcy Ribeiro"):
+            del y['_id']                        
+            json.append(y)                              
+    
+
     return jsonify(json)
 
-
-@app.route("/gama")  # #########-----GAMA PATH-----#############
+@app.route("/intercampi/gama/")  # #########-----GAMA PATH-----#############
 def get_from_gama():
     collection = get_intercampi_collection()
 
@@ -121,7 +128,7 @@ def get_from_gama():
     return jsonify(json)
 
 
-@app.route("/ceilandia")  # #####-----CEILÂNDIA PATH-----######
+@app.route("/intercampi/ceilandia/")  # #####-----CEILÂNDIA PATH-----######
 def get_from_ceilandia():
     collection = get_intercampi_collection()
 
@@ -130,11 +137,12 @@ def get_from_ceilandia():
         if(y['origem'] == "Ceilândia"):
             del y['_id']
             json.append(y)
+    
 
     return jsonify(json)
 
 
-@app.route("/planaltina")  # #########-----PLANALTINA PATH-----#############
+@app.route("/intercampi/planaltina/")  # #########-----PLANALTINA PATH-----#############
 def get_from_planaltina():
     collection = get_intercampi_collection()
 
@@ -144,7 +152,8 @@ def get_from_planaltina():
             del y['_id']
             json.append(y)
 
-    return jsonify(json)   
+    return jsonify(json)
+
 
 if(__name__ == '__main__'):
     app.run(debug=True, host='0.0.0.0')
