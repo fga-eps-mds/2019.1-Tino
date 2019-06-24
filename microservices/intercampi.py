@@ -1,3 +1,5 @@
+from flask import Flask
+from flask import request
 from flask import Response
 import pandas as pd
 from pymongo import MongoClient
@@ -6,6 +8,7 @@ from urllib import request as rq
 import os
 import ssl
 import json
+
 
 app = Flask(__name__)
 
@@ -93,7 +96,7 @@ def get_from_fga_site():
 def get_ssl_certificate():
     url = "https://fga.unb.br/guia-fga/horario-dos-onibus-intercampi"
     context = ssl._create_unverified_context()
-    response = rq.urlopen(url, context=context)
+    response = urllib.urlopen(url, context=context)
     html = response.read()
 
     return html

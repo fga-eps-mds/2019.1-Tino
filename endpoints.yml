@@ -1,2 +1,2 @@
 action_endpoint:
-  url: "http://0.0.0.0:5055/webhook"
+  url: "https://tinopro.com/webhook/"

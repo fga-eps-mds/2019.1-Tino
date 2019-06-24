@@ -13,13 +13,13 @@ import telegram
 
 mongo_host = os.environ['MONGO_ID']
 mongo_host = mongo_host + ':27017'
-bot_token = '817438100:AAFinhUm4zCFKkBRZMtL7ez3paLekIs0p4E'
+bot_token = '739701752:AAEu1dcyxVeTNf8pgyN5FfMZx-2Te3PwprA'
 chat_id = '126478234'
 url = os.environ['INTERCAMPI_WEBHOOK']
-url_darcy = url + "/darcy"
-url_gama = url + "/gama"
-url_planaltina = url + "/planaltina"
-url_ceilandia = url + "/ceilandia"
+url_darcy = url + "/darcy/"
+url_gama = url + "/gama/"
+url_planaltina = url + "/planaltina/"
+url_ceilandia = url + "/ceilandia/"
 logger = logging.getLogger(__name__)
 
 

@@ -10,6 +10,7 @@ import pyfiglet
 
 # load trained models
 
+
 interpreter = RasaNLUInterpreter('./models/current/nlu')
 ACTION_WEBHOOK = os.environ['ACTION_WEBHOOK']
 ACTION_WEBHOOK = ACTION_WEBHOOK + "/webhook"
@@ -31,17 +32,17 @@ app = Flask(__name__)
 def index():
     if(request.method == 'POST'):
         msg = request.get_json()
-
+        print(ACTION_WEBHOOK)
         chat_id, message = parse_msg(msg)
         response_messages = applyAi(message)
         if 'todos' in message:
-            requests.get(SENDPDF_WEBHOOK+"/?chat_id=" + str(chat_id))
+            requests.get(SENDPDF_WEBHOOK+"?chat_id=" + str(chat_id))
 
         send_message(chat_id, response_messages)
         return Response('ok', status=200)
 
     else:
-        return '<h1>Tino-Eps</h1>'
+        return '<h1>Tino-Eps</h1>' + ACTION_WEBHOOK
 
 
 # helper function to extract chat id and text
