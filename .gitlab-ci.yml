@@ -41,6 +41,8 @@ build core:
       - development
 
 deploy:
+  services:
+    - docker:dind
   stage: deploy
   script:
     - sh deploy.sh  
