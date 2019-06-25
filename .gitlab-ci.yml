@@ -23,8 +23,9 @@ build action_server:
     - docker build -t jppgomes/jp:latest .
     - docker push jppgomes/jp:latest
   only:
-   - master
-   - development
+    refs:
+      - master
+      - development
 
    build core:
     image: docker:latest
@@ -35,7 +36,8 @@ build action_server:
       - docker login -u jppgomes -p 250595
       - docker build -t jppgomes/telegram-jp:latest -f docker/Telegram.Dockerfile
       - docker push jppgomes/telegram-jp:latest
-    only:
+  only:
+    refs:
       - master
       - development
 
