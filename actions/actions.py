@@ -13,14 +13,13 @@ import telegram
 
 mongo_host = os.environ['MONGO_ID']
 mongo_host = mongo_host + ':27017'
-bot_token = '810210390:AAEOIp4lD3gnnWykAaxLlIRDKcBjkDeCpzU'
 url = os.environ['INTERCAMPI_WEBHOOK']
 url_darcy = url + "/darcy/"
 url_gama = url + "/gama/"
 url_planaltina = url + "/planaltina/"
 url_ceilandia = url + "/ceilandia/"
 logger = logging.getLogger(__name__)
-
+send_pdf = os.environ['SENDPDF_WEBHOOK']
 
 class ActionGreet(Action):
     def name(self) -> Text:
@@ -46,17 +45,21 @@ class ActionGreet(Action):
 
         # Defines the bot from bot_token
         options = [[buttons[0], buttons[1]]]
-
-        dispatcher.utter_message(message)
-            
-        #bot = telegram.Bot(token=bot_token)
+        client = MongoClient(mongo_host, username='rasa',password='rasa')
+        db = client.admin
+        collection = db['dados-conversa-atual']
+        chat_id = collection.find()[0]['chat_id']
+        token = collection.find()[0]['token']
+        bot = telegram.Bot(token=token)
 
         # Defines the options in reply_markup
-        #reply_markup = telegram.InlineKeyboardMarkup(options)
+        reply_markup = telegram.InlineKeyboardMarkup(options)
 
-        #bot.send_message(chat_id=chat_id,
-        #                 text=message,
-        #                 reply_markup=reply_markup)
+        
+
+        bot.send_message(chat_id=chat_id,
+                         text=message,
+                         reply_markup=reply_markup)
 
         return []
 
@@ -143,13 +146,18 @@ class ActionCallapiAll(Action):
         return 'action_callapi_all_intercampi'
 
     def run(self, dispatcher, tracker, domain):
+        client = MongoClient(mongo_host, username='rasa',password='rasa')
+        db = client.admin
+        collection = db['dados-conversa-atual']
+        chat_id = collection.find()[0]['chat_id']
         dispatcher.utter_message('Pronto! Aqui está um documento com '
                                  'o horário de todos intercampi. Se precisar'
                                  ' de mais alguma coisa, é só falar!')
-        requests.get("https://bfaaaeb3.ngrok.io/?chat_id=487522674")
+        requests.get(send_pdf + "?chat_id=" + str(chat_id))
 
 
 class ActionFindProfessor(Action):
+
     def name(self) -> Text:
         return 'action_find_professor'
 
