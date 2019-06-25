@@ -1,21 +1,43 @@
 stages:
   - test
+  - build action_server
+  - build core
+  - deploy
 
+before_script:
+  - cd 2019.1-Tino/
 
-######################## Variables #########################
-variables:
-  ACTION_IMAGE: jppgomes/jp:latest
-  TELEGRAM_IMAGE: jppgomes/jp-telegram:latest
-  INTERCAMPI_IMAGE: $jppgomes/jp-intercampi:latest
-
-
-######################## Tests #############################
-test_flake8:
+test:
   image: ejplatform/python:latest
   stage: test
   script:
     pip install --upgrade pip && pip install lxml && pip install bs4 && pip install html5lib && pip install progressbar33 && pip install pytest && pip install --upgrade setuptools && pip install ez_setup && ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install --upgrade numpy pandas && pip install requests && pip install pymongo && source .env && cd TestActions && pytest
 
+build action_server:
+  image: docker:latest
+  stage: build action_server
+  services:
+    - docker:dind
+  script:
+    - docker login -u jppgomes -p 250595
+    - docker build -t jppgomes/jp:latest .
+    - docker push jppgomes/jp:latest
+  only:
+   - master
+   - development
 
+   build core:
+    image: docker:latest
+    stage: build core
+    services:
+      - docker:dind
+    script:
+      - docker login -u jppgomes -p 250595
+      - docker build -t jppgomes/telegram-jp:latest -f docker/Telegram.Dockerfile
+      - docker push jppgomes/telegram-jp:latest
+    only:
+      - master
+      - development
 
-
+  deploy:
+    - sh deploy.sh   
