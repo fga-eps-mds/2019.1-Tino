@@ -48,8 +48,7 @@ deploy:
   services:
     - docker:dind
   stage: deploy
-  script:
-    - docker stop $(docker ps -a -q)
+  script:    
     - docker login -u jppgomes -p 250595
     - docker pull jppgomes/jp:latest
     - docker pull jppgomes/telegram-jp:latest  
