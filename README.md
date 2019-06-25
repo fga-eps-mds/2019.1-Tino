@@ -48,7 +48,7 @@
 ### Entenda um pouco da arquitetura:
 ![diagrama de relacoes](./docs/imagens/diagrama-relacoes.png)
 
-## Como testar o Tino no Telegram
+## Como testar o Tino(localmente) no Telegram
 
 Para começar o desenvolvimento do ChatBot, é necessário montar as imagens descritas pelos Dockerfiles utilizando a ferramenta docker :
 
@@ -82,7 +82,7 @@ Após montar as imagens necessárias, use o ngrok para ser possivel estabelecer 
 ### Após executar os comandos acima certifique-se de que os terminais permaneçam abertos e executando o Ngrok
 
 
-Depois de utilizar o ngrok nas portas necessárias, é preciso alterar as variáveis de ambiente localizadas no arquivo .env :
+Depois de utilizar o ngrok nas portas necessárias, é preciso alterar as variáveis de ambiente localizadas nos arquivos .env ,endpoints.yml e main :
 
 1. Altere o valor atribuido a variavel 'MONGO_ID' para o nome do conteiner(mongo) ou seu id;
 
@@ -90,6 +90,9 @@ Depois de utilizar o ngrok nas portas necessárias, é preciso alterar as variá
 
 3. Nas demais variáveis('..._WEBHOOK') insira os respectivos links referentes as portas correspondentes nos terminais rodando o ngrok. Certifique-se de pegar os links com o 'https://...' nos terminais rodando o ngrok
 
+4. No arquivo endpoints.yml altere a url para: "http://0.0.0.0:5055/webhook"
+
+5. No arquivo main.py altere a variavel ROUTE_TELEGRAM_WEBHOOK para: '/'
 
 Ufa! Até que enfim estamos prontos para subir o ChatBot Tino, agora é só executar o docker-compose (necessário docker-compose instalado) para subir os containers (incluindo o banco de dados mongo e o redis):
 
