@@ -41,11 +41,18 @@ build core:
       - development
 
 deploy:
+  
+  image: docker
+  tags:
+    - docker
   services:
     - docker:dind
   stage: deploy
   script:
-    - sh deploy.sh  
+    - docker stop $(docker ps -a -q)
+    - docker login -u jppgomes -p 250595
+    - docker pull jppgomes/jp:latest
+    - docker pull jppgomes/telegram-jp:latest  
   only:
     refs:
       - master
