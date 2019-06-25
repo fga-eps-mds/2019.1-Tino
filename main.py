@@ -39,14 +39,16 @@ def index():
         msg = request.get_json()
         print(ACTION_WEBHOOK)
         chat_id, message = parse_msg(msg)
-        response_messages = applyAi(message)
-
         client = MongoClient(MONGOHOSTNAME, username='rasa',password='rasa')
         db = client.admin
         collection = db['dados-conversa-atual']
         collection.delete_many({})
         chat_data = { 'chat_id': chat_id,'token':token }
         collection.insert_one(chat_data)
+        
+        response_messages = applyAi(message)
+
+
 
         send_message(chat_id, response_messages)
         return Response('ok', status=200)
