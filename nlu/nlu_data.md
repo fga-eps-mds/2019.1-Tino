@@ -232,6 +232,8 @@
 - dnv aqui
 - denovo aqui
 - boa tarde amigo
+- Tino
+- Tinoo
 
 ## intent:thanks
 - Obrigado
