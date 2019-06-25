@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import requests
 import json
 
-url_count = 'https://8a8e50e8.ngrok.io'  # intercampi local ngrok url 5002
+url_count = 'https://7c0eb0b6.ngrok.io'  # intercampi local ngrok url 5002
 url_count = url_count + '/count'
 mongo_host_prod = ''    # production mongo ip
 mongo_host_prod = 'mongodb://' + mongo_host_prod + ':27017'
@@ -15,21 +15,6 @@ total_intercampi_lines = 16
 # mongo collection.
 
 
-def get_local_count():
-    # GET HTTP REQUEST ON INTERCAMPI MICROSERVICE
-    return requests.get(url_count).json()
-
-
-def test_local_professor_count():
-    obj = get_local_count()
-    count = obj['profcount']
-    assert count == total_professors_registred
-
-
-def test_local_intercampi_count():
-    obj = get_local_count()
-    count = obj['intercampicount']
-    assert count == total_intercampi_lines
 
 # ###PROD MONGO TESTS
 # def connect_prod_mongo_db():
