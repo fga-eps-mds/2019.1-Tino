@@ -38,7 +38,8 @@ def index():
     if(request.method == 'POST'):
         msg = request.get_json()
         print(ACTION_WEBHOOK)
-        chat_id, message = parse_msg(msg)
+        if message:
+            chat_id, message = parse_msg(msg)
         client = MongoClient(MONGOHOSTNAME, username='rasa',password='rasa')
         db = client.admin
         collection = db['dados-conversa-atual']
