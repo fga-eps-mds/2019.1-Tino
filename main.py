@@ -105,8 +105,10 @@ def set_webhook():
 
 
 if(__name__ == '__main__'):
-    call_webhook = set_webhook()
-    ascii_banner = pyfiglet.figlet_format(call_webhook)
-    print(ascii_banner)
+    try:
+        call_webhook = set_webhook()
+    except KeyError:
+        print("Ocorreu um erro no Webhook")
 
+    print("Webhook atualizado com sucesso!")
     app.run(debug=True, host='0.0.0.0')
