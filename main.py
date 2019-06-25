@@ -22,6 +22,7 @@ TELEGRAM_WEBHOOK = os.environ['TELEGRAM_WEBHOOK']
 TELEGRAM_WEBHOOK = str(TELEGRAM_WEBHOOK)
 SENDPDF_WEBHOOK = os.environ['SENDPDF_WEBHOOK']
 SENDPDF_WEBHOOK = str(SENDPDF_WEBHOOK)
+ROUTE_TELEGRAM_WEBHOOK = '/telegram'
 
 
 
@@ -33,7 +34,7 @@ token = os.environ['TELEGRAM_TOKEN']
 app = Flask(__name__)
 
 # accept telegram messages
-@app.route('/telegram/', methods=['POST', 'GET'])
+@app.route(ROUTE_TELEGRAM_WEBHOOK, methods=['POST', 'GET'])
 def index():
     if(request.method == 'POST'):
         msg = request.get_json()

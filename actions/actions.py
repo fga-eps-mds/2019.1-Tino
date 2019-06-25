@@ -21,49 +21,6 @@ url_ceilandia = url + "/ceilandia/"
 logger = logging.getLogger(__name__)
 send_pdf = os.environ['SENDPDF_WEBHOOK']
 
-class ActionGreet(Action):
-    def name(self) -> Text:
-        return 'action_greet'
-
-    def run(self, dispatcher, tracker, domain):
-
-        message = ('Fala aí, beleza?\nSou o Tino e estou aqui '
-                   'para te ajudar com os seguintes assuntos:\n'
-                   ' - Horários dos Intercampi\n' +
-                   ' - Informações dos Professores')
-
-        buttons = []
-
-        # Defines the buttons.
-        buttons.append(telegram.InlineKeyboardButton(
-                text="Horários dos Intercampi",
-                callback_data="Quero saber sobre o intercampi"))
-
-        buttons.append(telegram.InlineKeyboardButton(
-                text="Informações dos Professores",
-                callback_data="Informações dos professores"))
-
-        # Defines the bot from bot_token
-        options = [[buttons[0], buttons[1]]]
-        client = MongoClient(mongo_host, username='rasa',password='rasa')
-        db = client.admin
-        collection = db['dados-conversa-atual']
-        chat_id = collection.find()[0]['chat_id']
-        token = collection.find()[0]['token']
-        bot = telegram.Bot(token=token)
-
-        # Defines the options in reply_markup
-        reply_markup = telegram.InlineKeyboardMarkup(options)
-
-        
-
-        bot.send_message(chat_id=chat_id,
-                         text=message,
-                         reply_markup=reply_markup)
-
-        return []
-
-
 class ActionCallapi(Action):
 
     def name(self) -> Text:
@@ -153,7 +110,7 @@ class ActionCallapiAll(Action):
         dispatcher.utter_message('Pronto! Aqui está um documento com '
                                  'o horário de todos intercampi. Se precisar'
                                  ' de mais alguma coisa, é só falar!')
-        requests.get(send_pdf + "?chat_id=" + str(chat_id))
+        requests.get(send_pdf + "/?chat_id=" + str(chat_id))
 
 
 class ActionFindProfessor(Action):
