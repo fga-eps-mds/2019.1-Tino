@@ -33,7 +33,7 @@ build core:
     - docker:dind
   script:
     - docker login -u jppgomes -p 250595
-    - docker build -t jppgomes/telegram-jp:latest -f docker/Telegram.Dockerfile
+    - docker build -t jppgomes/telegram-jp:latest -f Telegram.Dockerfile .
     - docker push jppgomes/telegram-jp:latest
   only:
     refs:
