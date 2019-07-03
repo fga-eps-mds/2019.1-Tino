@@ -39,7 +39,8 @@ def index():
     if(request.method == 'POST'):
         msg = request.get_json()
         print(ACTION_WEBHOOK)
-        chat_id, message = parse_msg(msg)
+        if message:
+            chat_id, message = parse_msg(msg)
         client = MongoClient(MONGOHOSTNAME, username='rasa',password='rasa')
         db = client.admin
         collection = db['dados-conversa-atual']
@@ -106,8 +107,10 @@ def set_webhook():
 
 
 if(__name__ == '__main__'):
-    call_webhook = set_webhook()
-    ascii_banner = pyfiglet.figlet_format(call_webhook)
-    print(ascii_banner)
+    try:
+        call_webhook = set_webhook()
+    except KeyError:
+        print("Ocorreu um erro no Webhook")
 
+    print("Webhook atualizado com sucesso!")
     app.run(debug=True, host='0.0.0.0')
