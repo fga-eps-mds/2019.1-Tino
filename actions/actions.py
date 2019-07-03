@@ -14,12 +14,13 @@ import telegram
 mongo_host = os.environ['MONGO_ID']
 mongo_host = mongo_host + ':27017'
 url = os.environ['INTERCAMPI_WEBHOOK']
-url_darcy = url + "/darcy/"
-url_gama = url + "/gama/"
-url_planaltina = url + "/planaltina/"
-url_ceilandia = url + "/ceilandia/"
+url_darcy = url + "/intercampi/darcy/"
+url_gama = url + "/intercampi/gama/"
+url_planaltina = url + "/intercampi/planaltina/"
+url_ceilandia = url + "/intercampi/ceilandia/"
 logger = logging.getLogger(__name__)
 send_pdf = os.environ['SENDPDF_WEBHOOK']
+send_pdf = send_pdf + '/pdf'
 
 class ActionCallapi(Action):
 
@@ -110,7 +111,7 @@ class ActionCallapiAll(Action):
         dispatcher.utter_message('Pronto! Aqui está um documento com '
                                  'o horário de todos intercampi. Se precisar'
                                  ' de mais alguma coisa, é só falar!')
-        requests.get(send_pdf + "/?chat_id=" + str(chat_id))
+        requests.get(send_pdf + '/?chat_id=' + str(chat_id))
 
 
 class ActionFindProfessor(Action):
