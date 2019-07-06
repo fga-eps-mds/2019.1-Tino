@@ -99,7 +99,19 @@ Ufa! Até que enfim estamos prontos para subir o ChatBot Tino, agora é só exec
 1. sudo docker-compose up
 
 
-### Agora sim está tudo pronto para testar o Tino no Telegram... Manda um 'Oi' lá!    
+### Agora sim está tudo pronto para testar o Tino no Telegram... Manda um 'Oi' lá! 
+
+## Equipe 
+
+
+| Nome | Github | E-mail | Matricula UnB |
+| :--------------------: | :-------------: | :-----------------------: | :--------: |
+|Lucas Leite Macedo | [@lucasqmc](https://github.com/lucasqmc) | lucasleitemm@hotmail.com | 17/0016811 |
+|Luis Bruno | [@lbrunofidelis](https://github.com/lbrunofidelis) | l.brunofidelis@gmail.com | 14/0169695 |
+|Luis Gustavo | [@lgpinheiro94](https://github.com/lgpinheiro94) | lgpinheiro94@gmail.com | 14/0169784 |
+|Lucas Lopes | [@lucaslop](https://github.com/lucaslop) | lucaslopes05597@gmail.com | 17/0016838 |
+|Henrique Dutra | [@henriquedutra](https://github.com/henriquedutra) | contato@henriquedutra.com.br | 14/0021949 |
+|João Pedro | [@jppgomes](https://github.com/jppgomes) | joaok8@gmail.com | 14/0145842  |
 
 
 
